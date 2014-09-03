@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+	<body class="styling">
+		 <!--      Top Navigation with BaseSpace & Illumina Logo
+			==================================================        -->
+
+  <div class="header"> <!-- custom css -->
+    <div class="container">
+            <a class="header-brand-baseSpace" href="{{ site.baseurl }}/">BaseSpace HelpCenter</span></a> <!-- custom css -->
+            <a class="header-brand-illumina" href="http://illumina.com/">illumina</span></a> <!-- custom css -->
+     </div>
+  </div>
+
+		<div>
+		{{ content }}
+		</div>
+
+		{% include foot.html %}
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+  <body class="styling">
+     <!--      Top Navigation with BaseSpace & Illumina Logo
+      ==================================================        -->
+
+    <div class="header"> <!-- custom css -->
+      <div class="container">
+          <a class="header-brand-baseSpace" href="{{ site.baseurl }}/">BaseSpace HelpCenter</span></a> <!-- custom css -->
+          <a class="header-brand-illumina" href="#">illumina</span></a> <!-- custom css -->
+       </div>
+    </div>
+
+  <header class="header_custom">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12">
+                      <div class="text">Welcome! We are here to help.</div>
+              </div>
+          </div>
+      </div>
+  </header>
+
+  <br>
+  <br>
+
+    <div>
+    {{ content }}
+    </div>
+
+    {% include feedback-bar.html %}
+    {% include foot.html %}
+  </body>
+</html>

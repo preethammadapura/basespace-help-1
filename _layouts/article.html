@@ -1,0 +1,83 @@
+---
+layout: default
+---
+  <!--      Banner with Breadcrumbs and Search Box
+        ==================================================        -->
+{% include article-breadcrumbs.html %}
+
+<!--       Article Header
+        ==================================================        -->
+<div class="container">
+   <h1 class="article-title">{{ page.title }}</h1>
+   <div class="row">
+      <div class="col-sm-8">
+           <!--       Article Body
+          ==================================================        -->
+          <div>
+  		{{ content }}
+          </div><!-- /article body ends -->
+      </div><!-- /column ends -->
+
+     <!-- ***************                    SIDE MODULE STARTS                ****************************** -->
+      <div class="col-sm-3 col-sm-offset-1">
+        <div class="block">
+        		<div class="row">
+        		  <span class="related_section_heading col-sm-9">Related Articles</span>
+        		</div>
+
+        		<div class="related_section_content">
+        		  <hr class="line-height"></hr>
+        		  <p><a>BaseSpace UI Overview</a></p>
+        		  <hr class="line-height"></hr>
+        		  <p><a>Getting Started with Sample Data</a></p>
+        		  <hr class="line-height"></hr>
+        		</div>
+        </div>
+
+        <div class="block">
+    			<div class="row">
+    				<span class="related_section_heading col-sm-9">Related FAQs</span>
+    			</div>
+
+    			<div class="related_section_content">
+    				<hr class="line-height"></hr>
+    				<p><a>Where is my data hosted?</a></p>
+    				<hr class="line-height"></hr>
+    				<p><a>Can I access Public Data?</a></p>
+    				<hr class="line-height"></hr>
+    				<p><a>Does Illumina Access my data??</a></p>
+    				<hr class="line-height"></hr>
+    			</div>
+        </div>
+
+        <div class="block">
+
+    			<div class="row">
+    				<span class="related_section_heading_video col-sm-9">Related Video</span>
+    			</div>
+    			<a href="#" class="lghtbox" data-toggle="modal" data-target="#videoModal" data-theVideo="//www.youtube.com/embed/HhHuCz5_pRQ"><img src="{{ site.baseurl}}/images/basespace_video.png" class="img-responsive">
+    			<br>
+    			<p>Introduction to BaseSpace</p>
+    			</a>
+
+    			<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+    				<div class="modal-dialog">
+    					<div class="modal-content">
+    						<div class="modal-body">
+    							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    							<div>
+    								<iframe width="100%" height="350" src=""></iframe>
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    			<p>This video provides an introduction to BaseSpace and gives and overview of its functionality</p>
+        </div>
+      </div><!-- /.blog-sidebar -->
+  </div><!-- /.row -->
+
+  <br> <!-- *Line Break after callout* -->
+  <br> <!-- *Line Break after callout* -->
+{% include github.html %}
+</div>
