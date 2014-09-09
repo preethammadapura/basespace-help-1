@@ -1,0 +1,44 @@
+/* Common font for entire body */
+
+.styling{
+    
+        color: @font-color;
+        font:100 12px/1.2em @font-text, sans-serif;
+        line-height: 150%;
+        word-spacing: 1px;
+        -webkit-font-smoothing: antialiased;
+    
+}
+
+
+/* Font for links */
+
+a {
+    
+    color: @link-color;
+    
+}
+
+a:link{
+
+     color: @link-color;
+
+}
+
+a:hover{
+    
+    color: @link-color;
+    text-decoration: underline;
+    
+    @media (max-width: 960px){
+                                text-decoration: NONE;
+                             }
+    
+    
+    @media (max-width: 768px){
+                                text-decoration: NONE;
+                             }
+    
+}
+
+

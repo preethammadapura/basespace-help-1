@@ -1,0 +1,931 @@
+/* %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%
+
+                                                                Body Home
+
+            %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
+
+
+.styling_home{
+    
+background-color: #ffffff;
+    
+}
+
+.line{
+    
+      border: solid;
+      border-color: @footer-color;
+      border-width: 1px;
+
+    
+}
+
+
+
+/* Jumbotron Section %% Not using jumbotron class %% */
+
+
+
+.header_custom{
+    
+text-align: center;
+color: #ffffff;
+background-image: url(http://res.illumina.com/images/rgh/hero/childpageheader-prpl240-v2.jpg);
+background-size: cover;
+height: 200px;
+
+}
+
+
+/* http://res.illumina.com/images/rgh/hero/childpageheader-prpl240-v2.jpg */   /* Purple Bckgrnd */
+
+.text {
+display: block;
+font: 200 36px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+text-align: center;
+position: relative;
+top: 60px;
+display: inline-block;
+color: #fff;
+padding: 10px 20px;
+letter-spacing: 1px;
+
+}
+
+    @media (max-width: 768px){
+        .text {
+        font: 200 26px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+        }
+    }
+    
+
+/* %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%
+
+                                           Popular FAQ Section
+
+            %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
+
+
+/* Popular FAQ Links Section */
+
+
+
+.header_text {
+ 
+    font: 200 20px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+    color: #666666;
+    margin-bottom: 20px;
+
+}
+
+
+.popular_faq_section{
+    
+    position: relative;
+    top: -1px;
+    
+     @media (max-width: 768px){
+                                margin-left: 60px;
+                                margin-right: 60px;
+                             }
+    
+}
+
+.faq_link{
+    
+    margin-bottom: 17px;
+    
+}
+
+.faq_ol{
+    
+    position: relative;
+    left: -20px;
+    
+}
+
+
+
+/* %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%
+
+                                            Categories Section
+
+            %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
+
+
+
+/** LEFT SIDE BAR CSS **/
+
+a.link_grey:link{
+ 
+    color: #000000;
+}
+
+
+/* Box Layout */
+
+
+.left_part{        /*icon layout*/
+    
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    
+    
+}
+
+.middle_part{           /*text layout*/
+    
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    padding-right: 5rem !important;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;   
+
+}
+
+.right_part{            /*caret layout*/
+    
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 10px;
+    color: #f1f2f2;
+    font-size: 3rem;
+    
+}
+
+/* %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%
+
+                                            Article Section CSS
+
+            %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
+
+/* Box for Article section */
+
+#sidebarmodule_articles{
+    
+    border: solid 1px;
+    border-color: #e5e5e5; 
+    border-radius: 3px;
+    background-color: @white-color;
+    display: table;
+    width: 105%;
+    height: 110px;
+    
+    padding: 10px;
+    margin-bottom: 15px;
+    position: relative;
+    left: -8px;
+    
+    
+     @media (max-width: 768px){
+                                width: 80%;
+                                left: 50px;
+                                height: 90px;
+                             }
+    
+    @media (max-width: 460px){
+                                width: 80%;
+                                left: 40px;
+                                height: 90px;
+                             }
+   
+}
+
+
+
+#category_heading_articles{
+    
+    font: 200 16px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+    color: @header-color;
+    margin-left: 20px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    padding-left: 5px;
+    display: table-cell;
+    position: relative;
+    left: 10px;
+    
+    
+    @media (max-width: 1199px){
+                                font: 200 16px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+                                left: 20px;
+                                
+                             }
+
+
+    @media (max-width: 991px){
+                                font: 200 14px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+                                left: 5px;
+                                
+                             }
+    
+    @media (max-width: 768px){
+                                font: 200 16px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+                                left: 10px;
+  
+                             }
+    
+    @media (max-width: 491px){
+        
+                                font: 200 14px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+                                left: 15px;
+                                
+                             }
+    
+}
+
+/* Articles Hover CSS */
+
+#sidebarmodule_articles:hover{
+    
+    background-color: @article-color;
+    transition-duration: 0.5s;
+    
+}
+
+#sidebarmodule_articles:hover #category_heading_articles{
+    
+    color: @white-color;
+    transition-duration: 0.5s;
+    
+}
+
+#sidebarmodule_articles:hover .articles_icon{
+    
+    
+    color: @white-color;
+    transition-duration: 0.5s;
+}
+
+/* Article Icon */
+
+.articles_icon{
+    
+    font-size: 45px;         
+    color: @article-color;
+    display: table-cell;
+    position: relative;
+    padding-right: 10px;
+    padding-left: 10px;
+    
+    @media (max-width: 1199px){
+                                top: 0px;
+                             }
+    
+    @media (max-width: 991px){
+                                font-size: 35px; 
+                                top: 1px;
+                             }
+
+    @media (max-width: 768px){
+                                top: -2px;
+                                font-size: 35px;
+                             }
+    
+    @media (max-width: 491px){
+                                top: -1px;
+                                font-size: 35px;
+                             }
+    
+    
+}
+
+/* %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%
+
+                                            Forum Section CSS
+
+            %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
+
+/* Forum Hover CSS */
+
+
+#sidebarmodule_forums{
+    
+    border: solid 1px;
+    border-color: #e5e5e5; 
+    border-radius: 3px;
+    background-color: @white-color;
+    display: table;
+    width: 105%;
+    height: 110px;
+    
+    padding: 10px;
+    margin-bottom: 15px;
+    position: relative;
+    left: -8px;
+    
+    
+     @media (max-width: 768px){
+                                width: 80%;
+                                left: 50px;
+                                height: 90px;
+                             }
+    
+    @media (max-width: 460px){
+                                width: 80%;
+                                left: 40px;
+                                height: 90px;
+                             }
+}
+
+#category_heading_forums{
+    
+    font: 200 16px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+    color: #666;
+    margin-left: 20px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    padding-left: 5px;
+    display: table-cell;
+    position: relative;
+    left: 10px;
+    
+    
+    @media (max-width: 1199px){
+                                font: 200 16px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+                                left: 20px;
+                                
+                             }
+
+
+    @media (max-width: 991px){
+                                font: 200 14px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+                                left: 5px;
+                                
+                             }
+    
+    @media (max-width: 768px){
+                                font: 200 16px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+                                left: 10px;
+  
+                             }
+    
+    @media (max-width: 491px){
+        
+                                font: 200 14px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+                                left: 7px;
+                                
+                             }
+    
+}
+
+#sidebarmodule_forums:hover{
+    
+    background-color: @forum-color;
+    transition-duration: 0.5s;
+    
+}
+
+#sidebarmodule_forums:hover #category_heading_forums{
+    
+    color: @white-color;
+    transition-duration: 0.5s;
+    
+}
+
+#sidebarmodule_forums:hover .forum_icon{
+    
+    
+    color: @white-color;
+    transition-duration: 0.5s;
+}
+
+/* Forum Icon */
+
+.forum_icon{
+    
+    font-size: 42px;         
+    color: @forum-color;
+    display: table-cell;
+    position: relative;
+    padding-right: 10px;
+    padding-left: 10px;
+    
+    @media (max-width: 1199px){
+                                top: 0px;
+                             }
+    
+    @media (max-width: 991px){
+                                font-size: 35px; 
+                                top: 1px;
+                             }
+
+    @media (max-width: 768px){
+                                top: -2px;
+                                font-size: 35px;
+                             }
+    
+    @media (max-width: 491px){
+                                top: -1px;
+                                font-size: 35px;
+                             }
+
+}
+
+/* %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%
+
+                                            FAQ Section CSS
+
+            %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
+
+/* FAQ Hover CSS */
+
+
+#sidebarmodule_faq{
+    
+    border: solid 1px;
+    border-color: #e5e5e5; 
+    border-radius: 3px;
+    background-color: @white-color;
+    display: table;
+    width: 105%;
+    height: 110px;
+    
+    padding: 10px;
+    margin-bottom: 15px;
+    position: relative;
+    left: -8px;
+    
+    
+     @media (max-width: 768px){
+                                width: 80%;
+                                left: 50px;
+                                height: 90px;
+                             }
+    
+    @media (max-width: 460px){
+                                width: 80%;
+                                left: 40px;
+                                height: 90px;
+                             }
+    
+}
+
+#category_heading_faq{
+    
+    font: 200 16px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+    color: #666;
+    margin-left: 20px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    padding-left: 5px;
+    display: table-cell;
+    position: relative;
+    left: 10px;
+    
+    
+    @media (max-width: 1199px){
+                                font: 200 16px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+                                left: 20px;
+                                
+                             }
+
+
+    @media (max-width: 991px){
+                                font: 200 14px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+                                left: 5px;
+                                
+                             }
+    
+    @media (max-width: 768px){
+                                font: 200 16px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+                                left: 10px;
+  
+                             }
+    
+    @media (max-width: 491px){
+        
+                                font: 200 14px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+                                left: 7px;
+                                
+                             }
+    
+}
+
+#sidebarmodule_faq:hover{
+    
+    background-color: @FAQ-color;
+    transition-duration: 0.5s;
+    
+}
+
+#sidebarmodule_faq:hover #category_heading_faq{
+    
+    color: @white-color;
+    transition-duration: 0.5s;
+    
+}
+
+#sidebarmodule_faq:hover .faq_icon{
+    
+    
+    color: @white-color;
+    transition-duration: 0.5s;
+}
+
+
+
+/* FAQ Icon */
+
+
+.faq_icon {
+    
+    font-size: 45px;         
+    color: @FAQ-color;
+    display: table-cell;
+    position: relative;
+    padding-right: 10px;
+    padding-left: 10px;
+    
+    @media (max-width: 1199px){
+                                top: 0px;
+                             }
+    
+    @media (max-width: 991px){
+                                font-size: 35px; 
+                                top: 1px;
+                             }
+
+    @media (max-width: 768px){
+                                top: -2px;
+                                font-size: 35px;
+                             }
+    
+    @media (max-width: 491px){
+                                top: -1px;
+                                font-size: 35px;
+                             }
+    
+}
+
+
+/* %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%
+
+                                           Dev Section CSS
+
+            %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
+
+
+
+
+#sidebarmodule_dev{
+    
+    border: solid 1px;
+    border-color: #e5e5e5; 
+    border-radius: 3px;
+    background-color: @white-color;
+    display: table;
+    width: 105%;
+    height: 110px;
+    
+    padding: 10px;
+    margin-bottom: 35px;
+    position: relative;
+    left: -8px;
+    
+    
+     @media (max-width: 768px){
+                                width: 80%;
+                                left: 50px;
+                                height: 90px;
+                             }
+    
+    @media (max-width: 460px){
+                                width: 80%;
+                                left: 40px;
+                                height: 90px;
+                             }
+    
+}
+
+#category_heading_dev{
+    
+    font: 200 16px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+    color: #666;
+    margin-left: 20px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    padding-left: 5px;
+    display: table-cell;
+    position: relative;
+    left: 10px;
+    
+    
+    @media (max-width: 1199px){
+                                font: 200 16px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+                                left: 20px;
+                                
+                             }
+
+
+    @media (max-width: 991px){
+                                font: 200 14px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+                                left: 5px;
+                                
+                             }
+    
+    @media (max-width: 768px){
+                                font: 200 16px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+                                left: 10px;
+  
+                             }
+    
+    @media (max-width: 491px){
+        
+                                font: 200 14px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+                                left: 7px;
+                                
+                             }
+    
+}
+
+#sidebarmodule_dev:hover{
+    
+    background-color: @video-color;
+    transition-duration: 0.5s;
+    
+}
+
+#sidebarmodule_dev:hover #category_heading_dev{
+    
+    color: @white-color;
+    transition-duration: 0.5s;
+    
+}
+
+#sidebarmodule_dev:hover .developer_icon{
+    
+    
+    color: @white-color;
+    transition-duration: 0.5s;
+}
+
+
+/* Developer Icon */
+
+.developer_icon {
+    
+    font-size: 45px;         
+    color: #ba3c93;
+    display: table-cell;
+    position: relative;
+    padding-right: 10px;
+    padding-left: 10px;
+    
+    @media (max-width: 1199px){
+                                top: 0px;
+                             }
+    
+    @media (max-width: 991px){
+                                font-size: 35px; 
+                                top: 1px;
+                             }
+
+    @media (max-width: 768px){
+                                top: -2px;
+                                font-size: 35px;
+                             }
+    
+    @media (max-width: 491px){
+                                top: -1px;
+                                font-size: 35px;
+                             }
+    
+}
+
+/* %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%
+
+                                            ICONS
+
+            %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
+
+/* Right Caret Icon */
+
+
+.caret_right{
+    
+    font-size: 60px;         
+    color: #f1f2f2;
+    position: relative;
+    top: 7px;
+    left: 10px;
+    display: table-cell;
+    
+    @media (max-width: 768px){
+                                top: -3px;
+                                font-size: 60px;
+        
+                             }
+       
+    
+}
+
+
+
+
+
+/* %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%
+
+                                            Lower Banner Section CSS
+
+            %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
+
+/* Lower Banner Main CSS */
+
+.lower_banner{
+    
+  border: 1px solid transparent;
+  background-color: #f6f6f6;
+  border-top: solid;
+  border-bottom: solid;
+  border-top-color: #E5EAEE;
+  border-bottom-color: #E5EAEE;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+    
+    
+    @media (max-width: 768px){
+                                
+                                padding-bottom: 30px;
+    
+    }
+  
+
+}
+
+
+/* **************************************************************************************************************** */
+
+/* Banner Position CSS */
+
+.block {
+    
+  margin-top: 5px;
+  display: table;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 60px;
+  position: relative;
+  top: 10px;
+  
+    @media (max-width: 768px){
+                                
+                                left: 25px;
+                                margin-bottom: 30px;
+                                padding-right: 20px;
+    
+    }
+    
+    @media (max-width: 491px){
+                                
+                                margin-bottom: 30px;
+                                padding-right: 20px;
+    
+    }
+    
+}
+
+
+
+
+/* **************************************************************************************************************** */
+
+/* Table Disply CSS */
+
+.table_row{
+    
+ display: table-row;
+    
+}
+
+
+
+.left_cell{
+    
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    
+}
+
+.right_cell{
+    
+    display: table-cell;
+    vertical-align: middle;
+    
+    
+}
+
+
+/* **************************************************************************************************************** */
+
+
+/* Contents CSS */
+
+
+.banner_heading{
+    
+    font:20px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+    font-weight: bold;
+    color: @header-color;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    
+    
+    
+    
+}
+
+
+.banner_header_icon{
+    
+    font-size: 30px;
+    padding-right: 15px;
+    color: #787878;
+    float: left;
+    position: relative;
+    display: table-cell;
+    
+     @media (max-width: 991px){
+                               
+                                padding-right: 5px;
+                                
+                             }
+    
+    @media (max-width: 768px){
+                                
+                                padding-right: 15px;
+    
+    }
+    
+    @media (max-width: 491px){
+                                
+                                padding-right: 10px;
+    
+    }
+    
+}
+
+.lower_banner_header{
+    
+    font: 16px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+    font-weight: bold;
+    color: @link-color;
+    margin-bottom: 10px;
+    
+    
+        @media (max-width: 1199px){
+                                font:14px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+
+                             }
+    
+        @media (max-width: 768px){
+                            
+                                font:18px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+    
+    }
+    
+    @media (max-width: 491px){
+                                font:14px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+                             }
+
+    
+}
+
+.lower_banner_text{
+    
+    font:12px/1.2em "pt-sans-regular",sans-serif;
+    color: #666;
+    font-weight: 100;
+    
+        @media (max-width: 1199px){
+                                    font:11px/1.2em "pt-sans-regular",sans-serif;
+
+                                 }
+
+        @media (max-width: 768px){
+
+                                    font:12px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+
+        }
+    
+        @media (max-width: 491px){
+                                font:12px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+                             }
+
+    
+}
+
+/* ************************************************ */
+
+.lower_banner_table{
+    
+    
+    position: relative;
+    top: 50px;
+        
+}

@@ -1,0 +1,100 @@
+/*   ========================================================================================================     */
+
+// @@@@@@@@@@@ CALLOUT  @@@@@@@@@@@
+// @@@@@@@@@@@ BOX      @@@@@@@@@@@
+// @@@@@@@@@@@ CSS      @@@@@@@@@@@
+
+
+
+/* MAIN CALLOUT BOX */
+
+
+.callout(@color){
+padding: 20px 20px 20px 5px;
+margin: 20px 0;
+border: 1px solid #eee;
+border-left-width: 5px;
+border-radius: 3px;
+border-left-color: @color;
+}
+
+.callout_code {
+    
+    .callout(@vivid-blue-color)
+}
+
+.callout_troubleshoot {
+    
+    .callout(@earth-pumpkin-color)
+}
+
+
+/* ******************************************** */
+
+
+/* ICONS FOR CALL OUT BOX */
+
+
+.icon_display(@iconcolor){
+ 
+    color: @iconcolor;
+    font-size: 30px;                //main icon
+    position: relative;
+    top: 100;
+}
+
+
+.callout_code_icon{
+    
+    .icon_display(@vivid-blue-color);  //red icon for code
+
+}
+
+
+.callout_troubleshoot_icon{
+    
+    .icon_display(@earth-pumpkin-color);  //red icon for code
+
+}
+
+
+
+/* ******************************************** */
+
+
+/* TITLE FOR CALL OUT BOX */
+
+.bs-callout-title(@colorheading) {
+ 
+    font:16px/1.2em @font-text, sans-serif;
+    padding: 10px 15px 0px 0px;
+    color: @colorheading;
+    font-weight: bold;
+
+    
+}
+
+.bs-callout-tile-code{
+    
+    .bs-callout-title(@vivid-blue-color);
+    
+}
+
+.bs-callout-title-troubleshoot{
+    
+    .bs-callout-title(@earth-pumpkin-color);
+    
+}
+
+/* ******************************************** */
+
+
+/* CONTENT FOR CALLOUT */
+
+
+.bs-callout-content {
+    
+    font: 12px/1.2em @font-text, sans-serif;
+
+    }
+
