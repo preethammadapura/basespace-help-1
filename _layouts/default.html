@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 {% include head.html %}
-<body class="styling">
+<body class="styling{% if page.is_homepage == true %}_home{% endif %}">
 	<!--      Top Navigation with BaseSpace & Illumina Logo
 		==================================================        -->
 
@@ -24,7 +24,7 @@
 							<div class="col-sm-6">
 									<div class="get-started">
 										<p class="gs-head">everything you need to quickly get going</p>
-										<a href="gettingStarted.html" class="button-secondary">Get Started <i class="glyphicon glyphicon-circle-arrow-right"></i></a>
+										<a href="{{ site.baseurl }}/articles/getting-started/" class="button-secondary">Get Started <i class="glyphicon glyphicon-circle-arrow-right"></i></a>
 									</div>
 							</div>
 						</div>
