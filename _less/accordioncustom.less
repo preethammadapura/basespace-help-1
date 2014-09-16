@@ -1,47 +1,121 @@
+/* %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%
+
+                                           Grey Box Holding Accordion
+
+            %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
 
 
-/*----- Accordion -----*/
-.accordion, .accordion * {
-    -webkit-box-sizing:border-box; 
-    -moz-box-sizing:border-box; 
-    box-sizing:border-box;
+.accordian-holder {
+    
+        padding-top: 30px;
+        padding-bottom: 30px;   
+    
 }
+
+
+
+/* %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%
+
+                                            Accordion
+
+            %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
+
+
+
+.accordion-new {
  
-.accordion {
-    overflow:hidden;
-    /* box-shadow:0px 1px 3px rgba(0,0,0,0.25); */
-    /* border-radius:3px; */
-    background:#ffffff;
+    
+   a{
+       
+       text-decoration: none;
+       
+   }
+    
+   dl {
+        
+     margin-bottom: 0px;   
+        
+    }
+    
+
+   dt, dd {
+       
+
+      padding: 10px 10px 10px 0px;
+       
+      font: 800 22px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+      color: #666666;
+ 
+
+        }
+    
+ 
+     dd{
+         
+         border-top: none;
+ 
+
+     }
+    
+
+}
+
+
+
+
+
+ /* %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%
+
+                                            Accordion Title, Links
+
+            %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
+
+
+
+/* Accordion List */
+
+.accordion-list{
+    
+    list-style-type: decimal;
+}
+
+
+/* Accordion Title */
+
+.accordian-title {
+     
+        text-decoration: none;
+        
+
+  }
+
+
+
+
+
+/* Accordion Link */
+
+
+.accordion-link{
+    
+    font:200 14px/1.2em "pt-sans-regular",sans-serif;
+    line-height: 35px;
+    text-decoration: underline;
+   
+}
+
+.accordion-link:hover{
+
+    text-decoration: underline;
+}
+
+
+.accordian-title-desc{
+    
+    font:200 14px/1.2em "pt-sans-regular",sans-serif;
+    color: #bbbbbb;
     position: relative;
-    top: -10px;
+    left: 0px;
+    
 }
- 
-/*----- Section Titles -----*/
-.accordion-section-title {
-    width:100%;
-    padding:15px;
-    display:inline-block;
-    /* border-bottom:1px solid #1a1a1a; */
-    background:#ffffff;
-    transition:all linear 0.15s;
-    /* Type */
-    font-size:1.200em;
-    /* text-shadow:0px 1px 0px #1a1a1a; */
-    color:#327DF2;
-}
- 
-.accordion-section-title.active, .accordion-section-title:hover {
-    background:#ffffff;
-    /* Type */
-    text-decoration:underline;
-}
- 
-.accordion-section:last-child .accordion-section-title {
-    border-bottom:none;
-}
- 
-/*----- Section Content -----*/
-.accordion-section-content {
-    padding:15px;
-    display:none;
-}
+

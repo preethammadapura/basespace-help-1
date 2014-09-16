@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 {% include head.html %}
-  <body class="styling">
+  <body class="styling_home">
      <!--      Top Navigation with BaseSpace & Illumina Logo
       ==================================================        -->
 
     <div class="header"> <!-- custom css -->
-      <div class="container">
-          <a class="header-brand-baseSpace" href="{{ site.baseurl }}/">BaseSpace HelpCenter</span></a> <!-- custom css -->
-          <a class="header-brand-illumina" href="#">illumina</span></a> <!-- custom css -->
+      <div class="row">
+          <div class="col-lg-12">
+              <img class="image-header" src="{{ site.baseurl }}/images/basespaceheader.jpg">
+          </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+          <div class="banner-custom">
+              <div class="container">
+                <div class="col-sm-6">
+                  <h1 class="banner-text">HelpCenter</h1>
+                  <p class="banner-p">Browse through our articles, forums, video and blog posts</p>
+                </div>
+                <div class="col-sm-6">
+                    <div class="get-started">
+                       <p class="gs-head">everything you need to quickly get going</p>
+                       <a href="gettingStarted.html" class="button-secondary">Get Started <i class="glyphicon glyphicon-circle-arrow-right"></i></a>
+                    </div>
+                </div>
+              </div>
+            </div>
        </div>
     </div>
 
-  <header class="header_custom">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-12">
-                      <div class="text">Welcome! We are here to help.</div>
-              </div>
-          </div>
-      </div>
-  </header>
-
-  <br>
-  <br>
+    <br>
+    <br>
 
     <div>
     {{ content }}
     </div>
-
-    {% include feedback-bar.html %}
+    
     {% include foot.html %}
   </body>
 </html>
