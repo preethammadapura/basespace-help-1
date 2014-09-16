@@ -13,7 +13,8 @@
 		</div>
 	</div>
 
-	<div class="container-fluid">
+{% if page.hide_welcome_banner == null || page.hide_welcome_banner == false %}
+	<div class="container-fluid banner-container">
 		<div class="row">
 				<div class="banner-custom">
 						<div class="container">
@@ -31,11 +32,9 @@
 					</div>
 		</div>
 	</div>
+{% endif %}
 
-	<br>
-	<br>
-
-	<div>
+	<div class="page-content">
 	{{ content }}
 	</div>
 

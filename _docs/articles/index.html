@@ -1,79 +1,226 @@
 ---
-layout: article
+layout: default
 title: "Articles"
 section_root: true
+hide_welcome_banner: true
 ---
-<hr class="line">
-<section>
-  <div class="row">
-    <div class="col-sm-4">
-      <h3 class="leftsection-heading">Introduction</h3>
-      <p class="leftsection-text">If you have never used BaseSpace before then check out these articles to get started</p>
-    </div>
-    <div class="col-sm-7 col-sm-offset-1">
-        <p><a href="{{ site.baseurl }}/articles/basespace-intro/">Introduction to BaseSpace ></a></p><br>
-        <p><a href="#">BaseSpace UserInterface ></a></p><br>
-        <p><a>Getting Started with Sample Data ></a></p>
-    </div>
-  </div>
-</section>
+{% include article-breadcrumbs.html %}
 
-<hr class="line">
-  <section>
-    <div class="row">
+<div class="accordian-container">
 
-      <div class="col-sm-4">
-        <h3 class="leftsection-heading">Runs Page</h3>
-        <p class="leftsection-text">Articles about the Runs Page on BaseSpace</p>
-      </div>
-      <div class="col-sm-7 col-sm-offset-1">
-          <p><a>Runs Page Overview ></a></p><br>
-          <p><a href="{{ site.baseurl }}/articles/download-run-data/">How to Download data from Runs ></a></p><br>
-          <p><a>How to view files from a Run in BaseSpace ></a></p><br>
-          <p><a>How to view the Run Summary Page ></a></p>
-      </div>
-    </div>
-  </section>
+ <div class="container">
 
-<!-- Projects Section -->
-    <hr class="line">
-            <section>
-              <div class="row">
-                    <div class="col-sm-4">
+     <div class="row">
 
-                        <h3 class="leftsection-heading">Projects Page</h3>
-                        <p class="leftsection-text">Articles about the Projects Page on BaseSpace</p>
+        <div class="sol-sm-12">
 
-                    </div>
-                    <div class="col-sm-7 col-sm-offset-1">
-                        <p><a>Project Page Overview ></a></p><br>
-                        <p><a>Search for Projects in BaseSpace ></a></p><br>
-                    </div>
-                </div>
-            </section>
-    <br>
+             <h1 class="landingpage-title">Articles</h1>
+             <p class="landingpage-p">Everything in one place. Browse list of tutorials, walkthourghs and articles</p>
 
-<!-- Apps Section -->
+             <hr class="landingpage-line">
+        </div>
 
-    <hr class="line">
-           <section>
-              <div class="row">
 
-                    <div class="col-sm-4">
+     </div>
 
-                        <h3 class="leftsection-heading">Apps Page</h3>
-                        <p class="leftsection-text">Articles about the Apps Page on BaseSpace</p>
 
-                    </div>
+  <!--       Article Body
+  ==================================================        -->
 
-                    <div class="col-sm-7 col-sm-offset-1">
+        <!-- Introduction Section -->
 
-                        <p><a>Apps Page Overview></a></p><br>
-                        <p><a href="{{ site.baseurl }}/articles/multipart-api/">MultiPart API ></a></p><br>
-                        <p><a>View the App Sessions detail page in BaseSpace ></a></p><br>
-                        <p><a>App Sessions ></a></p>
+<div class="row">
 
-                    </div>
+    <div class="col-sm-8">
+
+         <div class="accordian-holder">
+
+              <dl class="accordion-new">
+
+
+                    <a href="" class="accordian-title">
+                    <dt class="accordian-title-one">Basic</dt>
+                    <p class="accordian-title-desc">Read all the introductory articles about BaseSpace</p>
+                    <!-- <div class="caret-holder">
+                        <span class="icon-arrow-right caret-right-accordion"></span>
+                    </div> -->
+                    </a>
+
+                    <dd>
+                        <ul class="accordion-list">
+                            <li><a href="articleBasic.html" class="accordion-link">Introduction to BaseSpace</a></li>
+                            <li><a href="#" class="accordion-link">What can I do from the dashboard?</a></li>
+                            <li><a href="#" class="accordion-link">How do I purchase iCredits?</a></li>
+                            <li><a href="#" class="accordion-link">How to access help?</a></li>
+                            <li><a href="#" class="accordion-link">How to leave feedback?</a></li>
+                            <li><a href="#" class="accordion-link">How to request support?</a></li>
+                        </ul>
+                    </dd>
+                    <hr>
+
+
+                    <a href="" class="accordian-title">
+                    <dt class="accordian-title-two">Data Organization and Management</dt>
+                    <p class="accordian-title-desc">Learn to manage your data and files in BaseSpace</p>
+
+                    </a>
+                    <dd>
+                        <ul class="accordion-list">
+                            <li><a href="articleTutorial.html" class="accordion-link">How to Download data from BaseSpace</a></li>
+                            <li><a href="#" class="accordion-link">How to Share Data in BaseSpace</a></li>
+                            <li><a href="#" class="accordion-link">How to Transfer Data in BaseSpace</a></li>
+                            <li><a href="#" class="accordion-link">How to Delete Data from BaseSpace</a></li>
+                            <li><a href="#" class="accordion-link">How to Upload a Run to BaseSpace from a Sequencer (Prep Tab and On-Instrument)</a></li>
+                            <li><a href="#" class="accordion-link">How to Upload data to a Project in BaseSpace (command line and web uploader)</a></li>
+                            <li><a href="#" class="accordion-link">How to copy samples to another project?</a></li>
+                            <li><a href="#" class="accordion-link">How to combine samples?</a></li>
+                            <li><a href="#" class="accordion-link">How to rename a project?</a></li>
+                            <li><a href="#" class="accordion-link">How do I know who has share access to my project?</a></li>
+                            <li><a href="#" class="accordion-link">How to download SAV data?</a></li>
+                           <li> <a href="#" class="accordion-link">How to create a project?</a></li>
+                            <li><a href="#" class="accordion-link">How to add a description to a project?</a></li>
+                           <li> <a href="#" class="accordion-link">What’s the difference between sharing via email vs. via link?</a></li>
+                            <li><a href="#" class="accordion-link">How to tell how much space used/available?</a></li>
+                           <li> <a href="#" class="accordion-link">What are the different access levels between sharees and owners of projects/runs?</a></li>
+                           <li> <a href="#" class="accordion-link">How to cancel a share or transfer request?</a></li>
+                        </ul>
+                    </dd>
+                    <hr>
+
+                    <a href="" class="accordian-title">
+                    <dt class="accordian-title-three">Prep Tab</dt>
+                    <p class="accordian-title-desc">Understand the Prep Tab</p>
+                    </a>
+
+                    <dd>
+                        <ul class="accordion-list">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </dd>
+                    <hr>
+
+                    <a href="" class="accordian-title">
+                    <dt class="accordian-title-four">Runs Monitoring</dt>
+                    <p class="accordian-title-desc">Everything about managing your runs in BaseSpace</p>
+                    </a>
+                    <dd>
+                        <ul class="accordion-list">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </dd>
+                    <hr>
+
+                    <a href="" class="accordian-title">
+                    <dt class="accordian-title-five">Analysis</dt>
+                    <p class="accordian-title-desc">Conduct analysis on your data</p>
+                    </a>
+                    <dd>
+                        <ul class="accordion-list">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </dd>
+                    <hr>
+
+                    <a href="" class="accordian-title">
+                    <dt class="accordian-title-six">Public Data</dt>
+                    <p class="accordian-title-desc">Test BaseSpace with the use of Public Data</p>
+                    </a>
+                    <dd>
+                        <ul class="accordion-list">
+                            <li><a href="articleCode.html" class="accordion-link">Using the Multi-Part File Upload API</a></li>
+                            <li><a href="#" class="accordion-link">How to use BaseSpace Apps (Native vs. Web, ILMN vs. third party)</a></li>
+                            <li><a href="#" class="accordion-link">How can I put my own custom workflow into BaseSpace?</a></li>
+                            <li><a href="#" class="accordion-link">How do I develop apps for BaseSpace?</a></li>
+                            <li><a href="#" class="accordion-link">How do I publish an app on Basespace?</a></li>
+                            <li><a href="#" class="accordion-link">What’s the difference between launching apps from Apps page vs. within project?</li>
+                            <li><a href="#" class="accordion-link">How to re-queue analysis for a Run in BaseSpace?</a></li>
+                            <li><a href="#" class="accordion-link">How to view sample sheet?</a></li>
+                            <li><a href="#" class="accordion-link">How to rename analysis?</a></li>
+                            <li><a href="#" class="accordion-link">How to import public data?</a></li>
+                            <li><a href="#" class="accordion-link">How to filter Apps?</a></li>
+                        </ul>
+                    </dd>
+                    <hr>
+
+                    <a href="" class="accordian-title">
+                    <dt class="accordian-title-seven">Policies and Terms</dt>
+                    <p class="accordian-title-desc">Read our policies and terms and conditions</p>
+                    </a>
+                    <dd>
+                        <ul class="accordion-list">
+                            <li><a href="#" class="accordion-link">Eula</a></li>
+                            <li><a href="#" class="accordion-link">Privacy Policy</a></li>
+                           <li> <a href="#" class="accordion-link">App T/Cs</a></li>
+                           <li> <a href="#" class="accordion-link">Sharing and Transfer Policy</a></li>
+                           <li> <a href="#" class="accordion-link">Delete Policy</a></li>
+                           <li><a href="#" class="accordion-link"> Purchase/Refund Policy</a></li>
+                           <li> <a href="#" class="accordion-link">How does Illumina use my data?</a></li>
+                            <li><a href="#" class="accordion-link">Security document</a></li>
+                        </ul>
+                    </dd>
+                    <hr>
+
+            </dl>
+
+
+
+           </div>
+
+
+
+            </div><!-- /column ends -->
+
+<div class="col-sm-3 col-sm-offset-1">
+
+
+          <div class="block-sidebar-forums">
+
+              <span class="sidebar-heading"><a href="#">Visit Forums</a></span>
+
+              <div>
+
+                      <p class="sidebar-content">Engage with the BaseSpace community, suggest ideas or get help</p>
 
               </div>
-            </section>
+
+
+
+          </div>
+
+
+          <div class="block-sidebar-git">
+
+
+              <span class="sidebar-heading"><a href="#">Contribute to this Page</a></span>
+
+               <div >
+
+                   <p class="sidebar-content">Suggest content or modifications to this page</p>
+
+              </div>
+
+
+
+          </div>
+
+
+
+
+
+
+    </div><!-- /.blog-sidebar -->
+
+
+
+
+        </div><!-- /.row -->
+
+        </div>
+
+        </div><!-- /.container -->
