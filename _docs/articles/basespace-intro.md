@@ -3,7 +3,7 @@ layout: article
 title: "Introduction to BaseSpace"
 hide_welcome_banner: true
 ---
-![Intro to BaseSpace](/images/intro_to_basespace.jpg)  
+![Intro to BaseSpace](https://avatars2.githubusercontent.com/u/1480294?v=2&s=800)  
 
 BaseSpace is a powerful website where biologists and  informaticians can easily store, analyze, and share genetic data.  
 
