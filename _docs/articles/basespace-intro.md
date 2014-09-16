@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Hello BaseSpace Demo"
+title: "Introduction to BaseSpace"
 hide_welcome_banner: true
 ---
 ![Intro to BaseSpace](/images/intro_to_basespace.jpg)  
