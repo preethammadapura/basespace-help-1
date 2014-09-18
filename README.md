@@ -6,8 +6,14 @@ BaseSpace Docs Repo
 Conventions
 ------------
 
-- `_docs` -- all documentation files go here.  
-- `_includes` -- all html includes go here.  
-- `_layouts` -- all Liquid templates go here.  
-- `_less` -- all LESS partials go here.
-- `_config.yml` -- put HydeTower settings here.  
+See [HydeTower docs](https://github.com/basespace/SpaceAcademy/blob/master/README.md#hyde-tower).
+
+_config.yml
+-------------
+`_config.yml` stores configuration data. 
+
+
+| Variable					| Description														|
+| --------------------- | -----------------------------------------------|
+| gitrepo						| URL to the project's GitHub repo. *Used to build the edit on GitHub link.*				|
+| gitbranch				| Git branch name. *Used to build the edit on GitHub link.*											|
