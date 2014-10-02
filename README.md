@@ -31,7 +31,7 @@ Naming Conventions
 
 1. File name: File names shall follow the rules below,
   + Only lower case letters can be used.
-  + The name of the file should appropriately describe the content of the file.
+  + The name of the file should appropriately describe the content of the file. Abbrevations for words are not allowed (Eg. proj for project or dwnld for download, etc.).
   + Hyphens should be used between two consecutuve words.
 
    Format:    **description-of-file.md**
@@ -43,7 +43,7 @@ Naming Conventions
 ###Image convention
 
 1. Image name: Image names shall be in the following format, 
-  + The name should reflect the clear description of the image.
+  + The name should reflect the clear description of the image. Abbrevations for words are not allowed (Eg. proj for project or dwnld for download, etc.).
   + It should contain the folder hierarchy of the folder it belongs to. 
   + It should contain the image width and height in pixels. 
   + All lower case letters should be used. Numbers may be included if necessary. 
