@@ -38,7 +38,12 @@ Naming Conventions
    
    Eg: share-run-using-email.md
 
-2. File format: Files shall be stored in *markdown (.md)* format. Please refer to [this link](http://daringfireball.net/projects/markdown/syntax) to follow the markdown syntax.
+2. File format: Files shall be stored in *markdown (.md)* format. 
+
+   Following are some of the links that are good sources of reference for understanding the markdown syntax.
+   + Github articles [Link1](https://help.github.com/articles/github-flavored-markdown/) and [Link2](https://help.github.com/articles/markdown-basics/).
+   + [Daring Fireball](http://daringfireball.net/projects/markdown/syntax).
+   + Content writers are also advised to install [MarkdownPad](http://markdownpad.com/)(for WIndows) and [LightPaper](http://www.ashokgelal.com/lightpaper-for-mac/) or [Macdown](http://macdown.uranusjr.com/)(for Mac OS X).
 
 ###Image convention
 
