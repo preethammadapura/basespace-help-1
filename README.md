@@ -36,7 +36,7 @@ Naming Conventions
 
    Format:    **description-of-file.md**
    
-   Eg: share-run-using-email.md
+   For Eg: share-run-using-email.md
 
 2. File format: Files shall be stored in *markdown (.md)* format. 
 
@@ -52,11 +52,15 @@ Naming Conventions
   + It should contain the folder hierarchy of the folder it belongs to. 
   + It should contain the image width and height in pixels. 
   + All lower case letters should be used. Numbers may be included if necessary. 
-  + Underscores are used as separators between *folder name, description and size*. Hyphens are used to separate multiple words in folder names/image names.
+  + Underscores are used as separators between *description and size*. Hyphens are used to separate multiple words in image names.
 
-   Format:    **folder-name_description-of-image_widthxheight.png**
+   Format:    **description-of-image_widthxheight.png**
    
-   Eg: tutorials_share-run-using-email-step-1_672x320.png
+   For Eg: share-run-using-email-step-1_672x320.png
+  
+  + Images shall be saved under appropriate folders under the /images folder of the site. 
+    For Eg: /images/runs/share-run-using-email-step-1_672x320.png
+            /images/projects/share-project-using-getlink-step-1_672x320.png
 
 2. Image file format: All static images shall be in,
   + *.PNG (Portable Network Graphics)* format. 
