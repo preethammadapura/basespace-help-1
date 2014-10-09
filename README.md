@@ -58,8 +58,9 @@ Naming Conventions
    For Eg: share-run-using-email-step-1_672x320.png
   
   + Images shall be saved under appropriate folders under the "images" folder of the site. This folder should be a high level category for the image like 'projects' or 'app-store'.
-    For Eg: /images/runs/share-run-using-email-step-1_672x320.png
-            /images/projects/share-project-using-getlink-step-1_672x320.png
+
+    For Eg: */images/runs/share-run-using-email-step-1_672x320.png*
+            */images/projects/share-project-using-getlink-step-1_672x320.png*
 
 2. Image file format: All static images should be in,
   + *.PNG (Portable Network Graphics)* format. 
