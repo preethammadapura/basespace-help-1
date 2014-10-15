@@ -20,7 +20,14 @@
 
             %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
 
+  /*toggle-icons*/
 
+   .accordion-toggle.collapsed span:before { 
+        content:"\2b";
+   }
+   .accordion-toggle span:before { 
+        content:"\2212";
+   }
 
   .accordion-new {
     padding-top: 20px;
@@ -83,7 +90,6 @@
   }
 
   .accordion-link:hover{
-
       text-decoration: underline;
   }
 
