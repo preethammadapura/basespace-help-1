@@ -43,5 +43,8 @@ The 'Transfer Ownership' button changes to 'Pending Approval' indicating that th
 
 {% step 5, /images/tutorials/transfer-accept-ownership_494x334.png %}
 The other party gets the notification about the invitation and once it is clicked, a confirmation wondow pops up to confirm if the person is willing to accept the ownership. Once it is accepted, the ownership is permanently transferred. 
-**Note: One can always go to "My Account > Transfer History" to review the transfers done/accepted.**
 {% endstep %}
+
+{% callout troubleshoot, NOTE %}
+One can always go to "My Account > Transfer History" to review the transfers done/accepted. See [How to Cancel transfers](/tutorials/cancel-transfer-ownership/).
+{% endcallout %}

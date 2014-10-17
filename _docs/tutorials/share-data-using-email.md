@@ -35,3 +35,9 @@ Enter the email address of the collaborators and click on 'Invite'.
 Choose the access level of share using the drop down menu and click on 'Save Changes' to send the email invitation to the collaborator.
 {% endstep %}
 
+{% callout troubleshoot, NOTE %}
+Once a Project is shared, the collaborators for that Project can be viewed under the Project details page as shown in the following picture.
+{% endcallout %}
+![Project collaborators](/images/tutorials/view-project-collaborators_767x279.png)  
+
+
