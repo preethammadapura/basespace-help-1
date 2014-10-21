@@ -20,16 +20,14 @@
 
             %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
 
+  /*toggle-icons*/
 
-
-  .accordion.accordion-open span:before { 
-      font-family:'FontAwesome';
-    content: "\f068"; 
-  }
-  .accordion.accordion-close span:before { 
-     font-family:'FontAwesome';
-    content: "\f067"; 
-  }
+   .accordion-toggle.collapsed span:before { 
+        content:"\2b";
+   }
+   .accordion-toggle span:before { 
+        content:"\2212";
+   }
 
   .accordion-new {
     padding-top: 20px;
@@ -37,13 +35,6 @@
   }
 
   
-
-  .content-section {
-    border-top: none;
-    padding-left: 5px;
-    position: relative;
-  }
-
   /* Accordion List */
   .accordion-list{
       
@@ -85,12 +76,10 @@
   .toggle-icon {
     color:#FFB541;
     position: absolute;
-    font-size: 1.2em;
-    padding: 5px 0px 10px 0px;
+    padding: 5px 0px 0px 0px;
     cursor: pointer; 
     cursor: hand;
   }
-
 
 /* Accordion Link */
   .accordion-link{
@@ -101,7 +90,6 @@
   }
 
   .accordion-link:hover{
-
       text-decoration: underline;
   }
 
