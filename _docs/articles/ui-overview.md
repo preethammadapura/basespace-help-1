@@ -44,8 +44,8 @@ The Search box allows you to find runs, projects, or samples.
 ![Accounts tab](/images/articles/account-tab_313x133.png)
 The Account drop-down list provides access to:
 
-- iCredits. See Access Your Wallet.
-- MyAccount. See MyAccount.
+- iCredits. 
+- MyAccount. 
 - MyIllumina Dashboard.
 - FAQ: leads to a number of frequently asked questions and Illumina-provided answers.
 - Terms: leads to the User Agreement.
@@ -92,11 +92,11 @@ BaseSpace users can access Help, contact support or provide feedback almost inst
 ####Runs Pane
 
 The bottom left pane of the BaseSpace dashboard shows the three most recent runs, and is updated automatically.
-Clicking the Runs pane opens the Runs tab. Clicking a run opens the Runs tab with the run loaded. For more information, see Runs Tab.
+Clicking the Runs pane opens the Runs tab. Clicking a run opens the Runs tab with the run loaded. 
 
 ####Projects Pane
 
-The bottom middle pane of the BaseSpace dashboard shows the three most recent projects. The folder icon indicates the sharing status of the project: if it shows several people , the project is shared. Clicking the Projects pane opens the Projects tab. Clicking a project opens the Projects tab with the project loaded. For more information, see Projects Tab.
+The bottom middle pane of the BaseSpace dashboard shows the three most recent projects. The folder icon indicates the sharing status of the project: if it shows several people , the project is shared. Clicking the Projects pane opens the Projects tab. Clicking a project opens the Projects tab with the project loaded. 
 
 ####App Results Pane
 
