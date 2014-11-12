@@ -2,26 +2,94 @@
 layout: default
 hide_welcome_banner: true
 ---
-  <!--      Banner with Breadcrumbs and Search Box
-        ==================================================        -->
-{% include article-breadcrumbs.html %}
+<!-- Banner with Breadcrumbs and Search Box
+    ==================================================  -->
+    {% include article-breadcrumbs.html %}
 
-<!--       Article Header
-        ==================================================        -->
+ <!-- Side Nav Bar
+       ==================================================  -->
+        <nav class="col-xs-2 bs-docs-sidebar" align="right">
+            <ul id="sidebar" class="nav nav-stacked fixed">
+                <li>
+                    <a href="#GroupA">Group A</a>
+                    <ul class="nav nav-stacked">
+                        <li><a href="#GroupASub1">Sub-Group 1</a></li>
+                        <li><a href="#GroupASub2">Sub-Group 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#GroupB">Group B</a>
+                    <ul class="nav nav-stacked">
+                        <li><a href="#GroupBSub1">Sub-Group 1</a></li>
+                        <li><a href="#GroupBSub2">Sub-Group 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#GroupC">Group C</a>
+                    <ul class="nav nav-stacked">
+                        <li><a href="#GroupCSub1">Sub-Group 1</a></li>
+                        <li><a href="#GroupCSub2">Sub-Group 2</a></li>
+                    </ul>
+                </li>
+            </ul>
+         </nav>
+    
+
 <div class="container">
-   <h1 class="article-title">{{ page.title }}</h1>
+
    <div class="row">
-      <div class="col-sm-8">
-           <!--       Article Body
-          ==================================================        -->
+  
+        <div class="col-sm-8">
+
+  <!-- Article Header
+      ====================================================  -->
+         <h1 class="article-title">{{ page.title }}</h1>
+   
+  <!-- Article Body
+      ====================================================  -->
+       <!-- dummy content for nav -->
           <div id="article-content">
-  		{{ content }}
+      		      <div class="col-xs-9">
+                    <section id="GroupA" class="group">
+                        <h3>Group A</h3>
+                        <div id="GroupASub1" class="subgroup">
+                            <h4>Group A Sub 1</h4>
+                        </div>
+                        <div id="GroupASub2" class="subgroup">
+                            <h4>Group A Sub 2</h4>
+                        </div>
+                    </section>
+                    <section id="GroupB" class="group">
+                        <h3>Group B</h3>
+                        <div id="GroupBSub1" class="subgroup">
+                            <h4>Group B Sub 1</h4>
+                        </div>
+                        <div id="GroupBSub2" class="subgroup">
+                            <h4>Group B Sub 2</h4>
+                        </div>
+                    </section>
+                    <section id="GroupC" class="group">
+                        <h3>Group C</h3>
+                        <div id="GroupCSub1" class="subgroup">
+                            <h4>Group C Sub 1</h4>
+                        </div>
+                        <div id="GroupCSub2" class="subgroup">
+                            <h4>Group C Sub 2</h4>
+                        </div>
+                    </section>    
+              </div> 
+            <!-- {{ content }}  -->
           </div><!-- /article body ends -->
+
       </div><!-- /column ends -->
+
       {% include article-sidebar.html %}
+
   </div><!-- /.row -->
 
   <br> <!-- *Line Break after callout* -->
   <br> <!-- *Line Break after callout* -->
+
 </div>
+
 {% include edit.html %}
