@@ -7,7 +7,7 @@ hide_welcome_banner: true
 Once a Transfer request of a Project has been sent, it can be cancelled **unless the sharee has not accepted the transfer of ownership yet**. Follow the below steps to cancel a transfer of ownership.
 
 {% step 1, /images/tutorials/transfer-pending-cancel-alternate_704x345.png %}
-The 'transfer owner' button changes to a red 'Pending transfer' button once the tranfer has been confirmed and untill it has been accepted. Click on the button. 
+The 'transfer owner' button changes to a red 'Pending transfer' button once the transfer has been confirmed and untill it has been accepted. Click on the button. 
 {% endstep %}
 
 {% step 2, /images/tutorials/transfer-cancel-confirmaton-window_767x335.png %}
@@ -25,5 +25,5 @@ Go to My Accounts from the Dashboard.
 {% endstep %}
 
 {% step 2, /images/tutorials/transfer-history-pending-cancel_767x216.png %}
-Click on the 'Transfer History' tab on the left. In the list of that ppears on the right, select the file that has 'Pending' status and click on the 'X' mark to cancel the invitation.
+Click on the 'Transfer History' tab on the left. In the list of that appears on the right, select the file that has 'Pending' status and click on the 'X' mark to cancel the invitation.
 {% endstep %}

@@ -5,7 +5,6 @@ hide_welcome_banner: true
   <!--      Banner with Breadcrumbs and Search Box
         ==================================================        -->
 {% include article-breadcrumbs.html %}
-
 <!--       Article Header
         ==================================================        -->
 <div class="container">
@@ -15,7 +14,8 @@ hide_welcome_banner: true
            <!--       Article Body
           ==================================================        -->
           <div id="article-content">
-  		{{ content }}
+  		      {{ content }}
+            <div class="clearfix"></div>
           </div><!-- /article body ends -->
       </div><!-- /column ends -->
       {% include article-sidebar.html %}
@@ -23,5 +23,6 @@ hide_welcome_banner: true
 
   <br> <!-- *Line Break after callout* -->
   <br> <!-- *Line Break after callout* -->
+  <div class="clearfix"></div>
 </div>
 {% include edit.html %}
