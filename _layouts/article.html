@@ -2,103 +2,107 @@
 layout: default
 hide_welcome_banner: true
 ---
-<!-- Breadcrumb bar 
-    ==================================================  -->
-    {% include article-breadcrumbs.html %}
+<!--  Breadcrumb bar  -->
+{% include article-breadcrumbs.html %}
+<!--  Breadcrumb bar ends  -->
 
- <!-- Side Nav Bar
-       ==================================================  -->
-        <nav class="col-xs-2 bs-docs-sidebar" align="right">
-            <ul id="sidebar" class="nav nav-stacked fixed">
-                <li>
-                    <a href="#GroupA">Group A</a>
-                    <ul class="nav nav-stacked">
-                        <li><a href="#GroupASub1">Sub-Group 1</a></li>
-                        <li><a href="#GroupASub2">Sub-Group 2</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#GroupB">Group B</a>
-                    <ul class="nav nav-stacked">
-                        <li><a href="#GroupBSub1">Sub-Group 1</a></li>
-                        <li><a href="#GroupBSub2">Sub-Group 2</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#GroupC">Group C</a>
-                    <ul class="nav nav-stacked">
-                        <li><a href="#GroupCSub1">Sub-Group 1</a></li>
-                        <li><a href="#GroupCSub2">Sub-Group 2</a></li>
-                    </ul>
-                </li>
-            </ul>
-         </nav>
+  <!--  Row begins  -->
+  <div class="row">
     
+    <!--  Side Nav Bar  -->
+    <nav class="col-xs-2 col-sm-2 col-md-2 col-lg-2 bs-docs-sidebar">
+        <div id="myAffix" class="container" data-spy="affix">
+          <ul id="sidenav" class="nav nav-stacked">
+            <li>
+              <a href="#GroupA">Group A</a>
+              <ul class="nav nav-stacked">
+                <li><a href="#GroupASub1">Sub-Group 1</a></li>
+                <li><a href="#GroupASub2">Sub-Group 2</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#GroupB">Group B</a>
+              <ul class="nav nav-stacked">
+                <li><a href="#GroupBSub1">Sub-Group 1</a></li>
+                <li><a href="#GroupBSub2">Sub-Group 2</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#GroupC">Group C</a>
+              <ul class="nav nav-stacked">
+                <li><a href="#GroupCSub1">Sub-Group 1</a></li>
+                <li><a href="#GroupCSub2">Sub-Group 2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <!--  Side Nav Bar ends -->
 
-<div class="container">
+    <!--  Main article content with title  -->
+    <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 main-layout">
+      
+      <!-- Article Header -->
+      <h1 class="article-title">{{ page.title }}</h1>
+      <!-- Article Header ends -->
 
-   <div class="row">
-  
-        <div class="col-sm-8">
+      <!-- Article Body -->
+      <div id="article-content">
+        <!-- dummy content for nav 
 
-  <!-- Article Header
-      ====================================================  -->
-         <h1 class="article-title">{{ page.title }}</h1>
-   
-  <!-- Article Body
-      ====================================================  -->
-       <!-- dummy content for nav -->
-          <div id="article-content">
-      		      <div class="col-xs-8">
-                    <section id="GroupA" class="group">
-                        <h3>Group A</h3>
-                        <p>In this article, we’ll explain exactly what z-index is, how it has been misunderstood, and we’ll discuss some practical uses for it. We’ll also describe some of the browser differences that can occur, particularly in previous versions of Internet Explorer and Firefox. This comprehensive look at z-index should provide developers with an excellent foundation to be able to use this property confidently and effectively.</p>
-                        <div id="GroupASub1" class="subgroup">
-                            <h4>Group A Sub 1</h4>
-                            <p>In this article, we’ll explain exactly what z-index is, how it has been misunderstood, and we’ll discuss some practical uses for it. We’ll also describe some of the browser differences that can occur, particularly in previous versions of Internet Explorer and Firefox. This comprehensive look at z-index should provide developers with an excellent foundation to be able to use this property confidently and effectively.</p>
-                        </div>
-                        <div id="GroupASub2" class="subgroup">
-                            <h4>Group A Sub 2</h4>
-                            <p>In this article, we’ll explain exactly what z-index is, how it has been misunderstood, and we’ll discuss some practical uses for it. We’ll also describe some of the browser differences that can occur, particularly in previous versions of Internet Explorer and Firefox. This comprehensive look at z-index should provide developers with an excellent foundation to be able to use this property confidently and effectively.</p>
-                        </div>
-                    </section>
-                    <section id="GroupB" class="group">
-                        <h3>Group B</h3>
-                        <p>In this article, we’ll explain exactly what z-index is, how it has been misunderstood, and we’ll discuss some practical uses for it. We’ll also describe some of the browser differences that can occur, particularly in previous versions of Internet Explorer and Firefox. This comprehensive look at z-index should provide developers with an excellent foundation to be able to use this property confidently and effectively.</p>
-                        <div id="GroupBSub1" class="subgroup">
-                            <h4>Group B Sub 1</h4>
-                            <p>In this article, we’ll explain exactly what z-index is, how it has been misunderstood, and we’ll discuss some practical uses for it. We’ll also describe some of the browser differences that can occur, particularly in previous versions of Internet Explorer and Firefox. This comprehensive look at z-index should provide developers with an excellent foundation to be able to use this property confidently and effectively.</p>
-                        </div>
-                        <div id="GroupBSub2" class="subgroup">
-                            <h4>Group B Sub 2</h4>
-                            <p>In this article, we’ll explain exactly what z-index is, how it has been misunderstood, and we’ll discuss some practical uses for it. We’ll also describe some of the browser differences that can occur, particularly in previous versions of Internet Explorer and Firefox. This comprehensive look at z-index should provide developers with an excellent foundation to be able to use this property confidently and effectively.</p>
-                        </div>
-                    </section>
-                    <section id="GroupC" class="group">
-                        <h3>Group C</h3>
-                        <p>In this article, we’ll explain exactly what z-index is, how it has been misunderstood, and we’ll discuss some practical uses for it. We’ll also describe some of the browser differences that can occur, particularly in previous versions of Internet Explorer and Firefox. This comprehensive look at z-index should provide developers with an excellent foundation to be able to use this property confidently and effectively.</p>
-                        <div id="GroupCSub1" class="subgroup">
-                            <h4>Group C Sub 1</h4>
-                            <p>In this article, we’ll explain exactly what z-index is, how it has been misunderstood, and we’ll discuss some practical uses for it. We’ll also describe some of the browser differences that can occur, particularly in previous versions of Internet Explorer and Firefox. This comprehensive look at z-index should provide developers with an excellent foundation to be able to use this property confidently and effectively.</p>
-                        </div>
-                        <div id="GroupCSub2" class="subgroup">
-                            <h4>Group C Sub 2</h4>
-                            <p>In this article, we’ll explain exactly what z-index is, how it has been misunderstood, and we’ll discuss some practical uses for it. We’ll also describe some of the browser differences that can occur, particularly in previous versions of Internet Explorer and Firefox. This comprehensive look at z-index should provide developers with an excellent foundation to be able to use this property confidently and effectively.</p>
-                        </div>
-                    </section>    
-              </div> 
-            <!-- {{ content }}  -->
-          </div><!-- /article body ends -->
+                          <section id="GroupA" class="group">
+                              <h3>Group A</h3>
+                              <p>In this article, we’ll explain exactly what z-index is, how it has been misunderstood, and we’ll discuss some practical uses for it. We’ll also describe some of the browser differences that can occur, particularly in previous versions of Internet Explorer and Firefox. This comprehensive look at z-index should provide developers with an excellent foundation to be able to use this property confidently and effectively.</p>
+                              <div id="GroupASub1" class="subgroup">
+                                  <h4>Group A Sub 1</h4>
+                                  <p>In this article, we’ll explain exactly what z-index is, how it has been misunderstood, and we’ll discuss some practical uses for it. We’ll also describe some of the browser differences that can occur, particularly in previous versions of Internet Explorer and Firefox. This comprehensive look at z-index should provide developers with an excellent foundation to be able to use this property confidently and effectively.</p>
+                              </div>
+                              <div id="GroupASub2" class="subgroup">
+                                  <h4>Group A Sub 2</h4>
+                                  <p>In this article, we’ll explain exactly what z-index is, how it has been misunderstood, and we’ll discuss some practical uses for it. We’ll also describe some of the browser differences that can occur, particularly in previous versions of Internet Explorer and Firefox. This comprehensive look at z-index should provide developers with an excellent foundation to be able to use this property confidently and effectively.</p>
+                              </div>
+                          </section>
+                          <section id="GroupB" class="group">
+                              <h3>Group B</h3>
+                              <p>In this article, we’ll explain exactly what z-index is, how it has been misunderstood, and we’ll discuss some practical uses for it. We’ll also describe some of the browser differences that can occur, particularly in previous versions of Internet Explorer and Firefox. This comprehensive look at z-index should provide developers with an excellent foundation to be able to use this property confidently and effectively.</p>
+                              <div id="GroupBSub1" class="subgroup">
+                                  <h4>Group B Sub 1</h4>
+                                  <p>In this article, we’ll explain exactly what z-index is, how it has been misunderstood, and we’ll discuss some practical uses for it. We’ll also describe some of the browser differences that can occur, particularly in previous versions of Internet Explorer and Firefox. This comprehensive look at z-index should provide developers with an excellent foundation to be able to use this property confidently and effectively.</p>
+                              </div>
+                              <div id="GroupBSub2" class="subgroup">
+                                  <h4>Group B Sub 2</h4>
+                                  <p>In this article, we’ll explain exactly what z-index is, how it has been misunderstood, and we’ll discuss some practical uses for it. We’ll also describe some of the browser differences that can occur, particularly in previous versions of Internet Explorer and Firefox. This comprehensive look at z-index should provide developers with an excellent foundation to be able to use this property confidently and effectively.</p>
+                              </div>
+                          </section>
+                          <section id="GroupC" class="group">
+                              <h3>Group C</h3>
+                              <p>In this article, we’ll explain exactly what z-index is, how it has been misunderstood, and we’ll discuss some practical uses for it. We’ll also describe some of the browser differences that can occur, particularly in previous versions of Internet Explorer and Firefox. This comprehensive look at z-index should provide developers with an excellent foundation to be able to use this property confidently and effectively.</p>
+                              <div id="GroupCSub1" class="subgroup">
+                                  <h4>Group C Sub 1</h4>
+                                  <p>In this article, we’ll explain exactly what z-index is, how it has been misunderstood, and we’ll discuss some practical uses for it. We’ll also describe some of the browser differences that can occur, particularly in previous versions of Internet Explorer and Firefox. This comprehensive look at z-index should provide developers with an excellent foundation to be able to use this property confidently and effectively.</p>
+                              </div>
+                              <div id="GroupCSub2" class="subgroup">
+                                  <h4>Group C Sub 2</h4>
+                                  <p>In this article, we’ll explain exactly what z-index is, how it has been misunderstood, and we’ll discuss some practical uses for it. We’ll also describe some of the browser differences that can occur, particularly in previous versions of Internet Explorer and Firefox. This comprehensive look at z-index should provide developers with an excellent foundation to be able to use this property confidently and effectively.</p>
+                              </div>
+                          </section>    
+        dummy ends -->
 
-      </div><!-- /column ends -->
+         {{ content }} 
+      </div> 
+      <!-- Article-body ends -->
 
-      {% include article-sidebar.html %}
+    </div>
+    <!--  Main article layout ends  -->
 
-  </div><!-- /.row -->
+    <!-- Article sidebar -->
+    {% include article-sidebar.html %}
+    <!-- Article sidebar ends -->
 
-  <br> <!-- *Line Break after callout* -->
-  <br> <!-- *Line Break after callout* -->
+    <div class="clearfix"></div>
 
-</div>
+  </div>
+  <!--  Row ends  -->
 
+<!--  container ends -->
 {% include edit.html %}
