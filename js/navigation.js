@@ -6,7 +6,7 @@
   $('.menu-box').click(function() {
   	$( this ).toggleClass("menu-box-selected");
   	$('.vertical-line').toggleClass("vertical-line-toggle");
-  	$('#sidenav').slideToggle("slow");
+  	$('#sidenav').slideToggle("fast");
   });
 
  
