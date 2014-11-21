@@ -5,7 +5,8 @@ hide_welcome_banner: true
 ---
 
 The Public Data page provides an overview of the publicly available data sets that you can use. Clicking a data set provides more information for that set, and allows you to import the run or project. 
-
+<br />
+<br />
 {% step 1, /images/tutorials/import-public-data-selector_1311x414.png %}
 Visit the 'Public Data' tab. Clicking a data set provides more information for that set, and allows you to import the run or project. 
 {% endstep %}
