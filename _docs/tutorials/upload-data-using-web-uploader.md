@@ -7,11 +7,11 @@ hide_welcome_banner: true
 BaseSpace recently made available, the data upload feature that was previously generated on Illumina sequencing instruments. This simple-to-use feature is accessible from any project to which the user has write access to. The following steps exlplain the process:
 
 
-{% step 1, /images/tutorials/web-uploader-import-button_767x270.png %}
+{% step 1, /images/tutorials/web-uploader-import-button_767x270.png, CHOOSE PROJECT %}
 The user can choose any desired Project that he/she has write access to or [create a new project](/tutorials/create-a-new-project) and click on the 'Import' button at the top.
 {% endstep %}  
 
-{% step 2, /images/tutorials/web-uploader-file-selector-window_767x378.png %}
+{% step 2, /images/tutorials/web-uploader-file-selector-window_767x378.png, UPLOAD FILES %}
 The user can then either “Drag and drop” one or more files (of the same type) into the webpage or click on “select files” and select which files they would like to upload from a file browser. **For one upload session, only one kind of files can be uploaded.**
 {% endstep %}
 
