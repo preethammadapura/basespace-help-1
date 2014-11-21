@@ -82,9 +82,9 @@ Though all articles are written in 'markdown(.md)' format, the following are som
 1. Headings and sub-headings must have the following format.
     
   Title of the article : Should mention it in the YAML front matter in the beginning of the article.
-  Main Headings : H2
-  Sub heading 1 : H3
-  Sub heading 2 : H4
+  + Main Headings : H2
+  + Sub heading 1 : H3
+  + Sub heading 2 : H4
 
 2. All images/screenshots should be enclosed in the following liquid tag format:
 
@@ -96,7 +96,7 @@ Though all articles are written in 'markdown(.md)' format, the following are som
     This is the description
   {% endstep %}
 
-  **Please note:**The title MUST be in ALL CAPS and the step number shall be replaced accordingly for each step.
+  **Please note:** The title MUST be in ALL CAPS and the step number shall be replaced accordingly for each step.
 
 4. If there is a callout like a special note or tip, there are some ready call-outs to use.
 
