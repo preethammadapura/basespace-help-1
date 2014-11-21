@@ -72,7 +72,7 @@ Naming Conventions
 Guidelines for writing articles
 -------------------------------
 
-All the articles are stored under the '_docs' folder in their respective categories. Each articles can be one of the following categories: 
+All the articles are stored under the '_docs' folder in their respective categories. Each articles can belong to one of the two categories: 
 
 + Descriptive : Articles which are descriptive in nature, not having any kind of walk through tuorials, but only text and images/screenshots supporting it.
 + Tutorials : Articles that are clearly walkthrough tutorials, with step by step description along with screenshots/images.
@@ -81,7 +81,7 @@ Though all articles are written in 'markdown(.md)' format, the following are som
 
 1. Headings and sub-headings must have the following format.
     
-  Title of the article : Should mention it in the YAML front matter in the beginning of the article.
+  + Title of the article : Should mention it in the YAML front matter in the beginning of the article.
   + Main Headings : H2
   + Sub heading 1 : H3
   + Sub heading 2 : H4
