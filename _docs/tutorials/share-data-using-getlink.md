@@ -34,7 +34,7 @@ Copy the URL to share with collaborators.
 **Note:  The link is active until the "Deactivate" option is selected.**
 {% endstep %}
 
-{% callout troubleshoot, NOTE %}
+{% callout note, NOTE %}
 Once a Project is shared, the collaborators for that Project can be viewed under the Project details page as shown in the following picture.
 {% endcallout %}
-![Project collaborators](/images/tutorials/view-project-collaborators_767x279.png)  
+{% screenshot /images/tutorials/view-project-collaborators_767x279.png %}  

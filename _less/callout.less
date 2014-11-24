@@ -9,27 +9,32 @@
 /* MAIN CALLOUT BOX */
 
 
-.callout(@color){
+.callout(@color, @bg-color){
 padding: 20px 20px 20px 5px;
 margin: 20px 0;
-border: 1px solid #d7d7d7;
+border: 1px solid #eeeeee;
 border-left-width: 5px;
 border-radius: 3px;
 border-left-color: @color;
+background-color: @bg-color;
 }
 
 .callout_code {
-    .callout(@vivid-blue-color)
+    .callout(@vivid-blue-color, @vivid-blue-bg)
 }
 
 .callout_troubleshoot {
-    .callout(@earth-pumpkin-color)
+    .callout(@earth-pumpkin-color, @earth-pumpkin-bg)
 }
 
 .callout_note {
-    .callout(@note-green-color)
+    .callout(@note-green-color, @note-green-bg)
 }
 
+.bs-callout-box {
+    width: 100%;
+    float: right;
+}
 
 /* ******************************************** */
 
@@ -58,6 +63,16 @@ border-left-color: @color;
     .icon_display(@note-green-color);  //orange icon for troubleshoot
 }
 
+.bs-callout-column-left {
+    float: left;
+    width: 10%;
+    padding-left: 3%;
+}
+
+.bs-callout-column-right {
+    float: left;
+    width: 90%;
+}
 
 /* ******************************************** */
 
@@ -66,7 +81,7 @@ border-left-color: @color;
 
 .bs-callout-title(@colorheading) {
     font:16px/1.2em @font-text, sans-serif;
-    padding: 10px 15px 0px 0px;
+    padding: 6px 15px 0px 0px;
     color: @colorheading;
     font-weight: bold;
 }
@@ -79,7 +94,7 @@ border-left-color: @color;
     .bs-callout-title(@earth-pumpkin-color);
 }
 
-.bs-callout-tile-note{
+.bs-callout-title-note{
     .bs-callout-title(@note-green-color);
 }
 
