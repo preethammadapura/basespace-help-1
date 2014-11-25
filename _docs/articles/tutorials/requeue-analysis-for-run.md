@@ -39,7 +39,7 @@ BaseSpace validates the sample sheet; any issues are displayed above the sample 
 When you are done editing and the sample sheet is valid, click the Queue Analysis button, and BaseSpace starts analyzing the run using the new sample sheet. You can only resubmit a sample sheet and requeue the run one time.
 {% endstep %}
 
-{% callout troubleshoot, NOTE %}
+{% callout troubleshoot, Troubleshooting %}
 If your edits result in an invalid sample sheet, the Queue Analysis button is not available. You can return to the original using the Load Original button.
 {% endcallout %}
 

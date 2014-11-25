@@ -60,7 +60,7 @@ background-color: @bg-color;
 }
 
 .callout_note_icon{
-    .icon_display(@note-green-color);  //orange icon for troubleshoot
+    .icon_display(@note-green-color);  //green icon for note
 }
 
 .bs-callout-column-left {
@@ -86,7 +86,7 @@ background-color: @bg-color;
     font-weight: bold;
 }
 
-.bs-callout-tile-code{
+.bs-callout-title-code{
     .bs-callout-title(@vivid-blue-color);
 }
 
@@ -104,6 +104,9 @@ background-color: @bg-color;
 /* CONTENT FOR CALLOUT */
 
 .bs-callout-content {
-    font: 12px/1.2em @font-text, sans-serif;
+    font-size: 1.25em;
+    font-family: @font-text;
+    color: @font-color;
+    line-height: @line-gap;
 }
 
