@@ -4,7 +4,7 @@ title: How to requeue analysis for Run
 hide_welcome_banner: true
 ---
 
-To set up a new analysis for requeue is also nothing but fixing a Sample sheet. This option is often used to fix errors in the sample sheet, to change analysis parameters and to change indexing details. Errors in the sample sheet can prevent BaseSpace from processing a run. This option allows BaseSpace to finish the analysis.	The first analysis was suboptimal. You can resubmit the sample sheet and requeue the run with new analysis parameters one time.	The index settings for samples were wrong. This option allows you to correct the settings.
+To set up a new analysis for requeue is also nothing but fixing a Sample sheet. This option is often used to fix errors in the sample sheet, to change analysis parameters and to change indexing details. Errors in the sample sheet can prevent BaseSpace from processing a run. This option allows BaseSpace to finish the analysis.The first analysis was suboptimal. You can resubmit the sample sheet and requeue the run with new analysis parameters one time.	The index settings for samples were wrong. This option allows you to correct the settings.
 
 {% callout note, NOTE %}
 You can only submit a corrected sample sheet and requeue the run one time.

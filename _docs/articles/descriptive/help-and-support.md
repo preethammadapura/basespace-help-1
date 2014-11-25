@@ -9,4 +9,4 @@ BaseSpace users can access Help, contact support or provide feedback almost inst
 - Provide feedback for Illumina, suggest ideas to the user community, or browse, read, and vote for other ideas.
 - Contact Support.
 
-![Help and Support](/images/articles/help-and-support_767x344.png)  
+{% screenshot /images/articles/help-and-support_767x344.png %}  
