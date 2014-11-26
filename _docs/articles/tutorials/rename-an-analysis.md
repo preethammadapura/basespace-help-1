@@ -3,19 +3,20 @@ layout: article
 title: How to rename an analysis
 hide_welcome_banner: true
 ---
+<br />
 
-{% step 1, /images/tutorials/projects-tab-selected_1351x427.png %}
+{% step 1, /images/tutorials/projects-tab-selected_1351x427.png, CHOOSE PROJECT %}
 Go to 'Projects' tab and choose any desired project.
 {% endstep %}
 
-{% step 2, /images/tutorials/analysis-selector_1348x431.png %}
+{% step 2, /images/tutorials/analysis-selector_1348x431.png, SELECT ANALYSIS %}
 In the Projects page, select the analysis which needs to be renamed.
 {% endstep %}
 
-{% step 3, /images/tutorials/rename-analysis-selector_1347x417.png %}
+{% step 3, /images/tutorials/rename-analysis-selector_1347x417.png, CLICK ON RENAME %}
 In the analysis page, click on 'Rename Analysis' from the top menu of the page.
 {% endstep %}
 
-{% step 4, /images/tutorials/rename-analysis-save-window_734x278.png %}
+{% step 4, /images/tutorials/rename-analysis-save-window_734x278.png, EDIT AND SAVE %}
 In the Edit window, edit the name to a valid desired name and Save it to complete the renaming process.
 {% endstep %}

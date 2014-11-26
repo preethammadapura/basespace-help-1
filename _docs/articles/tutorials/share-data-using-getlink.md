@@ -5,8 +5,10 @@ hide_welcome_banner: true
 ---
 
 Sharing using the "Get Link" option allows you to share a Project or a Run with any collaborator who has access to the link. The hyperlink can be turned on or off by setting the activate or deactivate option. However, be aware that anyone can access the Project or Run when the link is activated. Furthermore, anyone who previously accepted the link will still have access to the run even though the link is deactivated. As opposed to using the email share option where you can specify who can view the Project or Run, giving you greater control. 
+<br />
+<br />
+**For Projects**:
 
-For Projects:
 {% step 1, /images/tutorials/projects-tab_1365x519.png, SELECT PROJECT %}
 Select the "Projects" icon from the BaseSpace home page and select the desired Project.
 {% endstep %}
@@ -15,7 +17,8 @@ Select the "Projects" icon from the BaseSpace home page and select the desired P
 Select the "Get Link" button from the options available in the Projects page.
 {% endstep %}
 
-For Runs:
+**For Runs**:
+
 {% step 1, /images/tutorials/runs-tab_1365x402.png, SELECT RUN %}
 Select the "Runs" icon and select the desired run.
 {% endstep %}
@@ -30,11 +33,13 @@ Click on "Activate" in the pop up window.
 
 {% step 4, /images/tutorials/share-analysis-getlink-deactivate_698x369.png, SHARE %}
 Copy the URL to share with collaborators.
-
-**Note:  The link is active until the "Deactivate" option is selected.**
 {% endstep %}
 
 {% callout note, NOTE %}
-Once a Project is shared, the collaborators for that Project can be viewed under the Project details page as shown in the following picture.
+
+- **The link will be active until the "Deactivate" option is selected.**
+- Once a Project is shared, the collaborators for that Project can be viewed under the Project details page as shown in the following picture.
+
 {% endcallout %}
+
 {% screenshot /images/tutorials/view-project-collaborators_767x279.png %}  
