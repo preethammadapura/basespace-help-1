@@ -5,38 +5,57 @@ hide_welcome_banner: true
 <!--  Breadcrumb bar  -->
 {% include article-breadcrumbs.html %}
 <!--  Breadcrumb bar ends  -->
-
   <!--  Row begins  -->
   <div class="row">
+  
+  <!--  <nav class="col-xs-2 bs-docs-sidebar" align="right">
+        <div class="container" data-spy="affix">
+        {% if page.headings and page.headings.size > 0 %}
+          <ul id="sidenav" class="nav nav-stacked">
+          {% for t in page.headings %}
+              <li>
+              {% if t.Level == 2 %}
+                <a href="#{{ t.Id }}">{{ t.Text }}</a>
+              {% endif %} 
+                <ul class="nav nav-stacked">
+                  <li>
+                  {% if t.Level == 3 %}  
+                    <a href="#{{ t.Id }}">{{ t.Text }}</a>
+                  {% endif %}
+                  </li>
+                </ul> 
+              </li>
+          {% endfor %}
+          </ul>
+        {% endif %}         
+        </div>
+    </nav> -->
     
-    <!--  Side Nav Bar  -->
+    <!--Side Nav Bar  -->
+
     <nav class="col-xs-2 bs-docs-sidebar" align="right">
         <div class="container" data-spy="affix">
+        {% if page.headings and page.headings.size > 0 %}
           <ul id="sidenav" class="nav nav-stacked">
+          {% for t in page.headings %}
             <li>
-              <a href="#GroupA">A big title</a>
+              {% if t.Level == 2 %}
+              <a href="#{{ t.Id }}">{{ t.Text }}</a>
+              {% endif %} 
               <ul class="nav nav-stacked">
-                <li><a href="#GroupASub1">Sub-Group 1</a></li>
-                <li><a href="#GroupASub2">Sub-Group 2</a></li>
+                <li>
+                  {% if t.Level == 3 %}
+                  <a href="#{{ t.Id }}">{{ t.Text }}</a>
+                  {% endif %}
+                </li>
               </ul>
             </li>
-            <li>
-              <a href="#GroupB">A very big title goes here actually</a>
-              <ul class="nav nav-stacked">
-                <li><a href="#GroupBSub1">Sub-Group 1</a></li>
-                <li><a href="#GroupBSub2">Sub-Group 2</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#GroupC">Another bigger title</a>
-              <ul class="nav nav-stacked">
-                <li><a href="#GroupCSub1">Sub-Group 1</a></li>
-                <li><a href="#GroupCSub2">Sub-Group 2</a></li>
-              </ul>
-            </li>
+          {% endfor %}
           </ul>
+        {% endif %}
         </div>
     </nav>
+            
     <!--  Side Nav Bar ends -->
 
     <!--  Main article content with title  -->
