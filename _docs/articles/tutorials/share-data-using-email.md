@@ -9,19 +9,19 @@ Sharing using the "Share" option allows you to share a Project or Run with a spe
 <br />
 **For Projects**,
 
-{% step 1, /images/tutorials/share-project-selector_1366x422.png, CLICK ON SHARE PROJECT %}
+{% step 1, /images/tutorials/share-project-selector_1366x422.png, Click on Share Project %}
 Select the "Projecs" icon and select the desired Project. Select the "Share" button from the options available in the top menu.
 {% endstep %}
 
 **Alternatively**,
 
-{% step 1, /images/tutorials/share-project-selector-alternate_1359x318.png, CLICK ON SHARE PROJECT %}
+{% step 1, /images/tutorials/share-project-selector-alternate_1359x318.png, Click on Share Project %}
 Select the "Projecs" icon and click on the desired Project. Select the "Share" button from the options available in the Projects page.
 {% endstep %}
 
 **For Runs**,
 
-{% step 1, /images/tutorials/share-run-selector_1349x361.png, CLICK ON SHARE %}
+{% step 1, /images/tutorials/share-run-selector_1349x361.png, Click on Share %}
 Select the "Runs" icon and select the desired Run. Select the "Share" button from the options available in the top menu.
 {% endstep %}
 
@@ -31,15 +31,15 @@ Sharing a Run shares only the Run. Projects must be shared individually.
 
 **Alternatively**,
 
-{% step 1, /images/tutorials/share-run-selector-alternate_1345x368.png, CLICK ON SHARE %}
+{% step 1, /images/tutorials/share-run-selector-alternate_1345x368.png, Click on Share %}
 Select the "Runs" icon and click on the desired Run. Select the "Share" button from the options available in the Runs page.
 {% endstep %}
 
-{% step 2, /images/tutorials/share-email-invite_1108x379.png, INVITE COLLABORATORS %}
+{% step 2, /images/tutorials/share-email-invite_1108x379.png, Invite Collaborators %}
 Enter the email address of the collaborators and click on 'Invite'.
 {% endstep %}
 
-{% step 3, /images/tutorials/share-email-confirmation-window_1349x575.png, SAVE CHANGES %}
+{% step 3, /images/tutorials/share-email-confirmation-window_1349x575.png, Save Changes %}
 Choose the access level of share using the drop down menu and click on 'Save Changes' to send the email invitation to the collaborator.
 {% endstep %}
 

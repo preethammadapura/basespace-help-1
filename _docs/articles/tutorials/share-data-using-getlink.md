@@ -9,29 +9,29 @@ Sharing using the "Get Link" option allows you to share a Project or a Run with 
 <br />
 **For Projects**:
 
-{% step 1, /images/tutorials/projects-tab_1365x519.png, SELECT PROJECT %}
+{% step 1, /images/tutorials/projects-tab_1365x519.png, Select Project %}
 Select the "Projects" icon from the BaseSpace home page and select the desired Project.
 {% endstep %}
 
-{% step 2, /images/tutorials/share-analysis-getlink-selector_1366x403.png, CLICK GETLINK %}
+{% step 2, /images/tutorials/share-analysis-getlink-selector_1366x403.png, Click Getlink %}
 Select the "Get Link" button from the options available in the Projects page.
 {% endstep %}
 
 **For Runs**:
 
-{% step 1, /images/tutorials/runs-tab_1365x402.png, SELECT RUN %}
+{% step 1, /images/tutorials/runs-tab_1365x402.png, Select Run %}
 Select the "Runs" icon and select the desired run.
 {% endstep %}
 
-{% step 2, /images/tutorials/share-run-getlink-selector_1365x366.png, CLICK GETLINK %}
+{% step 2, /images/tutorials/share-run-getlink-selector_1365x366.png, Click Getlink %}
 Select the "Get Link" button from the options available in the Runs page.
 {% endstep %}
 
-{% step 3, /images/tutorials/share-analysis-getlink-confirmation-window_702x345.png, ACTIVATE %}
+{% step 3, /images/tutorials/share-analysis-getlink-confirmation-window_702x345.png, Activate %}
 Click on "Activate" in the pop up window.
 {% endstep %}
 
-{% step 4, /images/tutorials/share-analysis-getlink-deactivate_698x369.png, SHARE %}
+{% step 4, /images/tutorials/share-analysis-getlink-deactivate_698x369.png, Share %}
 Copy the URL to share with collaborators.
 {% endstep %}
 

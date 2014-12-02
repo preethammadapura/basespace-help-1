@@ -11,21 +11,21 @@ You can only submit a corrected sample sheet and requeue the run one time.
 {% endcallout %}
 <br />
 
-{% step 1, /images/tutorials/requeue-analysis-for-run-selector_1240x331.png, CHOOSE RUN %}
+{% step 1, /images/tutorials/requeue-analysis-for-run-selector_1240x331.png, Choose Run %}
 Go to 'Runs' page and if a run has a 'Needs Attention' state, open the run. Or, open the run which needs fixing in a sample sheet.
 {% endstep %}
 
-{% step 2, /images/tutorials/requeue-fix-sample-sheet-link_885x348.png, CLICK ON FIX SAMPLE SHEET %}
+{% step 2, /images/tutorials/requeue-fix-sample-sheet-link_885x348.png, Click on Fix Sample sheet %}
 A run can have a Needs Attention state. Click the Fix Sample Sheet link.
 {% endstep %}
 
 **Alternatively**,
 
-{% step 2, /images/tutorials/requeue-fix-sample-sheet-link-alternate_796x402.png, CLICK ON FIX SAMPLE SHEET %}
+{% step 2, /images/tutorials/requeue-fix-sample-sheet-link-alternate_796x402.png, Click on Fix Sample sheet %}
 Go to a run, select the More drop-down list, and then select Fix Sample Sheet.
 {% endstep %}
 
-{% step 3, /images/tutorials/requeue-fix-sample-sheet-edit-options_1351x461.png, EDIT SAMPLE SHEET %}
+{% step 3, /images/tutorials/requeue-fix-sample-sheet-edit-options_1351x461.png, Edit Sample sheet %}
 The Fix Sample Sheet page opens. If BaseSpace has detected an error, it shows the issue above the black sample sheet editor. Depending on the complexity of the change, you have two options:
 	1. Easy fix: edit the sample sheet in the sample sheet editor. BaseSpace keeps validating the sample sheet as you edit; any remaining issues are displayed above the sample sheet editor.
 	2. More complex change: use Illumina Experiment Manager (IEM).
@@ -38,7 +38,7 @@ If you have not installed IEM yet, click the Illumina Experiment Manager (IEM) l
 - Copy and paste the sample sheet into the Sample Sheet Editor in BaseSpace.
 BaseSpace validates the sample sheet; any issues are displayed above the sample sheet editor.
 
-{% step 4, /images/tutorials/requeue-analysis-success-notification_475x101.png, SUCCESS NOTIFICATION %}
+{% step 4, /images/tutorials/requeue-analysis-success-notification_475x101.png, Success Notification %}
 When you are done editing and the sample sheet is valid, click the Queue Analysis button, and BaseSpace starts analyzing the run using the new sample sheet. You can only resubmit a sample sheet and requeue the run one time.
 {% endstep %}
 
