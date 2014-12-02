@@ -16,6 +16,48 @@ color: #666666;
 
 /* %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%
 
+                                                                Homepage banner
+
+            %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
+
+
+
+
+
+.banner-custom{
+    
+text-align: left;
+height: 100px;
+
+}
+
+.banner-title{
+    
+font-family: "HelveticaNeueW01-ThinEx 710288", sans-serif !important;
+color: #666666; 
+font-size: 42px;
+font-weight: 100;
+margin-top: 50px;
+position: relative;
+left: 40px;
+    
+}
+
+.hr-custom{
+    
+margin: 0px 0px 90px 0px;
+display: block;
+border: 0;
+border-top: 1px solid #dfdfdf;
+border-bottom: 1px solid #fff;
+ 
+    
+}
+
+
+
+/* %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%
+
                                            Popular Articles Section
 
             %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
@@ -26,18 +68,14 @@ color: #666666;
 
 
 .popular-articles-header {
-
+ 
     font: 200 20px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
-    color: #444444;
-    margin-bottom: 20px;
+    color: #ffb441;
+    margin-bottom: 30px;
     position: relative;
     left: 40px;
 
-    border-bottom: 1px solid #e2e2e2;
-    padding-bottom: 30px;
-
 }
-
 
 .popular-articles-section{
 
@@ -178,13 +216,13 @@ a.link_grey:link{
 
 /* %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%
 
-                                            Getting Started Section
+                                            New to BaseSpace Section
 
             %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
 
 
 
-#sidebarmodule-gs{                              /* Getting Started Box */
+#sidebarmodule-gs{                              /* New to BaseSpace */
 
     border: none;
     border-color: #7CA8D4;
@@ -331,33 +369,33 @@ a.link_grey:link{
 /* Box for Article section */
 
 #sidebarmodule-articles{
-
-    border: 2px solid;
+    
+    border: 1px solid;
     border-color: #bbbbbb;
     border-radius: 3px;
     background-color: #ffffff;
     display: table;
     width: 105%;
     height: 110px;
-
+    
     padding: 10px;
     margin-bottom: 25px;
     position: relative;
-    left: 15px;
-
-
+    left: 35px;
+    
+    
      @media (max-width: 768px){
                                 width: 80%;
                                 left: 50px;
                                 height: 90px;
                              }
-
+    
     @media (max-width: 460px){
                                 width: 80%;
                                 left: 40px;
                                 height: 90px;
                              }
-
+   
 }
 
 
@@ -414,40 +452,59 @@ a.link_grey:link{
 /* Articles Hover CSS */
 
 #sidebarmodule-articles:hover{
-
-    background-color: #f9f9f9;
+    
+    background-color: #ffb441;
     transition-duration: 0.5s;
-
-
+    border-color: #ffb441;
+    
+    
 }
 
 #sidebarmodule-articles:hover #category-heading-articles{
-
+    
+    transition-duration: 0.5s;
+    color: #fff;
+    
 
 }
 
 #sidebarmodule-articles:hover .articles_icon{
-
+  
     transition-duration: 0.5s;
+    color: #fff;
 }
+
+#sidebarmodule-articles:hover .caret-right{
+  
+    transition-duration: 0.5s;
+    color: #fff;
+}
+
+#sidebarmodule-articles:hover .description-part{
+    
+    transition-duration: 0.5s;
+    color: #fff;
+    
+}
+
 
 /* Article Icon */
 
 .articles_icon{
-
-    font-size: 45px;
-    color: #7CA8D4;
+    
+    font-size: 45px;         
+    color: #ffb441;
     display: table-cell;
     position: relative;
     padding-right: 10px;
     padding-left: 10px;
-
+    
     @media (max-width: 1199px){
                                 top: 0px;
                              }
-
+    
     @media (max-width: 991px){
-                                font-size: 35px;
+                                font-size: 35px; 
                                 top: 1px;
                              }
 
@@ -455,14 +512,15 @@ a.link_grey:link{
                                 top: -2px;
                                 font-size: 35px;
                              }
-
+    
     @media (max-width: 491px){
                                 top: -1px;
                                 font-size: 35px;
                              }
-
-
+    
+    
 }
+
 
 /* %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%
 
@@ -614,33 +672,33 @@ a.link_grey:link{
 
 
 #sidebarmodule-dev{
-
-    border: 2px solid;
+    
+    border: 1px solid;
     border-color: #bbbbbb;
     border-radius: 3px;
     background-color: #ffffff;
     display: table;
     width: 105%;
     height: 110px;
-
+    
     padding: 10px;
     margin-bottom: 25px;
     position: relative;
-    left: 15px;
-
-
+    left: 35px;
+    
+    
      @media (max-width: 768px){
                                 width: 80%;
                                 left: 50px;
                                 height: 90px;
                              }
-
+    
     @media (max-width: 460px){
                                 width: 80%;
                                 left: 40px;
                                 height: 90px;
                              }
-
+    
 }
 
 #category-heading-dev{
@@ -693,10 +751,10 @@ a.link_grey:link{
 }
 
 #sidebarmodule-dev:hover{
-
+    
     background-color: #f9f9f9;
     transition-duration: 0.5s;
-
+    
 }
 
 #sidebarmodule-dev:hover #category-heading-dev{
@@ -780,13 +838,23 @@ a.link_grey:link{
             %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
 
 
-.video-heading{
+.video-section{
+    
+    border: 1px solid transparent;
+    background-color: #f6f6f6;
+    padding-bottom: 100px;
+    
+    
+}
 
+.video-heading{
+    
     font: 200 28px/1.2em "HelveticaNeueW01-LtExt",sans-serif;
     color: #ffb441;
     text-align: left;
     letter-spacing: 1px;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 30px;
-
+    
 }
+
