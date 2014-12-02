@@ -12,36 +12,36 @@ The BaseSpace User Interface has a number of common UI elements that are shared 
 
 ##Toolbar elements
 
-####Dashboard tab
-![Dashboard tab](/images/articles/dashboard-tab_200x132.png)  
+###Dashboard tab
+{% screenshot /images/articles/dashboard-tab_200x132.png %}  
 After login, the first tab users see is the dashboard. The dashboard provides access to notifications, your latest runs, projects, and app results. The dashboard is always accessible in BaseSpace from the top ribbon selector.
 
-####Prep tab
-![Prep tab](/images/articles/prep-tab_121x128.png)  
+###Prep tab
+{% screenshot /images/articles/prep-tab_121x128.png %}
 The Prep tab enables you to set up a sequencing run on the NextSeq sequencing system. This tab is only available for NextSeq sequencing systems. Other sequencing instruments use a sample sheet to provide sample information to BaseSpace. 
 
-####Runs tab
-![Runs tab](/images/articles/runs-tab_129x129.png)  
+###Runs tab
+{% screenshot /images/articles/runs-tab_129x129.png %}  
 The Runs button leads to the runs list, which allows you to sort your runs based on experiment name, state, workflow, created date, machine, and owner.
 
-####Projects tab
-![Projects tab](/images/articles/projects-tab_169x132.png)
+###Projects tab
+{% screenshot /images/articles/projects-tab_169x132.png %}
 The Projects button opens a list of your projects. You can sort the list by name, last update, or owner. Clicking a project provides access to the app results and samples within that project.
 
-####Apps tab
-![Apps tab](/images/articles/apps-tab_127x132.png)
+###Apps tab
+{% screenshot /images/articles/apps-tab_127x132.png %}
 The Apps button leads to the Apps page, which provides an overview of the custom BaseSpace apps that you can run.
 
-####Public Data tab
-![Apps tab](/images/articles/public-data-tab_213x132.png)
+###Public Data tab
+{% screenshot /images/articles/public-data-tab_213x132.png %}
 The Public Data page provides an overview of the publicly available data sets that you can use. Clicking a data set provides more information for that set, and allows you to import the run or project. You can search for apps using the Search Public Data box, or filter by the research areas and categories listed on the right. 
 
-####Search icon
-![Search icon](/images/articles/search-icon_75x129.png)
+###Search icon
+{% screenshot /images/articles/search-icon_75x129.png %}
 The Search box allows you to find runs, projects, or samples. 
 
-####Accounts tab
-![Accounts tab](/images/articles/account-tab_313x133.png)
+###Accounts tab
+{% screenshot /images/articles/account-tab_313x133.png %}
 The Account drop-down list provides access to:
 
 - iCredits. 
@@ -52,10 +52,10 @@ The Account drop-down list provides access to:
 - Blog: leads to the blog. Check out for the latest news, developments, and updates.
 - Sign out.
 
-####iCredits
+###iCredits
 All in-app purchases are performed using an Illumina currency called iCredits. Before a user can make any in-app purchases, they must add iCredits to their account by purchasing them through BaseSpace. 1 iCredit can be purchased at a rate of 1 USD. 
 
-####Notifications
+###Notifications
 Shows notifications, most recent first. There are multiple types of notifications :
 
 * Runs notifications
@@ -89,16 +89,16 @@ BaseSpace users can access Help, contact support or provide feedback almost inst
 
 ##Bottom panes
 
-####Runs Pane
+###Runs Pane
 
 The bottom left pane of the BaseSpace dashboard shows the three most recent runs, and is updated automatically.
 Clicking the Runs pane opens the Runs tab. Clicking a run opens the Runs tab with the run loaded. 
 
-####Projects Pane
+###Projects Pane
 
 The bottom middle pane of the BaseSpace dashboard shows the three most recent projects. The folder icon indicates the sharing status of the project: if it shows several people , the project is shared. Clicking the Projects pane opens the Projects tab. Clicking a project opens the Projects tab with the project loaded. 
 
-####App Results Pane
+###App Results Pane
 
 The right bottom pane of the BaseSpace dashboard shows the most recent app results. Clicking an app result provides charts relevant for the app used in the Projects tab. For more information, see App Results Page.
 

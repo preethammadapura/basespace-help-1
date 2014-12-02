@@ -92,11 +92,9 @@ Though all articles are written in 'markdown(.md)' format, the following are som
 
 3. In case of tutorial articles, each step must follow this format:
 
-  {% step 1, images/myimage.png, THIS IS THE TITLE %}
+  {% step 1, images/myimage.png, This is The title %}
     This is the description
   {% endstep %}
-
-  **Please note:** The title MUST be in ALL CAPS and the step number shall be replaced accordingly for each step.
 
 4. If there is a callout like a special note or tip, there are some ready call-outs to use.
 
