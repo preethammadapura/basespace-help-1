@@ -21,7 +21,7 @@ hide_welcome_banner: true
                   {% assign temp = t.Id %}
                   {% for l in page.headings %}
                   <li>
-                    {% if l.Level == 3 and t.Id == temp %}
+                    {% if l.Level == 3 %}
                     <a href="#{{ l.Id }}">{{ l.Text }}</a>
                     {% endif %}
                   </li>
