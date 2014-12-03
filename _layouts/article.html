@@ -8,31 +8,7 @@ hide_welcome_banner: true
   <!--  Row begins  -->
   <div class="row">
   
-  <!--  <nav class="col-xs-2 bs-docs-sidebar" align="right">
-        <div class="container" data-spy="affix">
-        {% if page.headings and page.headings.size > 0 %}
-          <ul id="sidenav" class="nav nav-stacked">
-          {% for t in page.headings %}
-              <li>
-              {% if t.Level == 2 %}
-                <a href="#{{ t.Id }}">{{ t.Text }}</a>
-              {% endif %} 
-                <ul class="nav nav-stacked">
-                  <li>
-                  {% if t.Level == 3 %}  
-                    <a href="#{{ t.Id }}">{{ t.Text }}</a>
-                  {% endif %}
-                  </li>
-                </ul> 
-              </li>
-          {% endfor %}
-          </ul>
-        {% endif %}         
-        </div>
-    </nav> -->
-    
     <!--Side Nav Bar  -->
-
     <nav class="col-xs-2 bs-docs-sidebar" align="right">
         <div class="container" data-spy="affix">
         {% if page.headings and page.headings.size > 0 %}
@@ -41,21 +17,23 @@ hide_welcome_banner: true
             <li>
               {% if t.Level == 2 %}
               <a href="#{{ t.Id }}">{{ t.Text }}</a>
-              {% endif %} 
-              <ul class="nav nav-stacked">
-                <li>
-                  {% if t.Level == 3 %}
-                  <a href="#{{ t.Id }}">{{ t.Text }}</a>
-                  {% endif %}
-                </li>
-              </ul>
+                <ul class="nav nav-stacked">
+                  {% assign temp = t.Id %}
+                  {% for l in page.headings %}
+                  <li>
+                    {% if l.Level == 3 and t.Id == temp %}
+                    <a href="#{{ l.Id }}">{{ l.Text }}</a>
+                    {% endif %}
+                  </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
             </li>
           {% endfor %}
           </ul>
         {% endif %}
         </div>
     </nav>
-            
     <!--  Side Nav Bar ends -->
 
     <!--  Main article content with title  -->
