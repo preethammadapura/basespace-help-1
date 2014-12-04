@@ -38,6 +38,8 @@ If you have not installed IEM yet, click the Illumina Experiment Manager (IEM) l
 - Copy and paste the sample sheet into the Sample Sheet Editor in BaseSpace.
 BaseSpace validates the sample sheet; any issues are displayed above the sample sheet editor.
 
+<br />
+
 {% step 4, /images/tutorials/requeue-analysis-success-notification_475x101.png, Success Notification %}
 When you are done editing and the sample sheet is valid, click the Queue Analysis button, and BaseSpace starts analyzing the run using the new sample sheet. You can only resubmit a sample sheet and requeue the run one time.
 {% endstep %}
