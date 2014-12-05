@@ -11,7 +11,6 @@ On the Planned Runs page, you can set up the parameters for the sequencing run o
 
 - Enter a name for your planned run.
 - [Optional] Enter the reagent barcode you plan to use, which links a reagent kit to this run.
-- Select the rehyb checkbox if you are rehybridizing.
 
 {% endstep %}
 
