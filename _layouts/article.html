@@ -14,21 +14,22 @@ hide_welcome_banner: true
         {% if page.headings and page.headings.size > 0 %}
           <ul id="sidenav" class="nav nav-stacked">
           {% for t in page.headings %}
-            <li>
-              {% if t.Level == 2 %}
-              <a href="#{{ t.Id }}">{{ t.Text }}</a>
-                <ul class="nav nav-stacked">
-                  {% assign temp = t.Id %}
-                  {% for l in page.headings %}
-                  <li>
-                    {% if l.Level == 3 %}
-                    <a href="#{{ l.Id }}">{{ l.Text }}</a>
-                    {% endif %}
-                  </li>
-                  {% endfor %}
-                </ul>
-              {% endif %}
-            </li>
+			  {% if t.Level == 2 %}
+			  <li>
+				<a href="#{{ t.Id }}">{{ t.Text }}</a>
+				{% if t.children and t.children.size > 0 %}
+				<ul class="nav nav-stacked">
+				{% for child in t.children %}
+					{% if child.Level == 3 %}
+					<li>
+						<a href="#{{ child.Id }}">{{ child.Text }}</a>
+					</li>
+					{% endif %}
+				{% endfor %}
+				</ul>
+				{% endif %}
+			  </li>
+			  {% endif %}
           {% endfor %}
           </ul>
         {% endif %}
