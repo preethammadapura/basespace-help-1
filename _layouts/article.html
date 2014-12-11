@@ -5,57 +5,37 @@ hide_welcome_banner: true
 <!--  Breadcrumb bar  -->
 {% include article-breadcrumbs.html %}
 <!--  Breadcrumb bar ends  -->
+
   <!--  Row begins  -->
   <div class="row">
   
-  <!--  <nav class="col-xs-2 bs-docs-sidebar" align="right">
-        <div class="container" data-spy="affix">
-        {% if page.headings and page.headings.size > 0 %}
-          <ul id="sidenav" class="nav nav-stacked">
-          {% for t in page.headings %}
-              <li>
-              {% if t.Level == 2 %}
-                <a href="#{{ t.Id }}">{{ t.Text }}</a>
-              {% endif %} 
-                <ul class="nav nav-stacked">
-                  <li>
-                  {% if t.Level == 3 %}  
-                    <a href="#{{ t.Id }}">{{ t.Text }}</a>
-                  {% endif %}
-                  </li>
-                </ul> 
-              </li>
-          {% endfor %}
-          </ul>
-        {% endif %}         
-        </div>
-    </nav> -->
-    
     <!--Side Nav Bar  -->
-
     <nav class="col-xs-2 bs-docs-sidebar" align="right">
         <div class="container" data-spy="affix">
         {% if page.headings and page.headings.size > 0 %}
           <ul id="sidenav" class="nav nav-stacked">
           {% for t in page.headings %}
-            <li>
-              {% if t.Level == 2 %}
-              <a href="#{{ t.Id }}">{{ t.Text }}</a>
-              {% endif %} 
-              <ul class="nav nav-stacked">
-                <li>
-                  {% if t.Level == 3 %}
-                  <a href="#{{ t.Id }}">{{ t.Text }}</a>
-                  {% endif %}
-                </li>
-              </ul>
-            </li>
+    			  {% if t.Level == 2 %}
+      			  <li>
+        				<a href="#{{ t.Id }}">{{ t.Text }}</a>
+        				{% if t.children and t.children.size > 0 %}
+          				<ul class="nav nav-stacked">
+          				{% for child in t.children %}
+          					{% if child.Level == 3 %}
+          					<li>
+          						<a href="#{{ child.Id }}">{{ child.Text }}</a>
+          					</li>
+          					{% endif %}
+          				{% endfor %}
+          				</ul>
+        				{% endif %}
+      			  </li>
+    			  {% endif %}
           {% endfor %}
           </ul>
         {% endif %}
         </div>
     </nav>
-            
     <!--  Side Nav Bar ends -->
 
     <!--  Main article content with title  -->
@@ -67,46 +47,6 @@ hide_welcome_banner: true
 
       <!-- Article Body -->
       <div class="article-content">
-        <!-- dummy content for nav 
-
-                          <section id="GroupA" class="group">
-                              <h3>Group A</h3>
-                              <p>In this article, we’ll explain exactly what z-index is, how it has been misunderstood, and we’ll discuss some practical uses for it. We’ll also describe some of the browser differences that can occur, particularly in previous versions of Internet Explorer and Firefox. This comprehensive look at z-index should provide developers with an excellent foundation to be able to use this property confidently and effectively.</p>
-                              <div id="GroupASub1" class="subgroup">
-                                  <h4>Group A Sub 1</h4>
-                                  <p>In this article, we’ll explain exactly what z-index is, how it has been misunderstood, and we’ll discuss some practical uses for it. We’ll also describe some of the browser differences that can occur, particularly in previous versions of Internet Explorer and Firefox. This comprehensive look at z-index should provide developers with an excellent foundation to be able to use this property confidently and effectively.</p>
-                              </div>
-                              <div id="GroupASub2" class="subgroup">
-                                  <h4>Group A Sub 2</h4>
-                                  <p>In this article, we’ll explain exactly what z-index is, how it has been misunderstood, and we’ll discuss some practical uses for it. We’ll also describe some of the browser differences that can occur, particularly in previous versions of Internet Explorer and Firefox. This comprehensive look at z-index should provide developers with an excellent foundation to be able to use this property confidently and effectively.</p>
-                              </div>
-                          </section>
-                          <section id="GroupB" class="group">
-                              <h3>Group B</h3>
-                              <p>In this article, we’ll explain exactly what z-index is, how it has been misunderstood, and we’ll discuss some practical uses for it. We’ll also describe some of the browser differences that can occur, particularly in previous versions of Internet Explorer and Firefox. This comprehensive look at z-index should provide developers with an excellent foundation to be able to use this property confidently and effectively.</p>
-                              <div id="GroupBSub1" class="subgroup">
-                                  <h4>Group B Sub 1</h4>
-                                  <p>In this article, we’ll explain exactly what z-index is, how it has been misunderstood, and we’ll discuss some practical uses for it. We’ll also describe some of the browser differences that can occur, particularly in previous versions of Internet Explorer and Firefox. This comprehensive look at z-index should provide developers with an excellent foundation to be able to use this property confidently and effectively.</p>
-                              </div>
-                              <div id="GroupBSub2" class="subgroup">
-                                  <h4>Group B Sub 2</h4>
-                                  <p>In this article, we’ll explain exactly what z-index is, how it has been misunderstood, and we’ll discuss some practical uses for it. We’ll also describe some of the browser differences that can occur, particularly in previous versions of Internet Explorer and Firefox. This comprehensive look at z-index should provide developers with an excellent foundation to be able to use this property confidently and effectively.</p>
-                              </div>
-                          </section>
-                          <section id="GroupC" class="group">
-                              <h3>Group C</h3>
-                              <p>In this article, we’ll explain exactly what z-index is, how it has been misunderstood, and we’ll discuss some practical uses for it. We’ll also describe some of the browser differences that can occur, particularly in previous versions of Internet Explorer and Firefox. This comprehensive look at z-index should provide developers with an excellent foundation to be able to use this property confidently and effectively.</p>
-                              <div id="GroupCSub1" class="subgroup">
-                                  <h4>Group C Sub 1</h4>
-                                  <p>In this article, we’ll explain exactly what z-index is, how it has been misunderstood, and we’ll discuss some practical uses for it. We’ll also describe some of the browser differences that can occur, particularly in previous versions of Internet Explorer and Firefox. This comprehensive look at z-index should provide developers with an excellent foundation to be able to use this property confidently and effectively.</p>
-                              </div>
-                              <div id="GroupCSub2" class="subgroup">
-                                  <h4>Group C Sub 2</h4>
-                                  <p>In this article, we’ll explain exactly what z-index is, how it has been misunderstood, and we’ll discuss some practical uses for it. We’ll also describe some of the browser differences that can occur, particularly in previous versions of Internet Explorer and Firefox. This comprehensive look at z-index should provide developers with an excellent foundation to be able to use this property confidently and effectively.</p>
-                              </div>
-                          </section>    
-         dummy ends -->
-
         {{ content }}
       </div> 
       <!-- Article-body ends -->

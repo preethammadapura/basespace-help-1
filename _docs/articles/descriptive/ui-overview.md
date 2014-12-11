@@ -5,6 +5,7 @@ hide_welcome_banner: true
 ---
 
 The BaseSpace User Interface has a number of common UI elements that are shared between all BaseSpace pages, and which enable general tasks. Mainly the UI can be divided into:
+
 •	Toolbar elements.
 •	Contact us button.
 •   Bottom panes. 
@@ -85,7 +86,7 @@ Shows notifications, most recent first. There are multiple types of notification
 	- Announcement of a new feature
 
 ##Contact Us button
-BaseSpace users can access Help, contact support or provide feedback almost instantly in the matter of few clicks. See [Contact Us](/articles/help-and-support).
+BaseSpace users can access Help, contact support or provide feedback almost instantly in the matter of few clicks. See [Contact Us](/articles/descriptive/help-and-support).
 
 ##Bottom panes
 
