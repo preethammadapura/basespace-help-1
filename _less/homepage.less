@@ -134,24 +134,26 @@ a.link_grey:link{
     color: #000000;
 }
 
+a.link_grey:hover {
+    text-decoration: none;
+}
+
 
 /* Box Layout */
-
 
 .left-part{        /*icon layout*/
 
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-
-
 }
 
 .middle-part{           /*text layout*/
 
     padding-top: 1rem !important;
-    padding-bottom: 1rem !important;
-    padding-right: 5rem !important;
+    padding-bottom: 1rem !important; 
+    padding-right: 50px; 
+    padding-left: 5px;
     position: relative;
     align: center;
     display: table-cell;
@@ -161,8 +163,8 @@ a.link_grey:link{
 
 .right-part{            /*caret layout*/
 
-    display: block;
-    position: absolute;
+    display: table-cell;
+    position: absolute; 
     top: 18px;
     right: 10px;
     color: #f1f2f2;
@@ -172,104 +174,48 @@ a.link_grey:link{
 
 .description-part{
 
-    display: table-cell;
-    position: absolute;
-    top: 64px;
-    left: 102px;
     font: 200 11px/1.2em "pt-sans-regular",sans-serif;
     color: #bbbbbb;
+    padding-top: 10px;
+    
+    @media (max-width: 1199px){font: 200 11px/1.2em "pt-sans-regular",sans-serif;}
 
-                @media (max-width: 1199px){
-                                                font: 200 11px/1.2em "pt-sans-regular",sans-serif;
-
-
-                                          }
-
-
-                @media (max-width: 991px){
-                                                font: 200 11px/1.2em "pt-sans-regular",sans-serif;
-                                                display: none;
-
-
+    @media (max-width: 991px){
+                                font: 200 11px/1.2em "pt-sans-regular",sans-serif;
+                                display: none;
                              }
 
-                @media (max-width: 768px){
-                                                font: 200 11px/1.2em "pt-sans-regular",sans-serif;
-                                                display: table-cell;
-                                                top: 50px;
-                                                left: 100px;
-
+    @media (max-width: 768px){
+                                font: 200 11px/1.2em "pt-sans-regular",sans-serif;
+                                display: table-cell;
+                                top: 50px;
+                                left: 100px;
                              }
 
-                @media (max-width: 491px){
-
-                                                font: 200 11px/1.2em "pt-sans-regular",sans-serif;
-                                                display: none;
-
-                             }
-
-
-}
-
-
-/* %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%
-
-                                            New to BaseSpace Section
-
-            %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
-
-
-
-#sidebarmodule-gs{                              /* New to BaseSpace */
-
-    border: none;
-    border-color: #7CA8D4;
-    border-radius: 3px;
-    background-color: #f9f9f9;
-    display: table;
-    width: 105%;
-    height: 110px;
-
-    padding: 10px;
-    margin-bottom: 15px;
-    position: relative;
-    left: -8px;
-
-
-
-     @media (max-width: 768px){
-                                width: 80%;
-                                left: 50px;
-                                height: 90px;
-                             }
-
-    @media (max-width: 460px){
-                                width: 80%;
-                                left: 40px;
-                                height: 90px;
+    @media (max-width: 491px){
+                                font: 200 11px/1.2em "pt-sans-regular",sans-serif;
+                                display: none;
                              }
 
 }
 
-#category-heading-gs{                                   /* Getting Started Box Heading */
+.category-heading{
 
-    font: 200 20px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+    font: 800 20px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
     color: #666666;
     margin-left: 20px;
     letter-spacing: 1px;
     line-height: 1.5;
-    padding-left: 5px;
+   
     display: table-cell;
-    position: absolute;
-    top: 7px;
-    left: -190px;
+    top: 8px;
+    left: -188px;
 
 
     @media (max-width: 1199px){
                                 font: 200 16px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
                                 left: -140px;
                                 top: 10px;
-
                              }
 
 
@@ -277,16 +223,12 @@ a.link_grey:link{
                                 font: 200 14px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
                                 left: -90px;
                                 top: 25px;
-
                              }
 
     @media (max-width: 768px){
                                 font: 200 16px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
                                 left: -100px;
                                 top: 2px;
-
-
-
                              }
 
     @media (max-width: 491px){
@@ -294,75 +236,16 @@ a.link_grey:link{
                                 font: 200 14px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
                                 top: 15px;
                                 left: -75px;
-
-
                              }
 
 }
-
-#sidebarmodule-gs:hover{
-
-    background-color: @FAQ-color;
-    transition-duration: 0.5s;
-
-}
-
-#sidebarmodule-gs:hover #category-heading-gs{
-
-    color: @white-color;
-    transition-duration: 0.5s;
-
-}
-
-#sidebarmodule-gs:hover .faq_icon{
-
-
-    color: @white-color;
-    transition-duration: 0.5s;
-}
-
-
-
-/* FAQ Icon */
-
-
-.faq_icon {
-
-    font-size: 45px;
-    color: @FAQ-color;
-    display: table-cell;
-    position: relative;
-    padding-right: 10px;
-    padding-left: 10px;
-
-    @media (max-width: 1199px){
-                                top: 0px;
-                             }
-
-    @media (max-width: 991px){
-                                font-size: 35px;
-                                top: 1px;
-                             }
-
-    @media (max-width: 768px){
-                                top: -2px;
-                                font-size: 35px;
-                             }
-
-    @media (max-width: 491px){
-                                top: -1px;
-                                font-size: 35px;
-                             }
-
-}
-
 
 
 /* %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%
 
                                             Article Section
 
-            %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
+   &%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
 
 /* Box for Article section */
 
@@ -372,7 +255,7 @@ a.link_grey:link{
     border-color: #bbbbbb;
     border-radius: 3px;
     background-color: #ffffff;
-    display: block;
+    display: table;
     width: 105%;
     height: 110px;
     
@@ -398,54 +281,6 @@ a.link_grey:link{
 
 
 
-#category-heading-articles{
-
-    font: 800 20px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
-    color: #666666;
-    margin-left: 20px;
-    letter-spacing: 1px;
-    line-height: 1.5;
-    padding-left: 5px;
-    display: table-cell;
-    position: absolute;
-    top: 8px;
-    left: -188px;
-
-
-   @media (max-width: 1199px){
-                                font: 200 16px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
-                                left: -140px;
-                                top: 10px;
-
-                             }
-
-
-    @media (max-width: 991px){
-                                font: 200 14px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
-                                left: -90px;
-                                top: 25px;
-
-                             }
-
-    @media (max-width: 768px){
-                                font: 200 16px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
-                                left: -100px;
-                                top: 2px;
-
-
-
-                             }
-
-    @media (max-width: 491px){
-
-                                font: 200 14px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
-                                top: 15px;
-                                left: -75px;
-
-
-                             }
-
-}
 
 /* Articles Hover CSS */
 
@@ -457,18 +292,16 @@ a.link_grey:link{
    
 }
 
-#sidebarmodule-articles:hover #category-heading-articles{
-    
+#sidebarmodule-articles:hover .category-heading{
     transition-duration: 0.5s;
     color: #fff;
-    
-
 }
 
 #sidebarmodule-articles:hover .articles_icon{
   
     transition-duration: 0.5s;
     color: #fff;
+    text-decoration: none;
 }
 
 #sidebarmodule-articles:hover .caret-right{
@@ -496,6 +329,7 @@ a.link_grey:link{
     padding-right: 10px;
     padding-left: 10px;
     
+
     @media (max-width: 1199px){
                                 top: 0px;
                              }
@@ -521,149 +355,9 @@ a.link_grey:link{
 
 /* %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%
 
-                                            Forum Section CSS
-
-   &%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
-
-/* Forum Hover CSS */
-
-
-#sidebarmodule-forums{
-
-    border: 2px solid;
-    border-color: #bbbbbb;
-    border-radius: 3px;
-    background-color: #ffffff;
-    display: table;
-    width: 105%;
-    height: 110px;
-
-    padding: 10px;
-    margin-bottom: 25px;
-    position: relative;
-    left: 15px;
-
-     @media (max-width: 768px){
-                                width: 80%;
-                                left: 50px;
-                                height: 90px;
-                             }
-
-    @media (max-width: 460px){
-                                width: 80%;
-                                left: 40px;
-                                height: 90px;
-                             }
-}
-
-#category-heading-forums{
-
-    font: 800 20px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
-    color: #ffb441;
-    margin-left: 20px;
-    letter-spacing: 1px;
-    line-height: 1.5;
-    padding-left: 5px;
-    display: table-cell;
-    position: absolute;
-    top: 7px;
-    left: -193px;
-
-
-   @media (max-width: 1199px){
-                                font: 200 16px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
-                                left: -140px;
-                                top: 10px;
-
-                             }
-
-
-    @media (max-width: 991px){
-                                font: 200 14px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
-                                left: -90px;
-                                top: 25px;
-
-                             }
-
-    @media (max-width: 768px){
-                                font: 200 16px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
-                                left: -100px;
-                                top: 2px;
-
-
-
-                             }
-
-    @media (max-width: 491px){
-
-                                font: 200 14px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
-                                top: 15px;
-                                left: -75px;
-
-
-                             }
-
-}
-
-#sidebarmodule-forums:hover{
-
-    background-color: #f9f9f9;
-
-}
-
-#sidebarmodule-forums:hover #category-heading-forums{
-
-
-    transition-duration: 0.5s;
-
-}
-
-#sidebarmodule-forums:hover .forum_icon{
-
-
-
-    transition-duration: 0.5s;
-}
-
-/* Forum Icon */
-
-.forum_icon{
-
-    font-size: 42px;
-    color: #AD73AC;
-    display: table-cell;
-    position: relative;
-    padding-right: 10px;
-    padding-left: 10px;
-
-    @media (max-width: 1199px){
-                                top: 0px;
-                             }
-
-    @media (max-width: 991px){
-                                font-size: 35px;
-                                top: 1px;
-                             }
-
-    @media (max-width: 768px){
-                                top: -2px;
-                                font-size: 35px;
-                             }
-
-    @media (max-width: 491px){
-                                top: -1px;
-                                font-size: 35px;
-                             }
-
-}
-
-
-
-/* %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%
-
                                            Dev Section CSS
 
-            %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
+   &%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
 
 
 
@@ -698,54 +392,7 @@ a.link_grey:link{
     
 }
 
-#category-heading-dev{
 
-    font: 800 20px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
-    color: #666666;
-    margin-left: 20px;
-    letter-spacing: 1px;
-    line-height: 1.5;
-    padding-left: 5px;
-    display: table-cell;
-    position: absolute;
-    top: 7px;
-    left: -190px;
-
-
-    @media (max-width: 1199px){
-                                font: 200 16px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
-                                left: -140px;
-                                top: 10px;
-
-                             }
-
-
-    @media (max-width: 991px){
-                                font: 200 14px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
-                                left: -90px;
-                                top: 25px;
-
-                             }
-
-    @media (max-width: 768px){
-                                font: 200 16px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
-                                left: -100px;
-                                top: 2px;
-
-
-
-                             }
-
-    @media (max-width: 491px){
-
-                                font: 200 14px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
-                                top: 6px;
-                                left: -75px;
-
-
-                             }
-
-}
 
 #sidebarmodule-dev:hover{
     
@@ -755,7 +402,7 @@ a.link_grey:link{
     
 }
 
-#sidebarmodule-dev:hover #category-heading-dev{
+#sidebarmodule-dev:hover .category-heading{
 
     transition-duration: 0.5s;
     color: #fff;
