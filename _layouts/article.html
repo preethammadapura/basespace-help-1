@@ -9,11 +9,10 @@ hide_welcome_banner: true
   <!--  Row begins  -->
   <div class="row">
   
-    <!--Side Nav Bar  -->
-    <nav class="col-xs-2 bs-docs-sidebar" align="right">
-        <div class="container" data-spy="affix">
+    <!-- Side Nav Bar -->
+      <nav class="bs-docs-sidebar">
         {% if page.headings and page.headings.size > 0 %}
-          <ul id="sidenav" class="nav nav-stacked">
+          <ul id="sidenav" class="nav nav-stacked col-sm-2" data-spy="affix">
           {% for t in page.headings %}
     			  {% if t.Level == 2 %}
       			  <li>
@@ -34,12 +33,11 @@ hide_welcome_banner: true
           {% endfor %}
           </ul>
         {% endif %}
-        </div>
-    </nav>
-    <!--  Side Nav Bar ends -->
+      </nav>
+    <!-- Side Nav Bar ends -->
 
     <!--  Main article content with title  -->
-    <div class="col-xs-7 main-layout">
+    <div class="col-sm-7 col-sm-offset-2 main-layout">
       
       <!-- Article Header -->
       <h1 class="article-title">{{ page.title }}</h1>

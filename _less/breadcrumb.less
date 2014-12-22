@@ -103,8 +103,12 @@ user-select: none;
 
 .title-left {
 	margin-right: -18px;
-	margin-left: 15px;
+	margin-left: 18px;
 	padding-right: 0px;
+
+	@media all and (max-width: @media-xs-max) {
+		display: none;
+	}
 }
 
 .menu-box {

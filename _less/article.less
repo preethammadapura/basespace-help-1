@@ -31,30 +31,29 @@
 
 .main-layout {
     margin-top: 30px;
-    margin-left: 15px;
-    float: left
+    padding-left: 40px;
 }
+
+/* SIDE NAV STYLES BEGIN */
 
 .bs-docs-sidebar {
- /*   text-align: right;*/
-    margin-top: 50px;
-    float: left;
+    padding-right: 30px;
+    
+    @media all and (max-width: @media-xs-max) {
+        display: none;
+    }
 }
-
-.affix{width:200px;}
 
 #sidenav {
     border-right: 1px solid #e5e5e5;
-    margin-right: -115px; 
     display: none;
-}
-
-.fixed {
-    position: fixed;
+    margin-top: 50px;
+    float: left;
+    padding-right: 0px;
 }
 
 /* all links */
-.bs-docs-sidebar .nav>li>a {
+.nav>li>a {
     color: #999;
     border-right: 2px solid transparent;
     position: relative;
@@ -63,10 +62,11 @@
     font-size: 13px;
     font-weight: 400;
     line-height: 250%;
+    text-align: right;
 }
 
 /* nested links */
-.bs-docs-sidebar .nav .nav>li>a {
+.nav .nav>li>a {
     padding-top: 1px;
     padding-bottom: 1px;
     padding-left: 30px;
@@ -75,43 +75,41 @@
 }
 
 /* active & hover links */
-.bs-docs-sidebar .nav>.active>a, 
-.bs-docs-sidebar .nav>li>a:hover, 
-.bs-docs-sidebar .nav>li>a:focus {
+.nav>.active>a, 
+.nav>li>a:hover, 
+.nav>li>a:focus {
     color: #328ED1;                 
     text-decoration: none;          
     background-color: transparent;  
     border-right-color: #328ED1; 
 }
+
 /* all active links */
-.bs-docs-sidebar .nav>.active>a, 
-.bs-docs-sidebar .nav>.active:hover>a,
-.bs-docs-sidebar .nav>.active:focus>a {
+.nav>.active>a, 
+.nav>.active:hover>a,
+.nav>.active:focus>a {
     font-weight: 700;
 }
+
 /* nested active links */
-.bs-docs-sidebar .nav .nav>.active>a, 
-.bs-docs-sidebar .nav .nav>.active:hover>a,
-.bs-docs-sidebar .nav .nav>.active:focus>a {
+.nav .nav>.active>a, 
+.nav .nav>.active:hover>a,
+.nav .nav>.active:focus>a {
     font-weight: 500;
 }
 
 /* hide inactive nested list */
-.bs-docs-sidebar .nav ul.nav {
+.nav ul.nav {
     display: none;           
 }
+
 /* show active nested list */
-.bs-docs-sidebar .nav>.active>ul.nav {
+.nav>.active>ul.nav {
     display: block;           
 }
 
-.group, .subgroup {
-    padding-top: 100px;
-    margin-top: -100px;
-}
-
 @media screen and (max-width: 500px){
-    .bs-docs-sidebar {
+    #sidenav {
         display:none
     }
 }
@@ -121,16 +119,5 @@ h2, h3 {
     padding-top: 110px;
 }
 
-/* JUST DUMMY */
 
-.group {
-    
-    width: auto;
-    height: auto;
-}
-.group .subgroup {
-    
-    width: 750px;
-    height: auto;
-}
 
