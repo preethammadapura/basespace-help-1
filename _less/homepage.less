@@ -218,56 +218,57 @@ a.link_grey:link{
 
                                             New to BaseSpace Section
 
-            %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
+   &%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
 
+/* Box for New to Basespace section */
 
-
-#sidebarmodule-gs{                              /* New to BaseSpace */
-
-    border: none;
-    border-color: #7CA8D4;
+#sidebarmodule-newb{
+    
+    border: 1px solid;
+    border-color: #bbbbbb;
     border-radius: 3px;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     display: table;
     width: 105%;
     height: 110px;
-
+    
     padding: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     position: relative;
-    left: -8px;
-
-
-
+    left: 35px;
+    
+    
      @media (max-width: 768px){
                                 width: 80%;
                                 left: 50px;
                                 height: 90px;
                              }
-
+    
     @media (max-width: 460px){
                                 width: 80%;
                                 left: 40px;
                                 height: 90px;
                              }
-
+   
 }
 
-#category-heading-gs{                                   /* Getting Started Box Heading */
 
-    font: 200 20px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
-    color: #666666;
+
+#category-heading-newb{
+
+    font: 800 20px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+    color: #ffb441;
     margin-left: 20px;
     letter-spacing: 1px;
     line-height: 1.5;
     padding-left: 5px;
     display: table-cell;
     position: absolute;
-    top: 7px;
-    left: -190px;
+    top: 8px;
+    left: -188px;
 
 
-    @media (max-width: 1199px){
+   @media (max-width: 1199px){
                                 font: 200 16px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
                                 left: -140px;
                                 top: 10px;
@@ -302,47 +303,61 @@ a.link_grey:link{
 
 }
 
-#sidebarmodule-gs:hover{
+/* New to Basespace Hover CSS */
 
-    background-color: @FAQ-color;
+#sidebarmodule-newb:hover{
+    
+    background-color: #ffb441;
     transition-duration: 0.5s;
+    border-color: #ffb441;
+    
+    
+}
+
+#sidebarmodule-newb:hover #category-heading-newb{
+    
+    transition-duration: 0.5s;
+    color: #fff;
+    
 
 }
 
-#sidebarmodule-gs:hover #category-heading-gs{
-
-    color: @white-color;
+#sidebarmodule-newb:hover .newb_icon{
+  
     transition-duration: 0.5s;
-
+    color: #fff;
 }
 
-#sidebarmodule-gs:hover .faq_icon{
-
-
-    color: @white-color;
+#sidebarmodule-newb:hover .caret-right{
     transition-duration: 0.5s;
+    color: #fff;
+}
+
+#sidebarmodule-newb:hover .description-part{
+    
+    transition-duration: 0.5s;
+    color: #fff;
+    
 }
 
 
+/* Pencil Icon */
 
-/* FAQ Icon */
-
-
-.faq_icon {
-
-    font-size: 45px;
-    color: @FAQ-color;
+.newb_icon{
+    
+    font-size: 45px;         
+    color: #ffb441;
     display: table-cell;
     position: relative;
     padding-right: 10px;
     padding-left: 10px;
-
+    
     @media (max-width: 1199px){
                                 top: 0px;
                              }
-
+    
     @media (max-width: 991px){
-                                font-size: 35px;
+                                font-size: 35px; 
                                 top: 1px;
                              }
 
@@ -350,21 +365,20 @@ a.link_grey:link{
                                 top: -2px;
                                 font-size: 35px;
                              }
-
+    
     @media (max-width: 491px){
                                 top: -1px;
                                 font-size: 35px;
                              }
-
+    
+    
 }
-
-
 
 /* %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%
 
                                             Article Section
 
-            %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
+   &%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
 
 /* Box for Article section */
 
@@ -475,7 +489,6 @@ a.link_grey:link{
 }
 
 #sidebarmodule-articles:hover .caret-right{
-  
     transition-duration: 0.5s;
     color: #fff;
 }
