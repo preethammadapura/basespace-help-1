@@ -3,7 +3,7 @@
 	<div class="row">
 		<div class="bs-nav-titlebar">
 			<div class="col-xs-2 title-left">
-				{% if page.section_root == null || page.section_root == false %}
+				{% if (page.section_root == null || page.section_root == false) or page.layout == 'newb' %}
 					<!-- vertical line -->
 			        <div class="vertical-line"></div>
 
@@ -12,7 +12,7 @@
 			        	<span class="icon-menu menu-icon"></span>
 		       		</div></a>
 		        {% endif %}
-	        </div>
+		    </div>
 			<div class="col-xs-9">
 				<div class="bs-nav-titlebar-group">
 					{% if page.section_root == null || page.section_root == false %}
