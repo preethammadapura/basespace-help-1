@@ -26,14 +26,122 @@
 }
 
 .intro {
+    margin-top: 40px;
     border-top: 2px solid #9f9f9f;
     width: 100%;
+    padding-top: 50px;
+    padding-bottom: 150px;
+    border-bottom: 2px ridge #cfcfcf;
 }
 
 #discover-heading {
-  margin-bottom: 25px;
-  font: 100 2em @font-header, sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+  font-family: @font-header;
   color: #666666;
   letter-spacing: 1px;
-  margin-top: 25px;
+  margin-bottom: 48px;
+}
+
+#discover-tabs {
+   overflow:hidden;
+}
+
+.tabs {
+   width: 14.5%;
+   padding-bottom: 14.5%;
+   border: 1px solid #bbbbbb;
+   border-radius: 8px;
+   float: left; 
+   margin-right: 2.5%; 
+   position: relative;
+   text-align: center;
+}
+
+.tab-content {
+   position: absolute;
+   padding-top: 22%;
+   text-align: center; 
+   left: 7%;
+   right: 10%;
+}
+
+.tab-title {
+   font: 100 1.2em @font-text;
+   padding-top: 12%;
+}
+
+/* Tabs icons */
+
+.prep_icon {
+   font-size: 4.5em;         
+   color: #BE74AE;
+}
+
+.run_icon {
+   font-size: 4.5em;         
+   color: #FFB441;
+}
+
+.analysis_icon {
+   font-size: 4.5em;         
+   color: #7CA8D4;
+}
+
+.data_icon {
+   font-size: 4.5em;         
+   color: #BAC147;
+}
+
+.public_icon {
+   font-size: 4.5em;         
+   color: #FFB441;
+}
+
+.apps_icon {
+   font-size: 4.5em;         
+   color: #BE74AE;
+}
+
+/* Prep section */
+
+.prep-section {
+    padding-top: 50px;
+}
+
+.section-title {
+  font-weight: 100;
+  font-size: 30px;
+  font-family: @font-header;
+  color: #ffb441;
+  letter-spacing: 1px;
+}
+
+.section-desc {
+  font-size: 14px;
+  line-height: 28px;  
+}
+
+.card-fold {
+  background: #F2F2F2;
+  width: 100%;
+  height: 50px;  
+  margin-top: 40px; 
+}
+
+.num-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background: #ffffff;
+  border: 1px solid #d4d4d4;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.card-step {
+  width: 100%;
+  border: 1px solid #d4d4d4;
+  height: 300px;  
+  margin-top: 15px;
 }
