@@ -14,7 +14,7 @@ The 'Magnifying glass' icon at the top right is the entry point for search. Clic
 The search is instantaneous. The search goes through all the list of available results upon entering every character. Even partial string will fetch results. Hovering over any result will give a preview on the right.
 {% endstep %}
 
-{% step 3, /images/tutorials/search-results-alternate_1352x361.png, Swarch Results %}
+{% step 3, /images/tutorials/search-results-alternate_1352x361.png, Search Results %}
 If 'Go' is pressed after entering the keyword, the search window closes to a full search page, where advanced search options like filters are also available.
 {% endstep %}
 
