@@ -39,7 +39,7 @@ In the Runs list, click on a desired run and you enter the Runs page. Now click 
 {% endstep %}
 
 {% step 2, /images/tutorials/delete-run-confirmation-window_595x443.png, Confirm %}
-In the confirmation window, click on 'Confirm' button after verifying the run that shall be deleted. (Please make sure if u want to check the box that deletes all the associated fiels as well)
+In the confirmation window, click on 'Confirm' button after verifying the run that shall be deleted. (Please make sure if you want to check the box that deletes all the associated fields as well)
 {% endstep %}
 
 {% step 3, /images/tutorials/delete-run-success-notification_421x190.png, Success Notification %}
