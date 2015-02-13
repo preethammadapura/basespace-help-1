@@ -32,7 +32,7 @@ Click on "Activate" in the pop up window.
 {% endstep %}
 
 {% step 4, /images/tutorials/share-analysis-getlink-deactivate_698x369.png, Share %}
-Copy the URL to share with collaborators.
+Copy the URL to share with collaborators.  The URL can simply be shared with multiple users in order for them to access the dataset.
 {% endstep %}
 
 {% callout note, NOTE %}

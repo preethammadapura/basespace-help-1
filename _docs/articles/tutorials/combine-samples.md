@@ -1,6 +1,6 @@
 ---
 layout: article
-title: How to combine samples 
+title: How to Combine Samples 
 hide_welcome_banner: true
 ---
 <br />

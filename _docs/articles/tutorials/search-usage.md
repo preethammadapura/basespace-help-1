@@ -11,7 +11,7 @@ The 'Magnifying glass' icon at the top right is the entry point for search. Clic
 {% endstep %}
 
 {% step 2, /images/tutorials/search-results_965x596.png, Search Window %}
-The search is instantaneous. The search goes through all the list of available results upon entering every character. Even partial string will fetch results. Hovering over any result will give a preview on the right.
+The search is performed in real-time as the user types in the search box. Partial string will fetch results. Hovering over any result will gdisplay a preview of the data on the right side.
 {% endstep %}
 
 {% step 3, /images/tutorials/search-results-alternate_1352x361.png, Search Results %}

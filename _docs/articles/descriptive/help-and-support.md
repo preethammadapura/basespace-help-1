@@ -4,9 +4,11 @@ title: Access Help, Support and Feedback
 hide_welcome_banner: true
 ---
 
-BaseSpace users can access Help, contact support or provide feedback almost instantly in the matter of few clicks. The **Contact US** button will be available all the time at the right hand side edge of the screen in the middle. Clicking that will pop up a window where users can:
-- Browse the knowledge base.
-- Provide feedback for Illumina, suggest ideas to the user community, or browse, read, and vote for other ideas.
-- Contact Support.
+BaseSpace users can access help, contact support, or provide feedback instantly in the matter of few clicks. The **Contact Us** button will be available all the time at the right hand side of the screen. Clicking the 'Contact Us' button will open a window where users can:
+- Browse the knowledge base
+- Provide feedback for Illumina
+- Suggest ideas to the user community
+- Browse, read, and vote for other ideas
+- Contact support
 
 {% screenshot /images/articles/help-and-support_767x344.png %}  
