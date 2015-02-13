@@ -30,7 +30,6 @@
     border-top: 2px solid #9f9f9f;
     width: 100%;
     padding-top: 50px;
-    padding-bottom: 150px;
 }
 
   #discover-heading {
@@ -39,11 +38,13 @@
     font-family: @font-header;
     color: #666666;
     letter-spacing: 1px;
-    margin-bottom: 48px;
+    margin-bottom: 50px;
   }
 
   #discover-tabs {
      overflow:hidden;
+     text-align: center;
+     margin-top: 65px;
   }
 
   .tabs {
@@ -51,7 +52,7 @@
      padding-bottom: 14.5%;
      border: 1px solid #bbbbbb;
      border-radius: 8px;
-     float: left; 
+     display: inline-block; 
      margin-right: 2.5%; 
      position: relative;
      text-align: center;
@@ -72,32 +73,32 @@
 
   /* Tabs icons */
 
-    .prep_icon {
+    .prep-icon {
        font-size: 4.5em;         
        color: #BE74AE;
     }
 
-    .run_icon {
+    .run-icon {
        font-size: 4.5em;         
        color: #FFB441;
     }
 
-    .analysis_icon {
+    .analysis-icon {
        font-size: 4.5em;         
        color: #7CA8D4;
     }
 
-    .data_icon {
+    .data-icon {
        font-size: 4.5em;         
        color: #BAC147;
     }
 
-    .public_icon {
+    .public-icon {
        font-size: 4.5em;         
        color: #FFB441;
     }
 
-    .apps_icon {
+    .apps-icon {
        font-size: 4.5em;         
        color: #BE74AE;
     }
@@ -106,9 +107,6 @@
 
 .big-section {
     padding-top: 50px;
-    border-top: 2px dashed #cfcfcf;
-    margin-top: 60px;
-    padding-bottom: 100px;
 }
 
 .section-title {
@@ -298,6 +296,10 @@
   width: 100%;
   border-top: 1px solid #d7d7d7;
 
+  tr > td {
+    vertical-align: top;
+  }
+
   .links-title {
     color: #ffb441;
     font-size: 1.65em;
@@ -316,3 +318,15 @@
   }
 }
 
+.gradient-divider {
+  height: 50px;
+  width: 100%;
+  margin-top: 150px;
+
+  background-color:rgba(199, 199, 199, 0.2);
+  background-image: -moz-radial-gradient(50% 100%, ellipse farthest-corner, rgba(199, 199, 199, 0.4), #ffffff 76%);
+  background-image: -webkit-radial-gradient(50% 100%, ellipse farthest-corner, rgba(199, 199, 199, 0.4), #ffffff 76%);
+  background-image: -o-radial-gradient(50% 100%, ellipse farthest-corner, rgba(199, 199, 199, 0.4), #ffffff 76%);
+  background-image: -ms-radial-gradient(50% 100%, ellipse farthest-corner, rgba(199, 199, 199, 0.4), #ffffff 76%);
+  background-image: radial-gradient(50% 100%, ellipse farthest-corner, rgba(199, 199, 199, 0.4), #ffffff 76%)
+}
