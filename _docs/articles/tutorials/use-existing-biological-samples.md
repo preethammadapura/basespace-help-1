@@ -1,14 +1,14 @@
 ---
 layout: article
-title: How to use existing biological samples
+title: How to select existing biological samples to prep
 hide_welcome_banner: true
 ---
 
-To create a new biological sample, the following steps are to be followed:
+To select existing biological samples for library prep, please follow these steps:
 <br />
 <br />
 {% step 1, /images/articles/biological-samples-tab_767x321.png, Select Biological Samples %}
-Click on the Prep tab and click on Biological samples.
+Click on the Prep tab and click on Biological samples.  For more information here please view [Prep Libraries](/articles/descriptive/libraries/).
 {% endstep %}
 
 {% step 2, /images/tutorials/use-existing-samples-selector.png, Choose samples and Prep %}

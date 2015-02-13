@@ -1,12 +1,12 @@
 ---
 layout: article
-title: How to purchase iCredits
+title: How to Purchase iCredits
 hide_welcome_banner: true
 ---
 <br />
 
 {% step 1, /images/tutorials/icredits-selector_1357x521.png, Click Add more %}
-On the menu bar, click on the User name on the top right. Choose 'iCredits' option from the drop down menu. Upon entering the accounts Wallet page, click on 'Add more' under iCredits box.
+On the menu bar, click on the User name on the top right. Choose 'iCredits' option from the drop down menu. Upon entering the accounts Wallet page, click on 'Add More' under iCredits box.
 {% endstep %}
 
 **Alternatively**,

@@ -12,7 +12,7 @@ Select the "Runs" icon and select the desired run.
 {% endstep %}
 
 {% step 2, /images/tutorials/download-run-data-selector_1366x398.png, Download %}
-Select  the "Download" button.
+Select the "Download Run" button.
 {% endstep %}
 
 **Alternatively**,

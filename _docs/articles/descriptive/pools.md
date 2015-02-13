@@ -4,14 +4,15 @@ title: Pools
 hide_welcome_banner: true
 ---
 
-When you click the Pools tab you see the Pools list, which shows all available pools of libraries you have created on your account. You can sort the list by clicking the column headers, or click a pool to see its properties and associated libraries.
+When you click the Pools tab you see the Pools list, which shows all available pools of libraries you have created on your account. You can sort the list by clicking the Pool Id, Date Modified, and Owner column headers, or click a pool to see its properties and associated libraries.
 
 {% screenshot /images/articles/pools-select_757x440.png %}  
 
 This page provides the following actions to prepare your analysis:
 
--	Click a pool, then click the Edit button to edit the notes.
--	Select a pool and move to Plan Run.
+-	Click a Pool Id to open the **Edit Pool Libraries** page
+-	Then click the Edit button to edit the Pool Id and Notes
+-	Select a Pool and move to Plan Run.
 
 {% callout note, NOTE %}
 You can also merge pools the following way:

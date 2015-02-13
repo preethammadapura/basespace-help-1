@@ -1,14 +1,14 @@
 ---
 layout: article
-title: Biological samples
+title: Biological Samples
 hide_welcome_banner: true
 ---
 
-Under Prep tab, the first section is the Biological Samples tab. All the four tabs under Prep are arranged in sequential order; meaning, they replicate the 'prepping a run' process in a sequencing instrument. Users experience a workflow of preparing sample sheets within this tab.
+Under Prep Tab, the first section is Biological Samples. All four tabs under Prep are arranged in sequential order; meaning they replicate the 'prepping a run' process in a sequencing instrument for you.  
 
 {% screenshot /images/articles/biological-samples-tab_767x321.png %}
 
-Under the Biological Samples page, samples list exists; which shows all available samples you have created on your account. 
+THe Biological Samples page contains a list which shows all available Biological Samples you have created on your account through the Prep Tab. 
 
 - The list can be sorted by clicking on the column headers.
 - The individual sample page can be visited by clicking on each sample name.
@@ -29,6 +29,6 @@ You can select multiple samples by using one of the following methods:
 - Select multiple checkboxes.
 - Click anywhere on a sample row while holding Ctrl button to add to a selection.
 - Click anywhere on a sample row while holding Shift button to select all samples in between.
-- Click the checkbox next to Plate/Tube ID to select all samples on the current page.
+- Click the checkbox just above the list to select/deselect all samples on the current page
 
 {% endcallout %}

@@ -4,6 +4,8 @@ title: How to plan runs
 hide_welcome_banner: true
 ---
 
+Once you have completed pooling your libraries, you can click the **Plan Run** button in order to create a Planned Run.
+
 On the Planned Runs page, you can set up the parameters for the sequencing run on your NextSeq instrument following the steps below.
 <br />
 <br />
@@ -16,18 +18,16 @@ On the Planned Runs page, you can set up the parameters for the sequencing run o
 
 {% step 2, /images/tutorials/plan-runs-step2.png, Enter Cycles information %}
 
-- Fill out the Enter Cycles section:
-- Single-end vs. paired-end
-- Number of cycles per read
+Fill out the Enter Cycles section.  Also note whether it is single-end vs. paired-end and the number of cycles per read
 
 {% endstep %}
 
-{% step 3, /images/tutorials/plan-runs-step3.png, Verify Review Indexes %}
+{% step 3, /images/tutorials/plan-runs-step3.png, Verify Review Indices %}
 
-Verify the Review Indexes section for the indexing strategy. 
+Verify the Review Indices section for the indexing strategy. 
 
 - For indexing, it is set according to the index/library prep type chosen previously. If you choose to override this default indexing scheme, you are required to select the Index type (Single, Dual, or No Index). Make sure that you enter the number of index cycles accordingly. If you have selected multiple libraries, you cannot specify No Index.
-- SSM automatically checks if the indexes chosen all start with two Gs; if so, it warns you that you should change your index strategy.
+- SSM automatically checks if the indices chosen all start with two Gs; if so, it warns you that you should change your index strategy.
 - Verify the pool that is included in the planned run.
 
 {% endstep %}

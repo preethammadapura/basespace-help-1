@@ -5,7 +5,7 @@ hide_welcome_banner: true
 ---
 
 This is a method to hand control of data over to a collaborator or customer.
-Use it :
+Use it:
 
 -	If you want to give control of your data to a collaborator
 -	If you sequenced samples for a customer, for example, if you are a core lab or service provider.
@@ -40,7 +40,7 @@ Click on the 'Transfer now' button on the confirmation window once you confirm t
 {% endstep %}
 
 {% step 4, /images/tutorials/transfer-success-notification_548x332.png, Success Notification %}
-The 'Transfer Ownership' button changes to 'Pending Approval' indicating that the other party is yet to accept the invitation to accept the ownsership. Also, notice the confirmation message in green at the top right part of the screen about the transfer of ownership. You can cancel the transfer until the invitation to transfer ownership has not been accepted.
+The 'Transfer Ownership' button changes to 'Pending Transfer' indicating that the other party is yet to accept the invitation to accept the ownsership. Also, notice the confirmation message in green at the top right part of the screen about the transfer of ownership. You can cancel the transfer until the invitation to transfer ownership has not been accepted.
 {% endstep %}
 
 {% step 5, /images/tutorials/transfer-accept-ownership_494x334.png, Accept Transfer (Recepient) %}

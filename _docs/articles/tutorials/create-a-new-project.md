@@ -1,6 +1,6 @@
 ---
 layout: article
-title: How to create a new project
+title: How to Create a New Project
 hide_welcome_banner: true
 ---
 <br />

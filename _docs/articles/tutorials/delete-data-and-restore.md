@@ -5,7 +5,16 @@ hide_welcome_banner: true
 ---
 
 {% callout note, NOTE %}
-For deleting analyses or run, you must be the owner of that data
+Within BaseSpace, users are able to manage the data in their accounts through a few mechanisms, one of which is the ability to Delete.
+
+BaseSpace Users have the ability to delete:
+
+- Runs
+- Projects
+- Samples
+- Analyses
+
+In order to delete any data from BaseSpace, you must be the owner.  If you delete something that you do not own, it will be removed from your account and you will no longer be a collaborator for that dataset.
 {% endcallout %}
 <br />
 **For Analyses**:
@@ -29,13 +38,38 @@ Note the confirmation in a green notification that appears at the right top.
 **For Runs**:
 
 {% step 1, /images/tutorials/delete-run-selector_1366x359.png, Choose Run %}
-Select the "Runs" icon and select the desired run. Now, click on the 'Move to Trash' option available in the top menu.
+Select the "Runs" icon and select the desired run. Now, click on the **Move to Trash** option available in the top menu.
 {% endstep %}
+
+**For Projects**:
+
+There are two ways to delete a Project within BaseSpace:
+
+**From the Projects list page**
+
+{% step 1, /images/tutorials/delete-run-selector_1366x359.png, Choose Project %}
+On the Projects list page, simply select a Project from the list and click the **Move to Trash** button
+{% endstep %}
+
+**From the Project's details page**
+
+{% step 1, /images/tutorials/delete-run-selector_1366x359.png, Choose Project %}
+After selecting a Project and navigating to the Project's details page, simply click on the **Move to Trash** button
+{% endstep %}
+
+**For Samples**:
+
+{% step 1, /images/tutorials/delete-run-selector_1366x359.png, Choose Project %}
+Select the Project where your Samples are stored
+{% endstep %}
+
+{% step 1, /images/tutorials/delete-run-selector_1366x359.png, Select Samples %}
+Select the Sample(s) you wish to delete and click on the **Move to Trash** button{% endstep %}
 
 **Alternatively**,
 
 {% step 1, /images/tutorials/delete-run-selector-alternate_1366x517.png, Move to Trash %}
-In the Runs list, click on a desired run and you enter the Runs page. Now click on the 'Move to Trash' option available in the "More" dropdown menu.
+In the Runs list, click on a desired run and enter the Runs page. Now click on the 'Move to Trash' option available in the "More" dropdown menu.
 {% endstep %}
 
 {% step 2, /images/tutorials/delete-run-confirmation-window_595x443.png, Confirm %}
@@ -49,7 +83,7 @@ Note the confirmation in a green notification that appears at the right top.
 **To Restore data**,
 
 {% step 1, /images/tutorials/restore-analysis-selector_1366x427.png, Restore %}
-Click on View trash either from Analyses page or runs page and you arrive at the page that has a list of items currently in the trash. You can click on 'Restore' in order to restore the items.
+Click on View Trash either from Analyses page or Runs page and you will see a list of items currently in the Trash. You can select any of these items and click 'Restore' in order to restore the items.
 {% endstep %}
 
 **To Empty trash**
