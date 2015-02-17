@@ -4,12 +4,16 @@
 
             %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
 
+body { 
+  padding-top: 70px; 
+  padding-bottom: 50px;
+}
 
 .header {
-
   min-height: 65px;
   border: 1px solid transparent;
   background-color: #fff;
+  border-bottom: 1px solid #ededed;
 }
 
 
@@ -17,65 +21,100 @@
 
 .header-brand-baseSpace {
   float: left;
+  padding-left: 30px;
   height: 50px;
   line-height: 20px;
   padding-top: 15px;
   font: 200 22px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
   color: #666666;
+
+  sup {
+    font-size: 8px;
+  }
 }
 
 .header-brand-illumina {
   float: right;
-  height: 50px;
-  line-height: 20px;
-  padding-top: 15px;
-  font: 200 22px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
-  color: #666666;
+  position: relative;
+  background-image: url("/images/ILLUMINA_LOGO.png");
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 40px;
+  background-size: 100% auto;
+  margin: 15px 15px 0px 15px;
 }
 
-.container-fluid-header {               /* Custom container fluid without padding */
 
+/* Google search box */
+#googlecse {
+  width:0px;
+  overflow:hidden;
+  height:0px; 
+}
+
+#custom_search {
+  position: relative;
+  float: right;
+  padding-top: 18px;
+  padding-right: 20px;
+}
+
+input {
+  border: 1px solid #cfcfcf;
+  border-radius: 3px;
+  padding-left: 5px;
+}
+
+input.gsc-input {
+  border-color: #004220;
+}
+
+input.gsc-search-button {
+  display: none;
+}
+
+
+/* Custom container fluid without padding */
+.container-fluid-header {               
   margin-right: auto;
   margin-left: auto;
 }
 
 .image-header{
-
     width: 100%;
     height: 65px;
-
 }
+
 
 
 /* %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%
 
                                            BASESPACE FOOTER
 
-            %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
+   &%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
 
 .custom-footer {                   /* Footer CSS */
-
   font:200 14px/1.2em "pt-sans-regular",sans-serif;
-  background-color: #666666;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #666666;
   height: 50px;
-
-
+  border-top: 1px solid #bbbbbb;
 }
 
 .footer-holder {
-
-    text-align: right;
-    margin-bottom: 0px;
-
+  text-align: right;
+  margin-bottom: 0px;
 }
 
 .footer-list {
+  display: inline-block;
+  line-height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
- display: inline-block;
- line-height: 50px;
- padding-left: 20px;
- padding-right: 20px;
+/* Contribute Github */
 
-
+.contribute-github-content {
+    margin-left: 30px;
 }
