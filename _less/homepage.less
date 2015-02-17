@@ -28,7 +28,8 @@ color: #666666;
     
 text-align: left;
 height: 250px;
-background-image: url(http://res.illumina.com/images/rgh/hero/childpageheader-prpl240-v2.jpg);
+width: 100%;
+background-image: url(/images/illumina-purple-banner.jpg);
     
      @media (max-width: 491px) {
         height: 150px;
@@ -37,7 +38,7 @@ background-image: url(http://res.illumina.com/images/rgh/hero/childpageheader-pr
 
 .banner-title{
     
-font-family: "HelveticaNeueW01-ThinEx 710288", sans-serif !important;
+font-family: @font-header, sans-serif !important;
 color: #fff; 
 font-size: 52px;
 font-weight: 100;
@@ -70,7 +71,7 @@ left: 40px;
 
 .popular-articles-header {
  
-    font: 200 20px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+    font: 200 20px/1.2em @font-header,sans-serif;
     color: @earth-pumpkin-color;
     margin-bottom: 20px;
     position: relative;
@@ -107,7 +108,7 @@ left: 40px;
 }
 
 .popular-article-link{
-    font:200 14px/1.2em "helvetica","Arial",sans-serif;
+    font:200 14px/1.2em @font-alt, @font-text,sans-serif;
     line-height: 35px;
     margin-bottom: 30px;
 }
@@ -186,30 +187,30 @@ a.link_grey:hover {
 
     .category-heading{
 
-        font: 800 20px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+        font: 800 20px/1.2em @font-header,sans-serif;
         color: #666666;
         letter-spacing: 1px;
         line-height: 1.5;
       
             @media (max-width: 1199px){
-                                        font: 200 16px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+                                        font-size: 16px/1.2em;
                                         
                                      }
 
 
             @media (max-width: 991px){
-                                        font: 200 14px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+                                        font-size: 14px/1.2em;
                                         
                                      }
 
             @media (max-width: 768px){
-                                        font: 200 14px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+                                        font-size: 14px/1.2em;
                                        
                                      }
 
             @media (max-width: 491px){
 
-                                        font: 200 12px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+                                        font-size: 12px/1.2em;
                                         
                                      }
 
@@ -217,27 +218,27 @@ a.link_grey:hover {
 
     .description-part{
 
-        font: 200 11px/1.2em "Helvetica","Arial",sans-serif;
+        font: 200 11px/1.2em @font-alt, @font-text,sans-serif;
         color: #bbbbbb;
         
         
             @media (max-width: 1199px){
-                                        font: 200 11px/1.2em "Helvetica","Arial",sans-serif;
+                                        font-size: 11px/1.2em;
                                         
                                       }
 
             @media (max-width: 991px){
-                                        font: 200 11px/1.2em "Helvetica","Arial",sans-serif;
+                                       font-size: 11px/1.2em;
                                                                               
                                      }
 
             @media (max-width: 768px){
-                                        font: 200 11px/1.2em "Helvetica","Arial",sans-serif;
+                                        font-size: 9px/1em;
                                       
                                      }
 
             @media (max-width: 491px){
-                                        font: 200 11px/1.2em "Helvetica","Arial",sans-serif;
+                                        font-size: 11px/1.2em;
                                         display: none;
                                      }
 
@@ -507,7 +508,7 @@ a.link_grey:hover {
 }
 
 .video-heading{
-    font: 200 28px/1.2em "HelveticaNeueW01-ThinEx 710288",sans-serif;
+    font: 200 28px/1.2em @font-header,sans-serif;
     color: @earth-pumpkin-color;
     text-align: left;
     letter-spacing: 1px;
