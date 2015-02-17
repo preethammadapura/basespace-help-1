@@ -10,7 +10,7 @@
   font: 100 5em @font-header, sans-serif;
   color: #BE74AE;
   letter-spacing: 1px;
-  margin-top: 0px;
+  margin-top: 150px;
 }
 
 .newb-content {
@@ -70,6 +70,10 @@
      font: 100 1.2em @font-text;
      padding-top: 12%;
      color: @font-color;
+
+     @media (max-width: 1200px) {
+                              display: none;
+                            }
   }
 
   /* Tabs icons */
@@ -349,6 +353,10 @@
         width: 100%;
         padding-right: 5px;
         margin-top: -5px;
+
+        @media (max-width: 768px) {
+                              margin-top: -15px;
+                            }
       }
 
       .carousel-indicators li{
