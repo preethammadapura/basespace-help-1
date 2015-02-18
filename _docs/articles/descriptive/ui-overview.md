@@ -13,8 +13,8 @@ The BaseSpace User Interface (UI) has a number of common UI elements that are sh
 
 -----------------------
 ##Header elements
-
 The following documentation describes the actions available in the header within BaseSpace.
+
 
 ###Dashboard tab
 {% screenshot /images/articles/dashboard-tab_200x132.png %}  
@@ -93,9 +93,11 @@ The Account drop-down list provides access to:
 - Blog: leads to the blog. Check out for the latest news, developments, and updates
 - Sign out
 
+-----------------------
 ##Contact Us button
 BaseSpace users can access Help, contact support or provide feedback almost instantly in the matter of few clicks. See [Contact Us](/articles/descriptive/help-and-support).
 
+-----------------------
 ##Footer Links
 
 The bottom links provide access to more information:
