@@ -30,11 +30,11 @@ body {
 /* Logos for Navbar */
 
 .header-brand-baseSpace {
-  float: left;
+  display:block;
   padding-left: 30px;
   height: 50px;
   line-height: 20px;
-  padding-top: 15px;
+  margin-top: 15px;
   font: 200 22px/1.2em @font-header,sans-serif;
   color: #666666;
 
@@ -42,21 +42,13 @@ body {
     font-size: 8px;
   }
 
-  @media (max-width: 768px) {
-                              font-size: 16px;
-                              padding-left: 10px;
-                              height: 25px;
-                              line-height: 10px;
-                              padding-top: 10px;
-                            }
-
-  @media (max-width: 491px) {
-                              font-size: 16px;
-                              padding-left: 30px;
-                              height: 20px;
-                              line-height: 10px;
-                              padding-top: 5px;
-                            }
+  @media (max-width: @media-sm-max) {
+    font-size: 16px;
+    padding-left: 10px;
+    height: 25px;
+    line-height: 10px;
+    margin-top: 24px;
+  }
 }
 
 .header-brand-baseSpace:hover {
@@ -96,10 +88,12 @@ body {
   padding-top: 14px;
   padding-right: 20px;
 
-  @media (max-width: 491px) {
-                              padding-top: 8px;
-                              padding-right: 0px;
-                            }
+  @media (max-width: @media-xs-max) {
+    float: none;
+    padding-top: none;
+    margin-bottom: 15px;
+    margin-left: 10px;
+  }
 }
 
 input {
