@@ -6,60 +6,49 @@ hide_welcome_banner: true
 {% include article-breadcrumbs.html %}
 <!--  Breadcrumb bar ends  -->
 
-  <!--  Row begins  -->
+<div class="container">
   <div class="row">
-  
-    <!-- Side Nav Bar -->
-      <nav class="bs-docs-sidebar">
+    <div class="col-md-2 hidden-sm hidden-xs">
+      <div id="sidenav-list" class="affix">
         {% if page.headings and page.headings.size > 0 %}
-          <ul id="sidenav" class="nav nav-stacked col-sm-2" data-spy="affix">
+          <ul class="nav nav-stacked text-right">
           {% for t in page.headings %}
-    			  {% if t.Level == 2 %}
-      			  <li>
-        				<a href="#{{ t.Id }}">{{ t.Text }}</a>
-        				{% if t.children and t.children.size > 0 %}
-          				<ul class="nav nav-stacked">
-          				{% for child in t.children %}
-          					{% if child.Level == 3 %}
-          					<li>
-          						<a href="#{{ child.Id }}">{{ child.Text }}</a>
-          					</li>
-          					{% endif %}
-          				{% endfor %}
-          				</ul>
-        				{% endif %}
-      			  </li>
-    			  {% endif %}
+            {% if t.Level == 2 %}
+              <li>
+                <a href="#{{ t.Id }}">{{ t.Text }}</a>
+                {% if t.children and t.children.size > 0 %}
+                  <ul class="nav nav-stacked">
+                  {% for child in t.children %}
+                    {% if child.Level == 3 %}
+                    <li>
+                      <a href="#{{ child.Id }}">{{ child.Text }}</a>
+                    </li>
+                    {% endif %}
+                  {% endfor %}
+                  </ul>
+                {% endif %}
+              </li>
+            {% endif %}
           {% endfor %}
           </ul>
         {% endif %}
-      </nav>
-    <!-- Side Nav Bar ends -->
-
-    <!--  Main article content with title  -->
-    <div class="col-sm-7 col-sm-offset-2 main-layout">
-      
+      </div>
+    </div><!-- /end side nav column -->
+    <div class="col-md-8">
       <!-- Article Header -->
-      <h1 class="article-title">{{ page.title }}</h1>
+      <h1 class="bsh-article-title">{{ page.title }}</h1>
       <!-- Article Header ends -->
 
       <!-- Article Body -->
-      <div class="article-content">
+      <div class="bsh-article-content">
         {{ content }}
       </div> 
       <!-- Article-body ends -->
-
-    </div>
-    <!--  Main article layout ends  -->
-
-    <!-- Article sidebar -->
-    {% include article-sidebar.html %}
-    <!-- Article sidebar ends -->
-
-    <div class="clearfix"></div>
-
-  </div>
-  <!--  Row ends  -->
-
+    </div><!-- /end main content column -->
+    <div class="col-md-2">
+      {% include article-sidebar.html %}
+    </div><!-- /end related content column -->
+  </div><!-- /end main .row -->
+</div><!-- /end .container -->
 <!--  container ends -->
 {% include edit.html %}

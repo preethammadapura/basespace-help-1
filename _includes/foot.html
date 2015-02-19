@@ -1,32 +1,15 @@
-<!-- Footer
-================================================== -->
-<div class="custom-footer navbar-fixed-bottom">
+<nav class="navbar navbar-default navbar-fixed-bottom bsh-static-xs">
   <div class="container">
-    <ul class="footer-holder">
-     <li class="footer-list"><a target="_blank" class="footer-link" href="https://basespace.illumina.com">BaseSpace</a></li>
-     <li class="footer-list"><a target="_blank" class="footer-link" href="https://basespace.illumina.com/faq">FAQ</a></li>
-     <li class="footer-list"><a target="_blank" class="footer-link" href="https://developer.basespace.illumina.com">Developers</a></li>
-     <li class="footer-list"><a target="_blank" class="footer-link" href="https://basespace.illumina.com/agreements/toc">Terms</a></li>
-     <li class="footer-list"><a target="_blank" class="footer-link" href="http://blog.basespace.illumina.com/">Blog</a></li>
-    </ul>
+    <div class="row">
+          <div class="{% if page.is_homepage %}col-xs-12{% else %}col-xs-8 col-xs-offset-2{% endif %}">
+            <ul class="nav navbar-nav pull-right">
+             <li><a target="_blank" class="footer-link" href="https://basespace.illumina.com">BaseSpace</a></li>
+             <li><a target="_blank" class="footer-link" href="https://basespace.illumina.com/faq">FAQ</a></li>
+             <li><a target="_blank" class="footer-link" href="https://developer.basespace.illumina.com">Developers</a></li>
+             <li><a target="_blank" class="footer-link" href="https://basespace.illumina.com/agreements/toc">Terms</a></li>
+             <li><a target="_blank" class="footer-link" href="http://blog.basespace.illumina.com/">Blog</a></li>
+            </ul>
+          </div>
+      </div>
   </div>
-</div>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-<script src="{{ site.baseurl }}/js/video.js"></script>
-<script src="{{ site.baseurl }}/js/navigation.js"></script>
-<script src="{{ site.baseurl }}/js/newtobasespace.js"></script>
-<script src="{{ site.baseurl }}/js/googlecse.js"></script>
-
-<!-- Google analytics code -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-7994485-30', 'auto');
-  ga('send', 'pageview');
-
-</script>
+</nav>
