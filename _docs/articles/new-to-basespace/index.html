@@ -1,27 +1,69 @@
 ---
-layout: newb
+layout: article
 title: "New to BaseSpace?"
 hide_welcome_banner: true
-section_root: true
+hide_right_sidebar: true
+is_article: false
+hide_article_title: true
 ---
-<!-- Introduction paragraph -->
-<p class="intro-para">Sequencing data has traditionally been stored in non-centralized locations, which offer little uniformity of data management across locations. BaseSpace greatly simplifies access to sequencing data via data centralization and ease-of-use genetic data. Now sequencing labs can easily and securely analyze, archive, and share sequencing data.</p>
 
-<!-- Introduction section -->
-<div class="intro">
+<div class="jumbotron">
+    <h1>New to BaseSpace?</h1>
+    <p>Sequencing data has traditionally been stored in non-centralized locations, which offer little uniformity of data management across locations. BaseSpace greatly simplifies access to sequencing data via data centralization and ease-of-use genetic data. Now sequencing labs can easily and securely analyze, archive, and share sequencing data.</p>
+</div>
 
-	<h3 id="discover-heading">Discover the possibilities</h3>	
+<h2>Discover the possibilities</h2>
 
-	<div id="discover-tabs">
-		
-		<a href="#headings_0">
-			<div class="tabs" id="prep-tab">
-				<div class="tab-content">
-					<span class="icon-lab prep-icon"></span>
-					<p class="tab-title">Prep Libraries</p>
-				</div>
+<div class="row bsh-box-container ">
+	<div class="col-sm-3">
+		<div class="panel panel-default">
+		  <div class="panel-body">
+		    <div class="hidden-xs">Prep Libraries</div>
+		    <div class="media visible-xs-block">
+			  <div class="media-left">
+			    <a href="#">
+			      <img class="media-object" src="..." alt="...">
+			    </a>
+			  </div>
+			  <div class="media-body">
+			    <h4 class="media-heading">Prep Libraries...</h4>
+			    ...
+			  </div>
 			</div>
-		</a>
+		  </div>
+		</div>
+	</div>
+	<div class="col-sm-3">
+		<div class="panel panel-default">
+		  <div class="panel-body">
+		    Run Monitoring
+		  </div>
+		</div>
+	</div>
+	<div class="col-sm-3">
+		<div class="panel panel-default">
+		  <div class="panel-body">
+		    Start Analysis
+		  </div>
+		</div>
+	</div>
+	<div class="col-sm-3">
+		<div class="panel panel-default">
+		  <div class="panel-body">
+		    Data Management
+		  </div>
+		</div>
+	</div>
+</div>
+
+<a href="#headings_0">
+	<div class="tabs" id="prep-tab">
+		<div class="tab-content">
+			<span class="icon-lab prep-icon"></span>
+			<p class="tab-title">Prep Libraries</p>
+		</div>
+	</div>
+</a>
 
 		<a href="#headings_5">
 			<div class="tabs" id="run-tab">
@@ -57,9 +99,70 @@ section_root: true
 </div> <!-- Introduction section ends -->
 
 <!-- Prep tab section -->
-<div class="big-section">
+<div class="bsh-big-section">
 
-	<h2 class="section-title">Planning a sequencing run with Prep tab</h2>
+	<h2>Planning a sequencing run with Prep tab</h2>
+
+	<div class="panel panel-default">
+		<div class="panel-body">
+			<div class="row">
+				<div class="col-sm-6">
+					<h3>(1) Create Samples</h3>
+					<p>Create biological samples to be sequenced directly in BaseSpace.</p>
+
+					<div class="card-left-bottom">
+						<p class="card-further-title">Further Readings</p>
+						<ul class="card-links">
+							<li> <a href="/articles/descriptive/biological-samples/">Biological Samples Overview > </a> </li>
+							<li> <a href="/articles/tutorials/create-new-biological-samples/">Create new biological samples > </a> </li>
+							<li> <a href="/articles/tutorials/use-existing-biological-samples/">Use Existing Biological samples > </a> </li>
+						</ul>
+					</div>
+
+				</div>
+				<div class="col-sm-6">
+					<div id="carousel-samples" class="carousel slide bsh-carousel">
+				      	<!-- Carousel slides -->
+						<div class="carousel-inner">
+							<div class="item active">
+								<div class="card-image">
+									<img src="/images/new-to-basespace/create-samples-1.png"/>
+								</div>
+							  	<div>
+							      <p>On the Prep Tab click the "Biological Samples" box.</p>
+							  	</div>
+							</div>
+							<div class="item">
+							  	<div class="card-image">
+							    	<img src="/images/new-to-basespace/create-samples-2.png"/>
+							  	</div>
+							  	<div>
+							      	<p>Either create your own samples or import them</p>
+							  	</div>
+							</div>
+							<div class="item">
+							  	<div class="card-image">
+							    	<img src="/images/new-to-basespace/create-samples-3.png"/>
+							  	</div>
+							  	<div>
+							    	<p>Fill the form to create a sample and click on the prep libraries tab</p>
+							  	</div>
+							</div>
+						</div>
+
+						<!-- Indicators -->
+						<div class="carousel-bottom">
+							<ol class="carousel-indicators" align="right">
+						  		<li data-target="#carousel-samples" data-slide-to="0" class="active"></li>
+						  		<li data-target="#carousel-samples" data-slide-to="1"></li>
+					  			<li data-target="#carousel-samples" data-slide-to="2"></li>
+							</ol>
+						</div>
+			    	</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	
 	<div class="card-step">
 	
@@ -83,53 +186,6 @@ section_root: true
 			</div>
 		</div>
 		
-		<div class="card-right">
-			
-			<!-- Carousel begins -->
-			<div id="carousel-samples" class="carousel slide">
-
-		      <!-- Carousel slides -->
-		      <div class="carousel-inner">
-		        
-		        <div class="item active">
-		          <div class="card-image">
-		            <img src="/images/new-to-basespace/create-samples-1.png"/>
-		          </div>
-		          <div class="carousel-caption">
-		              <p>On the Prep Tab click the "Biological Samples" box.</p>
-		          </div>
-		        </div>
-		        <div class="item">
-		          <div class="card-image">
-		            <img src="/images/new-to-basespace/create-samples-2.png"/>
-		          </div>
-		          <div class="carousel-caption">
-		              <p>Either create your own samples or import them</p>
-		          </div>
-		        </div>
-		        <div class="item">
-		          <div class="card-image">
-		            <img src="/images/new-to-basespace/create-samples-3.png"/>
-		          </div>
-		          <div class="carousel-caption">
-		              <p>Fill the form to create a sample and click on the prep libraries tab</p>
-		          </div>
-		        </div>
-
-		      </div>
-
-		      <!-- Indicators -->
-		      <div class="carousel-bottom">
-		        <ol class="carousel-indicators" align="right">
-		          <li data-target="#carousel-samples" data-slide-to="0" class="active"></li>
-		          <li data-target="#carousel-samples" data-slide-to="1"></li>
-		          <li data-target="#carousel-samples" data-slide-to="2"></li>
-		        </ol>
-		      </div>
-
-		    </div>
-			
-		</div>		
 	
 	  </div>
 	
@@ -343,7 +399,7 @@ section_root: true
 </div><!-- Prep tab section ends -->
 
 <!-- Runs Monitoring section -->
-<div class="big-section">
+<div class="bsh-big-section">
 
 	<h2 class="section-title">Monitor your sequencing runs</h2>
 	
@@ -511,7 +567,7 @@ section_root: true
 </div> <!-- Runs Monitoring section ends -->
 
 <!-- Data analysis section -->
-<div class="big-section">
+<div class="bsh-big-section">
 
 	<h2 class="section-title">Analyze your data</h2>
 
@@ -812,7 +868,7 @@ section_root: true
 </div><!-- Data analysis section ends -->
 
 <!-- Manage data section -->
-<div class="big-section">
+<div class="bsh-big-section">
 
 	<h2 class="section-title">Manage your data</h2>
 	
@@ -1027,7 +1083,7 @@ section_root: true
 </div> <!-- Manage data section ends -->
 
 <!-- Links summary section -->
-<div class="big-section">
+<div class="bsh-big-section">
 	
 	<h2 class="section-title">Learn about the features in depth</h2>
 

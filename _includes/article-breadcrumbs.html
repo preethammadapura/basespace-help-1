@@ -3,7 +3,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-2 text-right hidden-sm hidden-xs">
-		  		{% if (page.section_root == null || page.section_root == false) or page.layout == 'newb' %}
+		  		{% if (page.section_root == null || page.section_root == false) %}
 	      		<a href="#" id="sidenav-toggle">
 	      			<span class="icon-menu menu-icon" aria-hidden="true"></span>
 	  			</a>
@@ -12,7 +12,7 @@
 			<div class="col-md-10">
 				<ol class="breadcrumb bsh-breadcrumb">
 		        	<li>
-		        	{% if page.section_root == null || page.section_root == false %}
+		        	{% if (page.is_article == true) %}
 						<a href="{{ site.baseurl }}/articles/">Articles</a>
 					{% else %}
 						<a href="{{ site.baseurl }}/">Help Center</a>

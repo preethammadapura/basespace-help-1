@@ -1,6 +1,7 @@
 ---
 layout: default
 hide_welcome_banner: true
+is_article: true
 ---
 <!--  Breadcrumb bar  -->
 {% include article-breadcrumbs.html %}
@@ -9,7 +10,7 @@ hide_welcome_banner: true
 <div class="container">
   <div class="row">
     <div class="col-md-2 hidden-sm hidden-xs">
-      <div id="sidenav-list" class="affix">
+      <div id="sidenav-list" class="affix" style="display:none;">
         {% if page.headings and page.headings.size > 0 %}
           <ul class="nav nav-stacked text-right">
           {% for t in page.headings %}
@@ -34,9 +35,11 @@ hide_welcome_banner: true
         {% endif %}
       </div>
     </div><!-- /end side nav column -->
-    <div class="col-md-8">
+    <div class="{% if page.hide_right_sidebar %}col-md-10{% else %}col-md-8{% endif %}">
       <!-- Article Header -->
-      <h1 class="bsh-article-title">{{ page.title }}</h1>
+      {% if (page.hide_article_title == null || page.hide_article_title == false) %}
+        <h1 class="bsh-article-title">{{ page.title }}</h1>
+      {% endif %}
       <!-- Article Header ends -->
 
       <!-- Article Body -->
@@ -45,9 +48,11 @@ hide_welcome_banner: true
       </div> 
       <!-- Article-body ends -->
     </div><!-- /end main content column -->
+    {% if page.hide_right_sidebar == null %}
     <div class="col-md-2">
       {% include article-sidebar.html %}
     </div><!-- /end related content column -->
+    {% endif %}
   </div><!-- /end main .row -->
 </div><!-- /end .container -->
 <!--  container ends -->
