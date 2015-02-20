@@ -14,10 +14,20 @@
   height: 65px;
   font-size: 1.5em;
   line-height: 32px;
+
+  @media all and (max-width: @media-xs-max) {
+    font-size: 1.2em;
+  }
 }
 
 .bsh-header .navbar-form, .bsh-header .navbar-toggle {
   margin-top: 15px;
+  border: none;
+}
+
+.bsh-footer {
+  background: white;
+  border-top: 1px solid #ccc;
 }
 
 h1, h2, h3, h4, h5, .navbar-brand {

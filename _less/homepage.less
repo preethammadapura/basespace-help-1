@@ -183,6 +183,9 @@ a.bsh-well {
   margin-top: 60px;
   padding-top: 65px;
   padding-bottom: 65px;
+  box-shadow: rgba(0,0,0,.24) 0 0 10px 0 inset;
+  border-bottom: 1px solid #ccc;
+
 
   .home-title {
     margin-bottom: 30px;
@@ -202,7 +205,16 @@ a.bsh-well {
 }
 
 .bsh-additional-section {
+  display: block;
   color: #666;
+
+  @media all and (max-height: @media-sm-max) {
+    margin-bottom: 30px;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
 
   .media-body {
     padding-left: 10px;
