@@ -1,100 +1,8 @@
-body {
-	position: relative;
-
-	&.bsh-with-breadcrumbs {
-		@media all and (min-width: @media-sm-min) {
-			padding-top: 101px;
-		}
-	}
-
-	@media all and (min-width: @media-sm-min) {
-		padding-bottom: 51px;
-		padding-top: 65px;
-	}
-}
-
-.bsh-well {
-	display: block;
-}
-
-.bsh-header {
-	background: white;
- 	min-height: 65px;
- 	margin-bottom: 0;
-}
-
-.bsh-header .navbar-brand {
-	height: 65px;
-	font-size: 1.5em;
-	line-height: 32px;
-}
-
-.bsh-header .navbar-form, .bsh-header .navbar-toggle {
-	margin-top: 15px;
-}
 
 .bsh-header .navbar-nav > li > a {
-	line-height: 32px;
+    line-height: 32px;
 }
 
-.bsh-static-xs {
-	@media all and (max-width: @media-xs-max) {
-		position: static !important;
-	}
-}
-
-.bsh-banner {
-	background-image: url(/images/illumina-purple-banner.jpg);
-	color: #fff;
-}
-
-.bsh-videos-container {
-	background: #f6f6f6;
-}
-
-.bsh-additional-container {
-	background: #ececec;
-}
-
-h1, h2, h3, h4, h5, .navbar-brand {
-	font-family: "HelveticaNeueW01-ThinEx 710288";
-}
-
-#sidenav-list.affix {
-	top: 101px;
-	width: 159px;
-
-	@media all and (max-width: @media-md-max) {
-		width: 125px;
-	}
-}
-
-#sidenav-list .nav > li > a {
-	border-right: 4px solid transparent;
-	font-size: 13px;
-}
-
-#sidenav-list .nav > li > ul {
-	max-height: 0;
-	transition: 0.25s ease all;
-	opacity: 0;
-	overflow: hidden;
-}
-
-#sidenav-list .nav > li > ul > li > a {
-	padding: 3px 8px;
-	border-right-width: 2px;
-}
-
-#sidenav-list .nav > li.active > ul {
-	max-height: 1200px;
-	transition: 0.25s ease all;
-	opacity: 1;
-}
-
-#sidenav-list .nav > li.active > a {
-	border-right-color: @vivid-blue-color;
-}
 
 .bsh-breadcrumb-bg {
 	background: #ededed;
@@ -146,6 +54,42 @@ h1, h2, h3, h4, h5, .navbar-brand {
 	    text-transform: uppercase;
 	}
 
+}
+
+#sidenav-list.affix {
+	top: 101px;
+	width: 159px;
+
+	@media all and (max-width: @media-md-max) {
+		width: 125px;
+	}
+}
+
+#sidenav-list .nav > li > a {
+	border-right: 4px solid transparent;
+	font-size: 13px;
+}
+
+#sidenav-list .nav > li > ul {
+	max-height: 0;
+	transition: 0.25s ease all;
+	opacity: 0;
+	overflow: hidden;
+}
+
+#sidenav-list .nav > li > ul > li > a {
+	padding: 3px 8px;
+	border-right-width: 2px;
+}
+
+#sidenav-list .nav > li.active > ul {
+	max-height: 1200px;
+	transition: 0.25s ease all;
+	opacity: 1;
+}
+
+#sidenav-list .nav > li.active > a {
+	border-right-color: @vivid-blue-color;
 }
 
 // end article styles
