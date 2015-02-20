@@ -1,0 +1,270 @@
+
+// @@@@@@@@@@@ Dumping @@@@@@@@@@@
+// @@@@@@@@@@@ Ground  @@@@@@@@@@@
+// @@@@@@@@@@@ CSS     @@@@@@@@@@@
+
+
+// Article.less
+
+.article-title {
+  margin-bottom: 25px;
+  font: 200 28px/1.2em @font-header, sans-serif;
+  color: @article-color;
+  letter-spacing: 1px;
+
+  @media (max-width: 491px) {
+    margin-top: 50px;
+  }
+}
+
+.article-content {
+    margin: 20px 40px 40px 0px;
+    font-family: @font-text;
+    color: @font-color;
+    line-height: @line-gap;
+}
+
+.article-content > p {
+    font-size: 14px;
+}
+
+.article-content > h2 {
+    text-transform: uppercase;
+}
+
+/*.article-content > h3 {
+    padding-top: 20px;
+}
+
+.article-content > h4 {
+    padding-top: 30px;
+}*/
+
+.article-sidebar {
+    margin-left: 30px; 
+    margin-top: 45px;
+    float: left; 
+}
+
+.main-layout {
+    margin-top: 30px;
+    padding-left: 40px;
+}
+
+hr {
+    border-color: #999;
+    background-color: #999;
+}
+
+/* SIDE NAV STYLES BEGIN */
+
+/* Side
+.bs-docs-sidebar {
+    padding-right: 30px;
+    
+    @media all and (max-width: @media-xs-max) {
+        display: none;
+    }
+}
+
+#sidenav {
+    border-right: 1px solid #e5e5e5;
+    display: none;
+    margin-top: 50px;
+    float: left;
+    padding-right: 0px;
+}
+
+/* all links */
+.nav>li>a {
+    color: #999;
+    border-right: 2px solid transparent;
+    position: relative;
+    right: -1px;
+    padding: 4px 20px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 250%;
+    text-align: right;
+}
+
+/* nested links */
+.nav .nav>li>a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    font-size: 12px;
+    line-height: 150%;
+}
+
+/* active & hover links */
+.nav>.active>a, 
+.nav>li>a:hover, 
+.nav>li>a:focus {
+    color: #328ED1;                 
+    text-decoration: none;          
+    background-color: transparent;  
+    border-right-color: #328ED1; 
+}
+
+/* all active links */
+.nav>.active>a, 
+.nav>.active:hover>a,
+.nav>.active:focus>a {
+    font-weight: 700;
+}
+
+/* nested active links */
+.nav .nav>.active>a, 
+.nav .nav>.active:hover>a,
+.nav .nav>.active:focus>a {
+    font-weight: 500;
+}
+
+/* hide inactive nested list */
+.nav ul.nav {
+    display: none;           
+}
+
+/* show active nested list */
+.nav>.active>ul.nav {
+    display: block;           
+}
+
+@media screen and (max-width: 500px){
+    #sidenav {
+        display:none
+    }
+}
+
+
+// Breadcrumb.less
+
+.bs-nav-titlebar {
+background: #ededed;
+position: fixed;
+top: 65px;
+clear: both;
+height: 36px;
+left: 0;
+line-height: 36px;
+padding-right: 20px;
+width: 100%;
+z-index: 20;
+border-bottom: 1px solid #bbbbbb;
+
+  @media (max-width: @media-xs-max) {
+    position: static;
+  }
+}
+
+.bs-nav-titlebar-group {
+transition: .25s ease all;
+position: relative;
+}
+
+.bs-nav-back {
+position: relative;
+margin: 0 11px 0 0;
+padding: 0 18px 0 18px;
+color: #3fa9f5;
+background-color: transparent;
+border: 0;
+border-radius: 0;
+font-weight: 400;
+font-size: 14px;
+-webkit-transition: .2s all linear;
+transition: .2s all linear;
+}
+
+
+
+.bs-nav-back:after {
+position: absolute;
+display: inline-block;
+padding-left: 10px;
+top: -3px;
+content: ":";
+font-size: 24px;
+font-weight: bold;
+color: #4a4a4a;
+}
+
+.bs-nav-title {
+position: absolute;
+display: inline-block;
+padding-left: 7px;
+margin: 0;
+font-size: 14px;
+font-weight: normal;
+color: #666;
+line-height: 25px;
+top: -2px;
+vertical-align: middle;
+  
+  @media (max-width: 491px) {
+    display: none;
+  }
+}
+
+.bs-nav-title, .bs-nav-back {
+position: relative;
+}
+
+.illumicons {
+font-family: "Illumicons-Regular";
+font-weight: 500;
+-webkit-font-smoothing: subpixel-antialiased;
+}
+
+.illumicons.caret-left:before {
+content: "";
+}
+
+
+.btn {
+display: inline-block;
+padding: 6px 12px;
+margin-bottom: 0;
+font-size: 14px;
+font-weight: normal;
+line-height: 1.428571429;
+text-align: center;
+vertical-align: middle;
+cursor: pointer;
+border: 1px solid transparent;
+border-radius: 4px;
+white-space: nowrap;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+
+.bs-nav-back-text {
+  padding-left: 3px;
+}
+
+
+
+.title-left {
+  margin-right: -18px;
+  margin-left: 18px;
+  padding-right: 0px;
+
+  @media all and (max-width: @media-xs-max) {
+    display: none;
+  }
+}
+
+
+
+
+.button:hover {
+   background-color: rgba(228,228,228,1);
+   border: solid 1px rgba(204,204,204,1);
+   color: rgba(0,0,0,1);
+}
+.button:active {
+}

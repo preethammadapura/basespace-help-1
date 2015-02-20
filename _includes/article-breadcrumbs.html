@@ -2,11 +2,17 @@
 <div class="bsh-breadcrumb-bg">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-2 text-right hidden-sm hidden-xs">
+			<div class="col-md-2 text-right hidden-sm hidden-xs bsh-breadcrumb-left">
 		  		{% if (page.section_root == null || page.section_root == false) %}
-	      		<a href="#" id="sidenav-toggle">
-	      			<span class="icon-menu menu-icon" aria-hidden="true"></span>
-	  			</a>
+	      			<!-- vertical line -->
+			        <div class="vertical-line"></div>
+
+			        <!-- burger icon -->
+		        	<a id="sidenav-toggle">
+		        		<div class="menu-box">
+			        	   	<span class="icon-menu menu-icon" aria-hidden="true"></span>
+		       			</div>
+		       		</a>
 	      		{% endif %}
      		</div>
 			<div class="col-md-10">

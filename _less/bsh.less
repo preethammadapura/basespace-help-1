@@ -1,9 +1,4 @@
 
-.bsh-header .navbar-nav > li > a {
-    line-height: 32px;
-}
-
-
 .bsh-breadcrumb-bg {
 	background: #ededed;
 	padding: 8px 15px;
@@ -25,75 +20,6 @@
 	padding: 0;
 	margin: 0;
 }
-
-// begin article styles
-
-
-.bsh-article-title {
-  margin-bottom: 25px;
-  font: 200 28px/1.2em @font-header, sans-serif;
-  color: @article-color;
-  letter-spacing: 1px;
-
-  @media (max-width: 491px) {
-    margin-top: 50px;
-  }
-}
-
-.bsh-article-content {
-    margin: 20px 40px 40px 0px;
-    font-family: @font-text;
-    color: @font-color;
-    line-height: @line-gap;
-
-    > p {
-	    font-size: 14px;
-	}
-
-	> h2 {
-	    text-transform: uppercase;
-	}
-
-}
-
-#sidenav-list.affix {
-	top: 101px;
-	width: 159px;
-
-	@media all and (max-width: @media-md-max) {
-		width: 125px;
-	}
-}
-
-#sidenav-list .nav > li > a {
-	border-right: 4px solid transparent;
-	font-size: 13px;
-}
-
-#sidenav-list .nav > li > ul {
-	max-height: 0;
-	transition: 0.25s ease all;
-	opacity: 0;
-	overflow: hidden;
-}
-
-#sidenav-list .nav > li > ul > li > a {
-	padding: 3px 8px;
-	border-right-width: 2px;
-}
-
-#sidenav-list .nav > li.active > ul {
-	max-height: 1200px;
-	transition: 0.25s ease all;
-	opacity: 1;
-}
-
-#sidenav-list .nav > li.active > a {
-	border-right-color: @vivid-blue-color;
-}
-
-// end article styles
-
 
 // new to basespace styles
 
@@ -167,3 +93,5 @@
 	width: 1.2em;
 	height: 1.2em;
 }
+
+// end of new to basespace

@@ -1,142 +1,43 @@
 
+// Menu box
 
-
-.bs-nav-titlebar {
-background: #ededed;
-position: fixed;
-top: 65px;
-clear: both;
-height: 36px;
-left: 0;
-line-height: 36px;
-padding-right: 20px;
-width: 100%;
-z-index: 20;
-border-bottom: 1px solid #bbbbbb;
-
-	@media (max-width: @media-xs-max) {
-		position: static;
-	}
-}
-
-.bs-nav-titlebar-group {
-transition: .25s ease all;
-position: relative;
-}
-
-.bs-nav-back {
-position: relative;
-margin: 0 11px 0 0;
-padding: 0 18px 0 18px;
-color: #3fa9f5;
-background-color: transparent;
-border: 0;
-border-radius: 0;
-font-weight: 400;
-font-size: 14px;
--webkit-transition: .2s all linear;
-transition: .2s all linear;
-}
-
-
-
-.bs-nav-back:after {
-position: absolute;
-display: inline-block;
-padding-left: 10px;
-top: -3px;
-content: ":";
-font-size: 24px;
-font-weight: bold;
-color: #4a4a4a;
-}
-
-.bs-nav-title {
-position: absolute;
-display: inline-block;
-padding-left: 7px;
-margin: 0;
-font-size: 14px;
-font-weight: normal;
-color: #666;
-line-height: 25px;
-top: -2px;
-vertical-align: middle;
-	
-	@media (max-width: 491px) {
-		display: none;
-	}
-}
-
-.bs-nav-title, .bs-nav-back {
-position: relative;
-}
-
-.illumicons {
-font-family: "Illumicons-Regular";
-font-weight: 500;
--webkit-font-smoothing: subpixel-antialiased;
-}
-
-.illumicons.caret-left:before {
-content: "";
-}
-
-
-.btn {
-display: inline-block;
-padding: 6px 12px;
-margin-bottom: 0;
-font-size: 14px;
-font-weight: normal;
-line-height: 1.428571429;
-text-align: center;
-vertical-align: middle;
-cursor: pointer;
-border: 1px solid transparent;
-border-radius: 4px;
-white-space: nowrap;
--webkit-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
--o-user-select: none;
-user-select: none;
-}
-
-.bs-nav-back-text {
-  padding-left: 3px;
-}
-
-
-
-.title-left {
-	margin-right: -18px;
-	margin-left: 18px;
-	padding-right: 0px;
-
-	@media all and (max-width: @media-xs-max) {
-		display: none;
-	}
+.bsh-breadcrumb-left {
+  padding-right: 8px;  
 }
 
 .menu-box {
-	float: right;
-	background-color: #ededed;;
-   	border-radius: 3px;
-  	width: 25px;
-   	height: 25px;
-   	color: #adadad;
-	font-size: 1em;
-	position: relative;
-	text-align: center;
-	margin-top: 5px;
-	margin-left: 10px;
-	cursor: pointer; 
-	cursor: hand;
+  float: right;
+  background-color: #ededed;;
+  border-radius: 3px;
+  width: 25px;
+  height: 25px;
+  color: #adadad;
+  font-size: 12px;
+  position: relative;
+  cursor: pointer; 
+  cursor: hand;
+
+  &:hover {
+    background-color: #e4e4e4;
+  }
 }
 
-.menu-box:hover {
-   background-color: #e4e4e4;
+.menu-icon {
+  top: 6px;
+  left: 7px;
+  position: absolute;
+  text-decoration: none;
+  z-index: 10;
+
+  &:hover {
+    background-color: #e4e4e4;
+  }
+}
+
+.vertical-line {
+  border-right: 1px solid #d7d7d7;
+  height: 22px;
+  float: right;
 }
 
 .menu-box-selected {
@@ -146,35 +47,11 @@ user-select: none;
    cursor: hand;
 }
 
-.menu-icon {
-	top: 5px;
-	left: 5px;
-	position: absolute;
-	text-decoration: none;
-	z-index: 10;
-}
-
-.menu-icon:hover {
-   background-color: #e4e4e4;
-}
-
-.vertical-line {
-	border-right: 1px solid #d7d7d7;
-	height: 22px;
-	float: right;
-	width: 1px;
-	margin-top: 6px;
-	margin-left: 2px;
+.menu-icon-selected {
+  top: 5px;
+  left: 6px;
 }
 
 .vertical-line-toggle {
-	visibility: hidden;
-}
-
-.button:hover {
-   background-color: rgba(228,228,228,1);
-   border: solid 1px rgba(204,204,204,1);
-   color: rgba(0,0,0,1);
-}
-.button:active {
+  visibility: hidden;
 }
