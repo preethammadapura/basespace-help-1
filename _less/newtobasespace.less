@@ -36,52 +36,89 @@
   padding: 0;
 }
 
+@panel-icon-font-size: 4em;
+
 .bsh-box-container {
 
   .panel { 
-    width: 100%;
-    padding-bottom: 100%;
+    display: block;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    border: 1px solid #dbdbdb;
+    margin: 0 auto 15px auto;
+    width: 165px;
+    height: 165px;
     position: relative;
-
-    &:last-of-type {
-      margin-right: 0;
-    }
+    text-decoration: none;
 
     .panel-body {
-      position: absolute;
-      top: 0; bottom: 0; left: 0; right: 0;
+      padding-top: 26px;
     }
 
-    /* Tabs icons */
-
-    .prep-icon {
-       font-size: 4.5em;         
-       color: #BE74AE;
+    h5 {
+      margin-top: 28px;
+      color: @font-color;
     }
 
-    .run-icon {
-       font-size: 4.5em;         
-       color: #FFB441;
+    .icon { font-size: 4em; }
+
+    &.purple {
+      transition: .15s ease all;
+      background-color: white;
+
+      .icon {
+        color: #BE74AE;
+      }
+
+      &:hover {
+        transition: .15s ease all;
+        background-color: #BE74AE;
+        .icon, h5 { color: white; }
+      }
     }
 
-    .analysis-icon {
-       font-size: 4.5em;         
-       color: #7CA8D4;
+    &.pumpkin {
+      transition: .15s ease all;
+      background-color: white;
+
+      .icon {
+        color: #FFB441;
+      }
+
+      &:hover {
+        transition: .15s ease all;
+        background-color: #FFB441;
+        .icon, h5 { color: white; }
+      }
     }
 
-    .data-icon {
-       font-size: 4.5em;         
-       color: #BAC147;
+    &.blue {
+      transition: .15s ease all;
+      background-color: white;
+
+      .icon {
+        color: #7CA8D4;
+      }
+
+      &:hover {
+        transition: .15s ease all;
+        background-color: #7CA8D4;
+        .icon, h5 { color: white; }
+      }
     }
 
-    .public-icon {
-       font-size: 4.5em;         
-       color: #FFB441;
-    }
+    &.green {
+      transition: .15s ease all;
+      background-color: white;
 
-    .apps-icon {
-       font-size: 4.5em;         
-       color: #BE74AE;
+      .icon {
+        color: #BAC147;
+      }
+
+      &:hover {
+        transition: .15s ease all;
+        background-color: #BAC147;
+        .icon, h5 { color: white; }
+      }
     }
   }
 }
