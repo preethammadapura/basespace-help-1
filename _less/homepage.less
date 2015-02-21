@@ -51,7 +51,7 @@ body {
 
    &%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
 
-a.bsh-well-gray {
+a.bsh-thumbnail {
   display: block;  
   background: #ffffff; /* Old browsers */
   background: -moz-linear-gradient(top,  #ffffff 0%, #efefef 100%); /* FF3.6+ */
@@ -62,6 +62,17 @@ a.bsh-well-gray {
   background: linear-gradient(to bottom,  #ffffff 0%,#efefef 100%); /* W3C */
   box-shadow: rgba(0,0,0,0.15) 0 0 3px;
   border-radius: 3px;
+
+  &:hover {
+    border-color: @link-color;
+    transition: .15 ease all;
+    text-decoration: none;
+
+    > .caption {
+      color: @link-color;
+      transition: .15s ease all;
+    }
+  }
 }
 
 a.bsh-well {
