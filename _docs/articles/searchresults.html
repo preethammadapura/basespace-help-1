@@ -3,35 +3,19 @@ layout: default
 title: "Search Results"
 section_root: true
 hide_welcome_banner: true
-hide_right_sidebar: true
 is_article: false
 ---
 {% include article-breadcrumbs.html %}
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <h1 class="bsh-article-title">Search Results</h1>
+      <hr/>
 
-<div class="landing-page">
+      <gcse:searchresults-only></gcse:searchresults-only> 
 
-    <div class="row">
-        <!-- intro banner -->
-        <div class="col-xs-8 col-xs-offset-2">
-          <div id="landingpage-main">
-            <h1 class="landingpage-title">Search Results</h1>
-           
-            <div class="landingpage-line"></div>
-          </div>
-             
-        </div>
-        <!-- intro banner ends-->
     </div>
-      
-
-    <!-- main Section -->
-    <div class="row">  
-        <div class="col-xs-8 col-xs-offset-2" id="column-main">    
-            <gcse:searchresults-only></gcse:searchresults-only>    
-        </div>    
-    </div>
-    <!-- main section row ends -->
-  
+  </div>
 </div>
 
 <script type="text/javascript">
