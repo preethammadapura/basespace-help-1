@@ -62,4 +62,6 @@ is_article: true
 </div><!-- /end .container -->
 
 <!--  container ends -->
-{% include edit.html %}
+{% if (page.hide_github_edit == null || page.hide_github_edit == false) %}
+  {% include edit.html %}
+{% endif %}
