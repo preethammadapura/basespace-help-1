@@ -3,7 +3,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-2 text-right hidden-sm hidden-xs bsh-breadcrumb-left">
-		  		{% if (page.section_root == null || page.section_root == false) %}
+		  		{% if page.headings != null and page.headings.size > 0 %}
 	      			<!-- vertical line -->
 			        <div class="vertical-line"></div>
 

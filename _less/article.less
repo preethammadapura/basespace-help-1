@@ -5,6 +5,8 @@
 // @@@@@@@@@@@ CSS      @@@@@@@@@@@
 
 
+@anchor-heading-offset: 125px;
+
 .bsh-header .navbar-nav > li > a {
     line-height: 32px;
 }
@@ -25,6 +27,12 @@
     font-family: @font-text;
     color: @font-color;
     line-height: @line-gap;
+
+    // hack for anchor-based page navigation with fixed topnav
+    > h2, > h3 {
+        margin-top: -@anchor-heading-offset;
+        padding-top: @anchor-heading-offset;
+    }
 
     > p {
         font-size: 14px;

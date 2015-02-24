@@ -32,9 +32,12 @@ background-color: @bg-color;
 }
 
 .bs-callout-box {
-    width: 100%;
-    float: right;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
 }
+
+
 
 /* ******************************************** */
 
@@ -44,9 +47,11 @@ background-color: @bg-color;
 
 .icon_display(@iconcolor){
     color: @iconcolor;
-    font-size: 30px;                //main icon
-    position: relative;
+    font-size: 21px;
+    position: absolute;
     top: 100;
+    top: 18px;
+    left: 17px;
 }
 
 
@@ -80,8 +85,9 @@ background-color: @bg-color;
 /* TITLE FOR CALL OUT BOX */
 
 .bs-callout-title(@colorheading) {
-    font:16px/1.2em @font-text, sans-serif;
-    padding: 6px 15px 0px 0px;
+    padding-left: 30px;
+    font-weight: bold;
+    font-size: 18px;
     color: @colorheading;
     font-weight: bold;
 }
@@ -104,9 +110,6 @@ background-color: @bg-color;
 /* CONTENT FOR CALLOUT */
 
 .bs-callout-content {
-    font-size: 1.25em;
-    font-family: @font-text;
-    color: @font-color;
-    line-height: @line-gap;
+    margin-top: 10px;
 }
 
