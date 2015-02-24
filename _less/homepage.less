@@ -6,7 +6,10 @@
 
 body {
   position: relative;
-
+  min-width: 320px;
+  width: auto !important;
+  width: 320px;
+  
   &.bsh-with-breadcrumbs {
     @media all and (min-width: @media-sm-min) {
       padding-top: 101px;
@@ -25,6 +28,19 @@ body {
     position: static !important;
   }
 }
+
+a {
+  color: @link-color;
+
+  &:hover {
+    color: @link-color;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 700;
+}
+
 
 
 /* %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%
