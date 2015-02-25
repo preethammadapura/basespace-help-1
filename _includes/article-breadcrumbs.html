@@ -2,8 +2,9 @@
 <div class="bsh-breadcrumb-bg">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-2 text-right hidden-sm hidden-xs bsh-breadcrumb-left">
-		  		{% if page.headings != null and page.headings.size > 0 %}
+			{% if page.headings != null and page.headings.size > 0 %}
+			<div class="text-left hidden-sm hidden-xs col-md-2 col-lg-2 bsh-breadcrumb-left">
+		  		
 	      			<!-- vertical line -->
 			        <div class="vertical-line"></div>
 
@@ -13,9 +14,10 @@
 			        	   	<span class="icon-menu menu-icon" aria-hidden="true"></span>
 		       			</div>
 		       		</a>
-	      		{% endif %}
-     		</div>
-			<div class="col-md-10">
+	      	</div>
+	      	{% endif %}
+			
+			<div class="col-md-10 col-lg-10">
 				<ol class="breadcrumb bsh-breadcrumb">
 		        	<li>
 		        	{% if (page.is_article == true) %}
