@@ -23,7 +23,7 @@
 }
 
 .bsh-article-content {
-    margin: 20px 40px 40px 0px;
+    margin: 20px 0px 40px 0px;
     font-family: @font-text;
     color: @font-color;
     line-height: @line-gap;
@@ -37,14 +37,13 @@
     > p {
         font-size: 14px;
     }
-
-    > h2 {
-        text-transform: uppercase;
-    }
-
 }
 
 /* Sidenav styles begin */
+
+#sidenav-column {
+    display: none;
+}
 
 #sidenav-list.affix {
     top: 114px;
@@ -59,6 +58,7 @@
 #sidenav-list .nav > li > a {
     font-size: 13px;
     color: #999;
+    padding: 10px 15px 10px 0;
 
     &:hover {
         color: @sidenav-blue;
@@ -106,7 +106,11 @@
 /* Sidebar styles */
 
 .bsh-article-sidebar {
-    margin-top: 5px;
+    padding-top: 25px;
+
+    > hr {
+        margin-bottom: 35px;
+    }
 
     > h4 {
         margin-top: 30px;

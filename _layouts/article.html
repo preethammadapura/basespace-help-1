@@ -9,7 +9,8 @@ is_article: true
 
 <div class="container">
   <div class="row">
-    <div class="col-lg-2 col-md-2 hidden-sm hidden-xs">
+
+    <div class="col-lg-2 col-md-2 hidden-sm hidden-xs" id="sidenav-column">
       <div id="sidenav-list" class="affix" style="display:none;">
         {% if page.headings and page.headings.size > 0 %}
           <ul class="nav nav-stacked text-right">
@@ -36,7 +37,7 @@ is_article: true
       </div>
     </div><!-- /end side nav column -->
     
-    <div class="{% if page.hide_right_sidebar %}col-lg-10 col-md-10{% else %}col-lg-8 col-md-8{% endif %}">
+    <div class="col-lg-12 col-md-12" id="content-column">
       <!-- Article Header -->
       {% if (page.hide_article_title == null || page.hide_article_title == false) %}
         <h1 class="bsh-article-title">{{ page.title }}</h1>
@@ -48,14 +49,16 @@ is_article: true
         {{ content }}
       </div> 
       <!-- Article-body ends -->
-    
-    </div><!-- /end main content column -->
-    
-    {% if page.hide_right_sidebar == null %}
-      <div class="col-lg-2 col-md-2 bsh-article-sidebar">
+
+      <!-- related row -->
+      {% if page.hide_right_sidebar == null %}
+      <div class="bsh-article-sidebar">
         {% include article-sidebar.html %}
-      </div><!-- /end related content column -->
-    {% endif %}
+      </div><!-- /end related content row -->
+      {% endif %}
+      <!-- /end related row -->
+
+    </div><!-- /end main content column -->
   
   </div><!-- /end main .row -->
 
