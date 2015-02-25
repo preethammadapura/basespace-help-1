@@ -50,13 +50,10 @@ is_article: true
       </div> 
       <!-- Article-body ends -->
 
-      <!-- related row -->
-      {% if page.hide_right_sidebar == null %}
-      <div class="bsh-article-sidebar">
+      <!--  bottom container -->
+      {% if (page.hide_github_edit == null || page.hide_github_edit == false) %}
         {% include article-sidebar.html %}
-      </div><!-- /end related content row -->
       {% endif %}
-      <!-- /end related row -->
 
     </div><!-- /end main content column -->
   
@@ -64,7 +61,4 @@ is_article: true
 
 </div><!-- /end .container -->
 
-<!--  container ends -->
-{% if (page.hide_github_edit == null || page.hide_github_edit == false) %}
-  {% include edit.html %}
-{% endif %}
+

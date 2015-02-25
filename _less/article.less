@@ -78,7 +78,7 @@
     padding: 3px 8px;
     font-size: 13px;
 
-     &:hover {
+    &:hover {
         color: @sidenav-blue;
         border-right: 1px solid @sidenav-blue;
     }
@@ -106,8 +106,10 @@
 /* Sidebar styles */
 
 .bsh-article-sidebar {
-    padding-top: 25px;
-
+    padding-top: 50px;
+    border-top: 1px solid #cfcfcf;
+    margin-top: 100px;
+    
     > hr {
         margin-bottom: 35px;
     }
@@ -122,5 +124,9 @@
         &:hover {
             background-color: #fff;
         }
+    }
+
+    a.bsh-thumbnail {
+        padding:11px;
     }
 }
