@@ -1,44 +1,35 @@
 <!--  Breadcrumbs bar just below the header  -->
-
-	<div class="row">
-		<div class="bs-nav-titlebar">
-
-			<div class="col-xs-2 title-left">
-				{% if (page.section_root == null || page.section_root == false) or page.layout == 'newb' %}
-
-					<!-- vertical line -->
+<div class="bsh-breadcrumb-bg">
+	<div class="container">
+		<div class="row">
+			{% if page.headings != null and page.headings.size > 0 %}
+			<div class="text-left hidden-sm hidden-xs col-md-2 col-lg-2 bsh-breadcrumb-left">
+		  		
+	      			<!-- vertical line -->
 			        <div class="vertical-line"></div>
 
-		        	<a><div class="menu-box">
 			        <!-- burger icon -->
-			        	<span class="icon-menu menu-icon"></span>
-		       		</div></a>
-		        {% endif %}
-
-	        </div>
-
-			<div class="col-sm-9 col-xs-11">
-
-				<div class="bs-nav-titlebar-group">
-					{% if page.section_root == null || page.section_root == false %}
-					<a class="btn illumina-gray bs-nav-back" href="{{ site.baseurl }}/articles/">
-						<span class="illumicons caret-left medium">
-						</span>
-						<span class="bs-nav-back-text">Articles</span>
-					</a>
+		        	<a id="sidenav-toggle">
+		        		<div class="menu-box">
+			        	   	<span class="icon-menu menu-icon" aria-hidden="true"></span>
+		       			</div>
+		       		</a>
+	      	</div>
+	      	{% endif %}
+			
+			<div class="col-md-10 col-lg-10">
+				<ol class="breadcrumb bsh-breadcrumb">
+		        	<li>
+		        	{% if (page.is_article == true) %}
+						<a href="{{ site.baseurl }}/articles/">Articles</a>
 					{% else %}
-					<a class="btn illumina-gray bs-nav-back" href="{{ site.baseurl }}/">
-						<span class="illumicons caret-left medium">
-						</span>
-						<span class="bs-nav-back-text">Help Center</span>
-					</a>
+						<a href="{{ site.baseurl }}/">Help Center</a>
 					{% endif %}
-					<p class="bs-nav-title">
-						<span class="bs-nav-title-text">{{ page.title }}</span>
-					</p>
-				</div>
-			</div>
+					</li>
+					<li class="active">{{ page.title }}</li>
+	      		</ol>
+ 			</div>
 		</div>
 	</div>
-
+</div>
 <!--  Breadcrumbs bar ends  -->

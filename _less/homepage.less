@@ -1,530 +1,283 @@
-/* %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%
+/* %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&
 
                                                     Body Home
 
-   &%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
+   &%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%& */
 
-
-.styling_home{
-
-background-color: #ffffff;
-font-size: 13px;
-color: #666666;
-
-}
-
-
-/* %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%
-
-                                                    Homepage banner
-
-   &%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
-
-.banner-container {
- margin-bottom: 60px;   
-}
-
-.banner-custom{
-    
-text-align: left;
-height: 250px;
-width: 100%;
-background-image: url(/images/illumina-purple-banner.jpg);
-    
-     @media (max-width: 491px) {
-        height: 150px;
-     }
-}
-
-.banner-title{
-    
-font-family: @font-header, sans-serif !important;
-color: #fff; 
-font-size: 52px;
-font-weight: 100;
-margin-top: 95px;
-position: relative;
-left: 40px;
-    
-     @media (max-width: 491px) {
-        font-size: 30px;
-        margin-top: 50px;
-     }
-    
-}
-
-.home-main-section {
-    margin-bottom: 40px;
-}
-
-
-/* %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%
-
-                                           Popular Articles Section
-
-
-   &%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
-
-
-/* Popular Articles Links Section */
-
-
-.popular-articles-header {
- 
-    font: 200 24px/1.2em @font-header,sans-serif;
-    color: @earth-pumpkin-color;
-    margin-bottom: 20px;
-    position: relative;
-    left: 40px;
-
-}
-
-.popular-articles-section{
-
-    position: relative;
-    top: -1px;
-    left: 90px;
-    background-color: #ffffff;
-    padding-right: 50px;
-    padding-bottom: 20px;
-
-
-
-     @media (max-width: 768px){
-                                margin-left: 60px;
-                                margin-right: 60px;
-                                padding-left: 20px;
-                                padding-right: 20px;
-                             }
-
-     @media (max-width: 491px){
-                                margin-left: 0px;
-                                margin-right: 0px;
-                                padding-left: 10px;
-                                padding-right: 10px;
-                                left: 20px;
-                             }
-
-}
-
-.popular-article-link{
-    font:200 14px/1.2em @font-alt, @font-text,sans-serif;
-    line-height: 35px;
-    margin-bottom: 30px;
-}
-
-.popular-article-ol{
-
-    list-style-type: none;
-    position: relative;
-
-}
-
-
-
-/* %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%
-
-                                            Categories Section
-
-   &%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
-
-
-a.link_grey:link{
-    color: #000000;
-}
-
-a.link_grey:hover {
-    text-decoration: none;
-}
-
-/* Main box for each category section */
-
-.category-main {
-    border: 1px solid;
-    border-color: #bbbbbb;
-    border-radius: 3px;
-    background-color: #ffffff;
-    display: block;
-    width: 105%;
-    height: 110px;
-    
-    padding: 10px;
-    margin-bottom: 25px;
-    position: relative;
-    left: 35px;
-    display:flex; 
-    align-items: center;
-
-    
-    @media (max-width: 768px){
-                                width: 80%;
-                                left: 50px;
-                                height: 90px;
-                             }
-    
-    @media (max-width: 460px){
-                                width: 80%;
-                                left: 30px;
-                                height: 90px;
-                             }
-}
-
-
-.left-part{        /*icon layout*/
-    display: block;
-    float: left;
-    padding-right: 5px;
-}
-
-.middle-part{           /*text layout*/
-
-    vertical-align: middle;
-    align: left;
-    display: block;
-    float: left;
-    padding-left: 5px;
-    width: 70%;
-
-    .category-heading{
-
-        font: 800 20px/1.2em @font-header,sans-serif;
-        color: #666666;
-        letter-spacing: 1px;
-        line-height: 1.5;
-      
-            @media (max-width: 1199px){
-                                        font-size: 16px/1.2em;
-                                        
-                                     }
-
-
-            @media (max-width: 991px){
-                                        font-size: 14px/1.2em;
-                                        
-                                     }
-
-            @media (max-width: 768px){
-                                        font-size: 14px/1.2em;
-                                       
-                                     }
-
-            @media (max-width: 491px){
-
-                                        font-size: 12px/1.2em;
-                                        
-                                     }
-
+body {
+  position: relative;
+  min-width: 320px;
+  width: auto !important;
+  width: 320px;
+  
+  &.bsh-with-breadcrumbs {
+    @media all and (min-width: @media-sm-min) {
+      padding-top: 101px;
     }
+  }
 
-    .description-part{
-
-        font: 200 11px/1.2em @font-alt, @font-text,sans-serif;
-        color: #bbbbbb;
-        
-        
-            @media (max-width: 1199px){
-                                        font-size: 11px/1.2em;
-                                        
-                                      }
-
-            @media (max-width: 991px){
-                                       font-size: 11px/1.2em;
-                                                                              
-                                     }
-
-            @media (max-width: 768px){
-                                        font-size: 9px/1em;
-                                      
-                                     }
-
-            @media (max-width: 491px){
-                                        font-size: 11px/1.2em;
-                                        display: none;
-                                     }
-
-    }
-
+  @media all and (min-width: @media-sm-min) {
+    padding-bottom: 51px;
+    padding-top: 65px;
+  }
 }
 
-.right-part{            /*caret layout*/
 
-    display: block;
-    color: #bbb;
-    font-size: 6rem;
-    float: right;
-    width: 15%;
-
-    @media (max-width: 991px) {
-                                    font-size: 4rem;
-                              }
-
-    @media (max-width: 491px) {
-                                    display: none;
-                              }
+.bsh-static-xs {
+  @media all and (max-width: @media-xs-max) {
+    position: static !important;
+  }
 }
 
-/* browser hack for safari only */
-_::-webkit-full-page-media, _:future, :root .safari-only {
+a {
+  color: @link-color;
 
-    display: none;
+  &:hover {
+    color: @link-color;
+  }
 }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 700;
+}
+
+
 
 /* %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%
 
-                                            New to BaseSpace Section
+                                                Homepage banner
 
    &%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
 
-
-/* New to Basespace Hover CSS */
-
-
-#sidebarmodule-newb:hover{
- 
-    background-color: #328ED1;
-    transition-duration: 0.5s;
-    border-color: #328ED1;
-    
-}
-
-#sidebarmodule-newb:hover .category-heading{
-    
-    transition-duration: 0.5s;
-    color: #fff;
-}
-
-
-#sidebarmodule-newb:hover .newb_icon{
+.bsh-banner {
   
-    transition-duration: 0.5s;
-    color: #fff;
+  h1 { 
+    font-weight: 500;
+  }
+
+  background-image: url(/images/illumina-purple-banner.jpg);
+  color: #fff;
+  margin-bottom: 65px;
+}
+
+
+/* %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%
+
+                                               Categories Section
+
+   &%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
+
+a.bsh-thumbnail {
+  display: block;  
+  background: #ffffff; /* Old browsers */
+  background: -moz-linear-gradient(top,  #ffffff 0%, #efefef 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#efefef)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#efefef 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #ffffff 0%,#efefef 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #ffffff 0%,#efefef 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #ffffff 0%,#efefef 100%); /* W3C */
+  box-shadow: rgba(0,0,0,0.15) 0 0 3px;
+  border-radius: 3px;
+
+  &:hover {
+    border-color: @link-color;
+    transition: .15 ease all;
     text-decoration: none;
+
+    > .caption {
+      color: @link-color;
+      transition: .15s ease all;
+    }
+  }
 }
 
-#sidebarmodule-newb:hover .caret-right{
-    transition-duration: 0.5s;
+a.bsh-well {
+  display: block;
+  background-color: #fff;
+  color: #666666;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  border: 1px solid #dbdbdb;
+  padding-top: 28px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+
+  &:hover{
+    text-decoration: none !important;
     color: #fff;
-}
-
-#sidebarmodule-newb:hover .description-part{
-    
     transition-duration: 0.5s;
+
+    .bsh-media-body p, .caret-right {
+      color: #fff;
+      transition-duration: 0.5s;
+    }
+  }
+
+  &:visited, &:focus {
+    text-decoration: none !important;
+  }
+}
+
+#bsh-category-newb:hover{
+  background-color: #328ED1;
+  transition-duration: 0.5s;
+  border-color: #328ED1;
+
+  .newb-icon {
     color: #fff;
-    
+    transition-duration: 0.5s;
+  }
+}
+
+#bsh-category-articles:hover{
+  background-color: #FFB441;
+  transition-duration: 0.5s;
+  border-color: #FFB441;
+
+  .article-icon {
+    color: #fff;
+    transition-duration: 0.5s;
+  }
+}
+
+#bsh-category-dev:hover{
+  background-color: #BAC147;
+  transition-duration: 0.5s;
+  border-color: #BAC147;
+
+  .dev-icon {
+    color: #fff;
+    transition-duration: 0.5s;
+  }
+}
+
+.bsh-media-body {
+
+  padding-left: 16px;
+  padding-top: 6px;
+
+  .media-heading {
+    font-weight: 800;
+  }
+
+  p {
+    padding-top: 10px;
+    font-size: 12px;
+    color: #bbb; 
+  }
 }
 
 
-/* New to Bsaespace Icon */
+// Icons
 
-.newb_icon{
-    
-    font-size: 45px;         
-    color: #328ED1;
-    position: relative;
-    padding-right: 10px;
-    padding-left: 10px;
-    
+.newb-icon {
+  font-size: 4rem;         
+  color: #328ED1;
+}
 
-    @media (max-width: 1199px){
-                                top: 0px;
-                             }
-    
-    @media (max-width: 991px){
-                                font-size: 35px; 
-                                top: 1px;
-                             }
+.article-icon {
+  font-size: 4rem;         
+  color: #FFB441;
+}
 
-    @media (max-width: 768px){
-                                top: -2px;
-                                font-size: 25px;
-                                padding-left: 0px;
-                             }
-    
-    @media (max-width: 491px){
-                                top: -1px;
-                                font-size: 25px;
-                             }
-    
-    
+.dev-icon {
+  font-size: 4rem;         
+  color: #BAC147;
+}
+
+.caret-right {
+  font-size: 6rem; 
+  color: #bbb;
+}
+
+/* Popular articles */
+
+.home-title {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  color: @earth-pumpkin-color;
+}
+
+.nav > li > a.popular-article-link {
+  color: @link-color;
+  line-height: 15px;
+
+  &:hover {
+    background-color: #fff;
+    text-decoration: underline;
+  }
+}
+
+.popular-articles-section {
+  padding-left: 40px;
+
+  h3 {
+    padding-left: 15px;
+  }
+
 }
 
 /* %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%
 
-
-                                            Article Section
-
-   &%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
-
-/* Articles Hover CSS */
-
-#sidebarmodule-articles:hover{
-    
-    background-color: #ffb441;
-    transition-duration: 0.5s;
-    border-color: #ffb441;
-    
-}
-
-#sidebarmodule-articles:hover .category-heading{
-    
-    transition-duration: 0.5s;
-    color: #fff;
-
-}
-
-#sidebarmodule-articles:hover .articles_icon{
-  
-    transition-duration: 0.5s;
-    color: #fff;
-}
-
-#sidebarmodule-articles:hover .caret-right{
-    transition-duration: 0.5s;
-    color: #fff;
-}
-
-#sidebarmodule-articles:hover .description-part{
-    
-    transition-duration: 0.5s;
-    color: #fff;
-    
-}
-
-
-/* Article Icon */
-
-.articles_icon{
-    
-    font-size: 45px;         
-    color: #ffb441;
-    position: relative;
-    padding-right: 10px;
-    padding-left: 10px;
-    
-    @media (max-width: 1199px){
-                                top: 0px;
-                             }
-    
-    @media (max-width: 991px){
-                                font-size: 35px; 
-                                top: 1px;
-                             }
-
-    @media (max-width: 768px){
-                                top: -2px;
-                                font-size: 25px;
-                                padding-left: 0px;
-                             }
-    
-    @media (max-width: 491px){
-                                top: -1px;
-                                font-size: 25px;
-                             }
-    
-    
-}
-
-
-/* %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%
-
-                                           Dev Section CSS
-
-   &%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
-
-#sidebarmodule-dev:hover{
-    
-    background-color: #BAC147;
-    transition-duration: 0.5s;
-    border-color: #BAC147;
-    
-}
-
-#sidebarmodule-dev:hover .category-heading{
-
-    transition-duration: 0.5s;
-    color: #fff;
-
-}
-
-#sidebarmodule-dev:hover .developer_icon{
-
-    transition-duration: 0.5s;
-    color: #fff;
-}
-
-#sidebarmodule-dev:hover .caret-right{
-  
-    transition-duration: 0.5s;
-    color: #fff;
-}
-
-#sidebarmodule-dev:hover .description-part{
-    
-    transition-duration: 0.5s;
-    color: #fff;
-    
-}
-
-
-/* Developer Icon */
-
-.developer_icon {
-
-    font-size: 45px;
-    color: #BAC147;
-    position: relative;
-    padding-right: 10px;
-    padding-left: 10px;
-
-    @media (max-width: 1199px){
-                                top: 0px;
-                             }
-
-    @media (max-width: 991px){
-                                font-size: 35px;
-                                top: 1px;
-                             }
-
-    @media (max-width: 768px){
-                                top: -2px;
-                                font-size: 25px;
-                                padding-left: 0px;
-                             }
-
-    @media (max-width: 491px){
-                                top: -1px;
-                                font-size: 25px;
-                             }
-
-}
-
-
-/* %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%
-
-                                            Video Section
+                                            Bottom Sections
 
    &%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
 
 
-.video-section{
-    border-top: 1px solid #e7e5e5;
-    background-color: #f6f6f6;
-    padding-bottom: 80px;
-}
+.bsh-videos-container {
+  background: #f6f6f6;
+  border-top: 1px solid #e7e5e5;
+  margin-top: 60px;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  box-shadow: rgba(0,0,0,.24) 0 0 10px 0 inset;
+  border-bottom: 1px solid #ccc;
 
-.video-heading{
-    font: 200 28px/1.2em @font-header,sans-serif;
-    color: @earth-pumpkin-color;
-    text-align: left;
-    letter-spacing: 1px;
-    margin-top: 50px;
+  .lghtbox > img {
+    border: 1px solid #ccc;
+  }
+
+  .home-title {
     margin-bottom: 30px;
+  }
+
 }
 
-.video-desc {
-    font-size: 14px;
+a.bsh-thumbnail {
+  padding:10px;
 }
 
-.video-container {
-     margin-left: 20%;
+.bsh-additional-container {
+  background: #ececec;
+  border-top: 1px solid #e7e5e5;
+  padding-top: 65px;
+  padding-bottom: 70px;
+
+  .home-title {
+    margin-bottom: 45px;
+  }
+}
+
+.bsh-additional-section {
+  display: block;
+  color: #666;
+
+  @media all and (max-height: @media-sm-max) {
+    margin-bottom: 30px;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  .media-body {
+    padding-left: 10px;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.bsh-additional-icon {
+  font-size: 4.5rem;
 }

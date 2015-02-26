@@ -1,67 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
 	<!-- head section -->
 	{% include head.html %}
 	<!-- head section ends -->
 
 	<!-- body section begins -->
-	<body class="styling{% if page.is_homepage == true %}_home{% endif %}">
+	<body data-spy="scroll" data-target="#sidenav-list" class="{% if page.is_homepage == null %}bsh-with-breadcrumbs{% endif %}">
+		<nav class="navbar navbar-default bsh-header navbar-fixed-top bsh-static-xs">
+		  <div class="container">
+		  	<div class="row">
+		  		<div class="col-md-12 col-lg-12">
+					<!-- Brand and toggle get grouped for better mobile display -->
+				    <div class="navbar-header">
+				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="glyphicon glyphicon-search"></span>
+				      </button>
+				      <a class="navbar-brand" href="{{ site.baseurl }}/"><b>BaseSpace</b><sup><sup>&reg;</sup></sup> HelpCenter</a> 
+				    </div>
 
-		<!--  Main container with all elements in the layout  -->
- 		<div class="container-fluid">
+				    <!-- Collect the nav links, forms, and other content for toggling -->
+				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				      <ul class="nav navbar-nav navbar-right hidden-xs {% if page.is_homepage == null %}hidden-md{% endif %}">
+				        <li>
+				        	<a href="http://www.illumina.com/" target="_blank">
+			  	    			<img class="header-brand-illumina" src="/images/ILLUMINA_LOGO_small_new.png" />
+			  	    		</a>
+		  	    		</li>
+				      </ul>
+				      <form class="navbar-form navbar-right" role="search" id="searchbox_002811649472907755927:ae_7fgj1z-k" method="get" action="{{ site.baseurl }}/articles/searchresults/">
+				        <div class="form-group">
+				          	<input value="002811649472907755927:ae_7fgj1z-k" name="cx" type="hidden"/>
+					    	<input value="FORID:11" name="cof" type="hidden"/>
+						    <input class="form-control" id="q" name="q" size="35" type="text" value="" placeholder="Search"/>
+				        </div>
+				      </form>
+				    </div><!-- /.navbar-collapse -->
+		  		</div>
+		  	</div>
+		    
+		  </div><!-- /.container -->
+		</nav>
+		
+		<!-- page content -->
+		{{ content }}
+		<!-- end page content -->
 
-		  	<!-- header -->		  	
-		  	<div class="header navbar-fixed-top">
-		  		<div class="col-xs-8 col-sm-offset-2">
-			  	    <a class="header-brand-baseSpace" href="{{ site.baseurl }}/"><b>BaseSpace</b><sup><sup>&reg;</sup></sup> HelpCenter</a> 
-			  	    
-			  	    <a href="http://www.illumina.com/" target="_blank">
-			  	    	<div class="header-brand-illumina" src="/images/ILLUMINA_LOGO.png"></div>
-			  	    </a> 
-			  	 
-			  	    <div id="custom_search">
-			  	    	<form id="searchbox_002811649472907755927:ae_7fgj1z-k" method="get" action="{{ site.baseurl }}/articles/searchresults/">
-						    <input value="002811649472907755927:ae_7fgj1z-k" name="cx" type="hidden"/>
-						    <input value="FORID:11" name="cof" type="hidden"/>
-						    <input id="q" name="q" size="35" type="text" value="" placeholder="Search BaseSpace Help ...."/>
-						</form> 
-					</div> 
-		  	 	</div>   
-	   		</div> 
-		   	<!--header ends-->
+		<!-- footer -->
+		{% include foot.html %}		
+		<!-- end footer -->
 
-		   	<!-- banner -->
-				{% if page.hide_welcome_banner == null || page.hide_welcome_banner == false %}
-				
-                    <div class="banner-container">
-                          <div class="row">
-                                <div class="banner-custom">
-                                    <div class="row">
-									    <div class="col-xs-8 col-xs-offset-2">
-									    	  <h1 class="banner-title">Welcome to our HelpCenter</h1>
-									    </div>
-                                    </div>        
-                                </div>
-                           </div>
-                    </div> 
-				{% endif %}
-			<!-- banner ends -->
-
-			<!-- page content -->
-			<div class="page-content">
-			{{ content }}
-			</div>
-			<!-- page content ends -->
-
-			<!-- footer -->
-			{% include foot.html %}
-		  	<!-- footer ends -->
-
-		</div>
-		<!-- Main container ends -->
-
+		<!-- scripts -->
+		{% include scripts.html %}
+		<!-- end scripts -->
 	</body>
 	<!-- body section ends -->
-
 </html>

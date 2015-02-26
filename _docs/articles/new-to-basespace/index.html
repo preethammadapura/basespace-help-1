@@ -1,341 +1,333 @@
 ---
-layout: newb
+layout: article
 title: "New to BaseSpace?"
 hide_welcome_banner: true
-section_root: true
+hide_right_sidebar: true
+is_article: false
+hide_article_title: true
+hide_github_edit: true
 ---
-<!-- Introduction paragraph -->
-<p class="intro-para">Sequencing data has traditionally been stored in non-centralized locations, which offer little uniformity of data management across locations. BaseSpace greatly simplifies access to sequencing data via data centralization and ease-of-use genetic data. Now sequencing labs can easily and securely analyze, archive, and share sequencing data.</p>
 
-<!-- Introduction section -->
-<div class="intro">
+<div class="jumbotron" id="bsh-newb-jumbotron">
+    <h1>New to BaseSpace?</h1>
+    <p>Sequencing data has traditionally been stored in non-centralized locations, which offer little uniformity of data management across locations. BaseSpace greatly simplifies access to sequencing data via data centralization and ease-of-use genetic data. Now sequencing labs can easily and securely analyze, archive, and share sequencing data.</p>
+</div>
 
-	<h3 id="discover-heading">Discover the possibilities</h3>	
+<h2 id="discover-heading">Discover the possibilities</h2>
 
-	<div id="discover-tabs">
-		
-		<a href="#headings_0">
-			<div class="tabs" id="prep-tab">
-				<div class="tab-content">
-					<span class="icon-lab prep-icon"></span>
-					<p class="tab-title">Prep Libraries</p>
-				</div>
-			</div>
-		</a>
-
-		<a href="#headings_5">
-			<div class="tabs" id="run-tab">
-				<div class="tab-content">
-					<span class="icon-run run-icon"></span>
-					<p class="tab-title">Run Monitoring</p>
-				</div>
-			</div>
-		</a>
-
-		<a href="#headings_8">
-			<div class="tabs" id="analysis-tab">
-				<div class="tab-content">
-					<span class="icon-analysis-report analysis-icon"></span>
-					<p class="tab-title">Start Analysis</p>
-				</div>
-			</div>
-		</a>
-		
-		<a href="#headings_14">	
-			<div class="tabs" id="data-tab">
-				<div class="tab-content">
-					<span class="icon-data-management data-icon"></span>
-					<p class="tab-title">Data Management</p>
-				</div>
-			</div>
-		</a>
-		
+<div class="row bsh-box-container ">
+	<div class="col-sm-6 bsh-row">
+		<div class="col-xs-6">
+			<a href="#headings_5" class="panel panel-default purple">
+			  <div class="panel-body text-center">
+			    <span class="icon icon-lab prep-icon"></span>
+				<h5>Prep Libraries</h5>
+			  </div>
+			</a>
+		</div>
+		<div class="col-xs-6">
+			<a href="#headings_10" class="panel panel-default pumpkin">
+			  <div class="panel-body text-center">
+			    <span class="icon icon-run run-icon"></span>
+				<h5>Run Monitoring</h5>
+			  </div>
+			</a>
+		</div>
 	</div>
+	<div class="col-sm-6 bsh-row">
+		<div class="col-xs-6">
+			<a href="#headings_13" class="panel panel-default blue">
+			  <div class="panel-body text-center">
+			    <span class="icon icon-analysis-report analysis-icon"></span>
+				<h5>Start Analysis</h5>
+			  </div>
+			</a>
+		</div>
+		<div class="col-xs-6">
+			<a href="#headings_19" class="panel panel-default green">
+			  <div class="panel-body text-center">
+			    <span class="icon icon-data-management data-icon"></span>
+				<h5>Data Management</h5>
+			  </div>
+			</a>
+		</div>
+	</div>
+</div>
 
-	<div class="gradient-divider"></div>
+<div class="gradient-divider"></div>
 
 </div> <!-- Introduction section ends -->
 
 <!-- Prep tab section -->
-<div class="big-section">
+<div class="bsh-big-section">
 
 	<h2 class="section-title">Planning a sequencing run with Prep tab</h2>
-	
-	<div class="card-step">
-	
-	  <div class="card-container">
-	  	
-	  	<div class="card-left">
-			<div class="card-left-top">
-				<div class="card-title">
-					<div class="num-circle">1</div>
-					<h3 class="card-title-open">Create Samples</h3>
+
+	<div class="panel panel-default card-step">
+		<div class="panel-body">
+			<div class="row">
+				
+				<div class="col-sm-6 card-left">
+					
+					<div class="media">
+	                  <div class="media-left media-top">
+	                    <div class="num-circle">1</div>
+	                  </div>
+	                  <div class="media-body media-top card-title-open">
+	                    <h3 class="media-heading">Create Samples</h3>
+	                    <p>Create biological samples to be sequenced directly in BaseSpace.</p>
+	                  </div>
+	                </div>
+
+					<div class="card-left-bottom">
+						<p class="card-further-title">Further Readings</p>
+						<ul class="card-links">
+							<li> <a href="/articles/descriptive/biological-samples/">Biological Samples Overview > </a> </li>
+							<li> <a href="/articles/tutorials/create-new-biological-samples/">Create new biological samples > </a> </li>
+							<li> <a href="/articles/tutorials/use-existing-biological-samples/">Use Existing Biological samples > </a> </li>
+						</ul>
+					</div>
+
 				</div>
-				<p class="card-desc">Create biological samples to be sequenced directly in BaseSpace</p>
-			</div>
-			<div class="card-left-bottom">
-				<p class="card-further-title">Further Readings</p>
-				<ul class="card-links">
-					<li> <a href="/articles/descriptive/biological-samples/">Biological Samples Overview > </a> </li>
-					<li> <a href="/articles/tutorials/create-new-biological-samples/">Create new biological samples > </a> </li>
-					<li> <a href="/articles/tutorials/use-existing-biological-samples/">Use Existing Biological samples > </a> </li>
-				</ul>
+				
+				<div class="col-sm-6">
+					<div id="carousel-samples" class="carousel slide bsh-carousel">
+				      	<!-- Carousel slides -->
+						<div class="carousel-inner">
+							<div class="item active">
+								<div class="card-image">
+									<img src="/images/new-to-basespace/create-samples-1.png"/>
+								</div>
+							  	<div class="carousel-caption">
+							      <p>On the Prep Tab click the "Biological Samples" box.</p>
+							  	</div>
+							</div>
+							<div class="item">
+							  	<div class="card-image">
+							    	<img src="/images/new-to-basespace/create-samples-2.png"/>
+							  	</div>
+							  	<div class="carousel-caption">
+							      	<p>Either create your own samples or import them</p>
+							  	</div>
+							</div>
+							<div class="item">
+							  	<div class="card-image">
+							    	<img src="/images/new-to-basespace/create-samples-3.png"/>
+							  	</div>
+							  	<div class="carousel-caption">
+							    	<p>Fill the form to create a sample and click on the prep libraries tab</p>
+							  	</div>
+							</div>
+						</div>
+
+						<!-- Indicators -->
+						<div class="carousel-bottom">
+							<ol class="carousel-indicators" align="right">
+						  		<li data-target="#carousel-samples" data-slide-to="0" class="active"></li>
+						  		<li data-target="#carousel-samples" data-slide-to="1"></li>
+					  			<li data-target="#carousel-samples" data-slide-to="2"></li>
+							</ol>
+						</div>
+			    	</div>
+				</div>
 			</div>
 		</div>
-		
-		<div class="card-right">
-			
-			<!-- Carousel begins -->
-			<div id="carousel-samples" class="carousel slide">
-
-		      <!-- Carousel slides -->
-		      <div class="carousel-inner">
-		        
-		        <div class="item active">
-		          <div class="card-image">
-		            <img src="/images/new-to-basespace/create-samples-1.png"/>
-		          </div>
-		          <div class="carousel-caption">
-		              <p>On the Prep Tab click the "Biological Samples" box.</p>
-		          </div>
-		        </div>
-		        <div class="item">
-		          <div class="card-image">
-		            <img src="/images/new-to-basespace/create-samples-2.png"/>
-		          </div>
-		          <div class="carousel-caption">
-		              <p>Either create your own samples or import them</p>
-		          </div>
-		        </div>
-		        <div class="item">
-		          <div class="card-image">
-		            <img src="/images/new-to-basespace/create-samples-3.png"/>
-		          </div>
-		          <div class="carousel-caption">
-		              <p>Fill the form to create a sample and click on the prep libraries tab</p>
-		          </div>
-		        </div>
-
-		      </div>
-
-		      <!-- Indicators -->
-		      <div class="carousel-bottom">
-		        <ol class="carousel-indicators" align="right">
-		          <li data-target="#carousel-samples" data-slide-to="0" class="active"></li>
-		          <li data-target="#carousel-samples" data-slide-to="1"></li>
-		          <li data-target="#carousel-samples" data-slide-to="2"></li>
-		        </ol>
-		      </div>
-
-		    </div>
-			
-		</div>		
-	
-	  </div>
-	
-		<div class="clearfix"></div>
-
 	</div>
 	
-	<div class="card-step">
-	  
-	  <div class="card-container">
+	<div class="panel panel-default card-step">
+		<div class="panel-body">
+			<div class="row">
+				
+				<div class="col-sm-6 card-left">
+					
+					<div class="media">
+	                  <div class="media-left media-top">
+	                    <div class="num-circle">2</div>
+	                  </div>
+	                  <div class="media-body media-top card-title-open">
+	                    <h3 class="media-heading">Prep Libraries</h3>
+	                    <p>Prepare sample libraries for sequencing</p>
+	                  </div>
+	                </div>
 
-		<div class="card-left">
-			<div class="card-left-top">
-				<div class="card-title">
-					<div class="num-circle">2</div>
-					<h3 class="card-title-open">Prep Libraries</h3>
+					<div class="card-left-bottom">
+						<p class="card-further-title">Further Readings</p>
+						<ul class="card-links">
+							<li> <a href="/articles/descriptive/libraries/">Prep libraries overview > </a> </li>
+							<li> <a href="/articles/tutorials/prep-libraries/">How to Prep Libraries > </a> </li>
+							<li> <a href="/articles/tutorials/import-prep-libraries/">How to import Libraries > </a> </li>
+						</ul>
+					</div>
+
 				</div>
-				<p class="card-desc">Prepare sample libraries for sequencing</p>
-			</div>
-			<div class="card-left-bottom">
-				<p class="card-further-title">Further Readings</p>
-				<ul class="card-links">
-					<li> <a href="/articles/descriptive/libraries/">Prep libraries overview > </a> </li>
-					<li> <a href="/articles/tutorials/prep-libraries/">How to Prep Libraries > </a> </li>
-					<li> <a href="/articles/tutorials/import-prep-libraries/">How to import Libraries > </a> </li>
-				</ul>
+				
+				<div class="col-sm-6">
+					<div id="carousel-libraries" class="carousel slide bsh-carousel">
+				    	<!-- Carousel slides -->
+						<div class="carousel-inner">
+						        
+					        <div class="item active">
+					          <div class="card-image">
+					            <img src="/images/new-to-basespace/prep-libraries-1.png"/>
+					          </div>
+					          <div class="carousel-caption">
+					              <p>On the Prep Tab click the "Libraries" box.</p>
+					          </div>
+					        </div>
+					        <div class="item">
+					          <div class="card-image">
+					            <img src="/images/new-to-basespace/prep-libraries-2.png"/>
+					          </div>
+					          <div class="carousel-caption">
+					              <p>Either select existing libraries or import them</p>
+					          </div>
+					        </div>
+					        <div class="item">
+					          <div class="card-image">
+					            <img src="/images/new-to-basespace/prep-libraries-3.png"/>
+					          </div>
+					          <div class="carousel-caption">
+					              <p>Import sample libraries in .csv format and click Pool Libraries button</p>
+					          </div>
+					        </div>
+
+						</div>
+
+				     	<!-- Indicators -->
+				      	<div class="carousel-bottom">
+					        <ol class="carousel-indicators" align="right">
+					          <li data-target="#carousel-libraries" data-slide-to="0" class="active"></li>
+					          <li data-target="#carousel-libraries" data-slide-to="1"></li>
+					          <li data-target="#carousel-libraries" data-slide-to="2"></li>
+					        </ol>
+				      	</div>
+			    	</div>
+				</div>
 			</div>
 		</div>
-
-		
-		<div class="card-right">
-			
-			<!-- Carousel begins -->
-			<div id="carousel-libraries" class="carousel slide">
-
-		      <!-- Carousel slides -->
-		      <div class="carousel-inner">
-		        
-		        <div class="item active">
-		          <div class="card-image">
-		            <img src="/images/new-to-basespace/prep-libraries-1.png"/>
-		          </div>
-		          <div class="carousel-caption">
-		              <p>On the Prep Tab click the "Libraries" box.</p>
-		          </div>
-		        </div>
-		        <div class="item">
-		          <div class="card-image">
-		            <img src="/images/new-to-basespace/prep-libraries-2.png"/>
-		          </div>
-		          <div class="carousel-caption">
-		              <p>Either select existing libraries or import them</p>
-		          </div>
-		        </div>
-		        <div class="item">
-		          <div class="card-image">
-		            <img src="/images/new-to-basespace/prep-libraries-3.png"/>
-		          </div>
-		          <div class="carousel-caption">
-		              <p>Import sample libraries in .csv format and click Pool Libraries button</p>
-		          </div>
-		        </div>
-
-		      </div>
-
-		      <!-- Indicators -->
-		      <div class="carousel-bottom">
-		        <ol class="carousel-indicators" align="right">
-		          <li data-target="#carousel-libraries" data-slide-to="0" class="active"></li>
-		          <li data-target="#carousel-libraries" data-slide-to="1"></li>
-		          <li data-target="#carousel-libraries" data-slide-to="2"></li>
-		        </ol>
-		      </div>
-
-		    </div>
-			
-		</div>
-
-	  </div>
-
-		<div class="clearfix"></div>
-
 	</div>
 
-	<div class="card-step">
+	<div class="panel panel-default card-step">
+		<div class="panel-body">
+			<div class="row">
+				
+				<div class="col-sm-6 card-left">
+					
+					<div class="media">
+	                  <div class="media-left media-top">
+	                    <div class="num-circle">3</div>
+	                  </div>
+	                  <div class="media-body media-top card-title-open">
+	                    <h3 class="media-heading">Pool Libraries</h3>
+	                    <p>Pool sample libraries on the plate.</p>
+	                  </div>
+	                </div>
 
-	  <div class="card-container">
+					<div class="card-left-bottom">
+						<p class="card-further-title">Further Readings</p>
+						<ul class="card-links">
+							<li> <a href="/articles/descriptive/pools/">Pool libraries overview > </a> </li>
+							<li> <a href="/articles/tutorials/pool-libraries/">How to pool libraries > </a> </li>
+						</ul>
+					</div>
 
-	  	<div class="card-left">
-			<div class="card-left-top">
-				<div class="card-title">
-					<div class="num-circle">3</div>
-					<h3 class="card-title-open">Pool Libraries</h3>
 				</div>
-				<p class="card-desc">Pool sample libraries on the plate</p>
-			</div>
-			<div class="card-left-bottom">
-				<p class="card-further-title">Further Readings</p>
-				<ul class="card-links">
-					<li> <a href="/articles/descriptive/pools/">Pool libraries overview > </a> </li>
-					<li> <a href="/articles/tutorials/pool-libraries/">How to pool libraries > </a> </li>
-				</ul>
+				
+				<div class="col-sm-6">
+					
+					<div id="carousel-pools" class="carousel slide">
+
+				    <!-- Carousel slides -->
+				    <div class="carousel-inner">
+				        
+				        <div class="item active">
+				          <div class="card-image">
+				            <img src="/images/new-to-basespace/pool-libraries-1.png"/>
+				          </div>
+				          <div class="carousel-caption">
+				              <p>On the Prep Tab click the "Pools" box.</p>
+				          </div>
+				        </div>
+				        <div class="item">
+				          <div class="card-image">
+				            <img src="/images/new-to-basespace/pool-libraries-2.png"/>
+				          </div>
+				          <div class="carousel-caption">
+				              <p>Drag the samples from the plate to the 'Pools' section.</p>
+				          </div>
+				        </div>
+				        
+				     </div>
+
+				    <!-- Indicators -->
+				    <div class="carousel-bottom">
+				        <ol class="carousel-indicators" align="right">
+				          <li data-target="#carousel-pools" data-slide-to="0" class="active"></li>
+				          <li data-target="#carousel-pools" data-slide-to="1"></li>
+				        </ol>
+				    </div>
+
+				    </div>
+				</div>
 			</div>
 		</div>
-		
-		<div class="card-right">
-			
-			<!-- Carousel begins -->
-			<div id="carousel-pools" class="carousel slide">
-
-		      <!-- Carousel slides -->
-		      <div class="carousel-inner">
-		        
-		        <div class="item active">
-		          <div class="card-image">
-		            <img src="/images/new-to-basespace/pool-libraries-1.png"/>
-		          </div>
-		          <div class="carousel-caption">
-		              <p>On the Prep Tab click the "Pools" box.</p>
-		          </div>
-		        </div>
-		        <div class="item">
-		          <div class="card-image">
-		            <img src="/images/new-to-basespace/pool-libraries-2.png"/>
-		          </div>
-		          <div class="carousel-caption">
-		              <p>Drag the samples from the plate to the 'Pools' section.</p>
-		          </div>
-		        </div>
-		        
-		      </div>
-
-		      <!-- Indicators -->
-		      <div class="carousel-bottom">
-		        <ol class="carousel-indicators" align="right">
-		          <li data-target="#carousel-pools" data-slide-to="0" class="active"></li>
-		          <li data-target="#carousel-pools" data-slide-to="1"></li>
-		        </ol>
-		      </div>
-
-		    </div>
-			
-		</div>		
-	
-	  </div>
-	
-	  <div class="clearfix"></div>
-
 	</div>
 
-	<div class="card-step">
-	
-	   <div class="card-container">
+	<div class="panel panel-default card-step">
+		<div class="panel-body">
+			<div class="row">
+				
+				<div class="col-sm-6 card-left">
+					
+					<div class="media">
+	                  <div class="media-left media-top">
+	                    <div class="num-circle">4</div>
+	                  </div>
+	                  <div class="media-body media-top card-title-open">
+	                    <h3 class="media-heading">Plan Runs</h3>
+	                    <p>Finish planning the run to be picked up by the sequencing instrument.</p>
+	                  </div>
+	                </div>
 
-		<div class="card-left">
-			<div class="card-left-top">
-				<div class="card-title">
-					<div class="num-circle">4</div>
-					<h3 class="card-title-open">Plan Run</h3>
+					<div class="card-left-bottom">
+						<p class="card-further-title">Further Readings</p>
+						<ul class="card-links">
+							<li> <a href="/articles/descriptive/planned-runs/">Plan Runs overview > </a> </li>
+							<li> <a href="/articles/tutorials/plan-runs/">How to plan Runs > </a> </li>
+						</ul>
+					</div>
+
 				</div>
-				<p class="card-desc">Finish planning the run to be picked up by the sequencing instrument</p>
-			</div>
-			<div class="card-left-bottom">
-				<p class="card-further-title">Further Readings</p>
-				<ul class="card-links">
-					<li> <a href="/articles/descriptive/planned-runs/">Plan Runs overview > </a> </li>
-					<li> <a href="/articles/tutorials/plan-runs/">How to plan Runs > </a> </li>
-				</ul>
+				
+				<div class="col-sm-6">
+					<!-- Carousel begins -->
+					<div id="carousel-run" class="carousel slide">
+
+					    <!-- Carousel slides -->
+					    <div class="carousel-inner">
+					        
+					    	<div class="item active">
+						        <div class="card-image">
+						            <img src="/images/new-to-basespace/plan-run.png"/>
+						        </div>
+						        <div class="carousel-caption">
+						            <p>Enter the relevant information and the Run is ready to be sequenced.</p>
+						        </div>
+					        </div>
+					        
+					    </div>
+
+					    <!-- Indicators -->
+					    <div class="carousel-bottom">
+					        <ol class="carousel-indicators" align="right">
+					    	    <li data-target="#carousel-run" data-slide-to="0" class="active"></li>
+					        </ol>
+					    </div>
+
+				    </div>
+				</div>
 			</div>
 		</div>
-
-		
-		<div class="card-right">
-			
-			<!-- Carousel begins -->
-			<div id="carousel-run" class="carousel slide">
-
-		      <!-- Carousel slides -->
-		      <div class="carousel-inner">
-		        
-		        <div class="item active">
-		          <div class="card-image">
-		            <img src="/images/new-to-basespace/plan-run.png"/>
-		          </div>
-		          <div class="carousel-caption">
-		              <p>Enter the relevant information and the Run is ready to be sequenced.</p>
-		          </div>
-		        </div>
-		        
-		      </div>
-
-		      <!-- Indicators -->
-		      <div class="carousel-bottom">
-		        <ol class="carousel-indicators" align="right">
-		          <li data-target="#carousel-run" data-slide-to="0" class="active"></li>
-		        </ol>
-		      </div>
-
-		    </div>
-			
-		</div>		
-
-	  </div>
-
-	  <div class="clearfix"></div>
-
 	</div>
 
 	<div class="gradient-divider"></div>
@@ -343,167 +335,159 @@ section_root: true
 </div><!-- Prep tab section ends -->
 
 <!-- Runs Monitoring section -->
-<div class="big-section">
+<div class="bsh-big-section">
 
 	<h2 class="section-title">Monitor your sequencing runs</h2>
 	
-	<div class="card-stack">
-	
-	  <div class="card-container">
-	 
-		<div class="card-left">
-			<div class="card-left-top">
-				<div class="card-stack-title">
-					<h3 class="card-title-open-stack">Run Charts</h3>
-					<p class="card-desc-stack">Charts are updated in real-time as the machine sequences the data</p>
+	<div class="panel panel-default card-step">
+		<div class="panel-body">
+			<div class="row">
+				
+				<div class="col-sm-6 card-left">
+					
+					<div class="media">
+		                <div class="media-body media-top card-title-open">
+		                    <h3 class="media-heading">Run Charts</h3>
+		                    <p>Charts are updated in real-time as the machine sequences the data.</p>
+		                </div>
+	                </div>
+
+					<div class="card-left-bottom">
+						<p class="card-further-title">Further Readings</p>
+						<ul class="card-links">
+							<li> <a href="/articles/descriptive/runs-overview/">Runs Overview > </a> </li>
+						</ul>
+					</div>
+
+				</div>
+				
+				<div class="col-sm-6">
+					<!-- Carousel begins -->
+					<div id="carousel-run-charts" class="carousel slide">
+
+				      <!-- Carousel slides -->
+				      <div class="carousel-inner">
+				        
+				        <div class="item active">
+				          <div class="card-image">
+				            <img src="/images/new-to-basespace/runs-chart.png"/>
+				          </div>
+				          <div class="carousel-caption">
+				              <p>Runs chart</p>
+				          </div>
+				        </div>
+				        <div class="item">
+				          <div class="card-image">
+				            <img src="/images/new-to-basespace/flow-chart.png"/>
+				          </div>
+				          <div class="carousel-caption">
+				              <p>Flow chart</p>
+				          </div>
+				        </div>
+				        <div class="item">
+				          <div class="card-image">
+				            <img src="/images/new-to-basespace/data-by-cycle.png"/>
+				          </div>
+				          <div class="carousel-caption">
+				              <p>Data by cycle graph</p>
+				          </div>
+				        </div>
+				        <div class="item">
+				          <div class="card-image">
+				            <img src="/images/new-to-basespace/data-by-lane.png"/>
+				          </div>
+				          <div class="carousel-caption">
+				              <p>Data by lane graph</p>
+				          </div>
+				        </div>
+				        <div class="item">
+				          <div class="card-image">
+				            <img src="/images/new-to-basespace/qscore-heatmap.png"/>
+				          </div>
+				          <div class="carousel-caption">
+				              <p>Q-score heatmap graph</p>
+				          </div>
+				        </div>
+				        <div class="item">
+				          <div class="card-image">
+				            <img src="/images/new-to-basespace/qscore-distribution.png"/>
+				          </div>
+				          <div class="carousel-caption">
+				              <p>Q-score distribution graph</p>
+				          </div>
+				        </div>
+
+				      </div>
+
+				      <!-- Indicators -->
+				      <div class="carousel-bottom">
+				        <ol class="carousel-indicators" align="right">
+				          <li data-target="#carousel-run-charts" data-slide-to="0" class="active"></li>
+				          <li data-target="#carousel-run-charts" data-slide-to="1"></li>
+				          <li data-target="#carousel-run-charts" data-slide-to="2"></li>
+				          <li data-target="#carousel-run-charts" data-slide-to="3"></li>
+				          <li data-target="#carousel-run-charts" data-slide-to="4"></li>
+				          <li data-target="#carousel-run-charts" data-slide-to="5"></li>
+				        </ol>
+				      </div>
+
+				    </div>
 				</div>
 			</div>
-			<div class="card-left-bottom">
-				<p class="card-further-title">Further Readings</p>
-				<ul class="card-links">
-					<li> <a href="/articles/descriptive/runs-overview/">Runs Overview > </a> </li>
-				</ul>
-			</div>
 		</div>
-
-		
-		<div class="card-right">
-			
-			<!-- Carousel begins -->
-			<div id="carousel-run-charts" class="carousel slide">
-
-		      <!-- Carousel slides -->
-		      <div class="carousel-inner">
-		        
-		        <div class="item active">
-		          <div class="card-image">
-		            <img src="/images/new-to-basespace/runs-chart.png"/>
-		          </div>
-		          <div class="carousel-caption">
-		              <p>Runs chart</p>
-		          </div>
-		        </div>
-		        <div class="item">
-		          <div class="card-image">
-		            <img src="/images/new-to-basespace/flow-chart.png"/>
-		          </div>
-		          <div class="carousel-caption">
-		              <p>Flow chart</p>
-		          </div>
-		        </div>
-		        <div class="item">
-		          <div class="card-image">
-		            <img src="/images/new-to-basespace/data-by-cycle.png"/>
-		          </div>
-		          <div class="carousel-caption">
-		              <p>Data by cycle graph</p>
-		          </div>
-		        </div>
-		        <div class="item">
-		          <div class="card-image">
-		            <img src="/images/new-to-basespace/data-by-lane.png"/>
-		          </div>
-		          <div class="carousel-caption">
-		              <p>Data by lane graph</p>
-		          </div>
-		        </div>
-		        <div class="item">
-		          <div class="card-image">
-		            <img src="/images/new-to-basespace/qscore-heatmap.png"/>
-		          </div>
-		          <div class="carousel-caption">
-		              <p>Q-score heatmap graph</p>
-		          </div>
-		        </div>
-		        <div class="item">
-		          <div class="card-image">
-		            <img src="/images/new-to-basespace/qscore-distribution.png"/>
-		          </div>
-		          <div class="carousel-caption">
-		              <p>Q-score distribution graph</p>
-		          </div>
-		        </div>
-
-		      </div>
-
-		      <!-- Indicators -->
-		      <div class="carousel-bottom">
-		        <ol class="carousel-indicators" align="right">
-		          <li data-target="#carousel-run-charts" data-slide-to="0" class="active"></li>
-		          <li data-target="#carousel-run-charts" data-slide-to="1"></li>
-		          <li data-target="#carousel-run-charts" data-slide-to="2"></li>
-		          <li data-target="#carousel-run-charts" data-slide-to="3"></li>
-		          <li data-target="#carousel-run-charts" data-slide-to="4"></li>
-		          <li data-target="#carousel-run-charts" data-slide-to="5"></li>
-		        </ol>
-		      </div>
-
-		    </div>
-			
-		</div>		
-
-	  </div>
-
-	  <div class="clearfix"></div>
-
 	</div>
-
-	<div class="card-stack">
 	
-	  <div class="card-container">
-	 
-		<div class="card-left">
-			<div class="card-left-top">
-				<div class="card-stack-title">
-					<h3 class="card-title-open-stack">Run Summary</h3>
-					<p class="card-desc-stack">An overall summary of the Run quality information is available</p>
+	<div class="panel panel-default card-step">
+		<div class="panel-body">
+			<div class="row">
+				
+				<div class="col-sm-6 card-left">
+					
+					<div class="media">
+		                <div class="media-body media-top card-title-open">
+		                    <h3 class="media-heading">Run Summary</h3>
+		                    <p>An overall summary of the Run quality information is available.</p>
+		                </div>
+	                </div>
+
+					<div class="card-left-bottom">
+						<p class="card-further-title">Further Readings</p>
+						<ul class="card-links">
+							<li> <a href="/articles/descriptive/runs-overview/">Runs Overview > </a> </li>
+							<li> <a href="/articles/tutorials/download-data-from-run/">Download data from Run > </a> </li>
+						</ul>
+					</div>
+
+				</div>
+				
+				<div class="col-sm-6">
+					<!-- Carousel begins -->
+					<div id="carousel-run-summary" class="carousel slide">
+
+					    <!-- Carousel slides -->
+					    <div class="carousel-inner">
+					        
+					        <div class="item active">
+					          <div class="card-image">
+					            <img src="/images/new-to-basespace/run-summary.png"/>
+					          </div>
+					          <div class="carousel-caption">
+					              <p>Runs summary chart</p>
+					          </div>
+					        </div>
+					    </div>
+
+					    <!-- Indicators -->
+					    <div class="carousel-bottom">
+					        <ol class="carousel-indicators" align="right">
+					    	    <li data-target="#carousel-run-charts" data-slide-to="0" class="active"></li>
+					        </ol>
+					    </div>
+
+					</div>
 				</div>
 			</div>
-			<div class="card-left-bottom">
-				<p class="card-further-title">Further Readings</p>
-				<ul class="card-links">
-					<li> <a href="/articles/descriptive/runs-overview/">Runs Overview > </a> </li>
-					<li> <a href="/articles/tutorials/download-data-from-run/">Download data from Run > </a> </li>
-				</ul>
-			</div>
 		</div>
-
-		
-		<div class="card-right">
-			
-			<!-- Carousel begins -->
-			<div id="carousel-run-summary" class="carousel slide">
-
-		      <!-- Carousel slides -->
-		      <div class="carousel-inner">
-		        
-		        <div class="item active">
-		          <div class="card-image">
-		            <img src="/images/new-to-basespace/run-summary.png"/>
-		          </div>
-		          <div class="carousel-caption">
-		              <p>Runs summary chart</p>
-		          </div>
-		        </div>
-		       
-
-		      </div>
-
-		      <!-- Indicators -->
-		      <div class="carousel-bottom">
-		        <ol class="carousel-indicators" align="right">
-		          <li data-target="#carousel-run-charts" data-slide-to="0" class="active"></li>
-		        </ol>
-		      </div>
-
-		    </div>
-			
-		</div>		
-
-	  </div>
-
-	  <div class="clearfix"></div>
-
 	</div>
 
 	<div class="gradient-divider"></div>
@@ -511,569 +495,541 @@ section_root: true
 </div> <!-- Runs Monitoring section ends -->
 
 <!-- Data analysis section -->
-<div class="big-section">
+<div class="bsh-big-section">
 
 	<h2 class="section-title">Analyze your data</h2>
 
-	<!-- Open step card -->
-	<div class="card-step">
-	
-	  <div class="card-container">
-	  	
-	  	<div class="card-left">
-			<div class="card-left-top">
-				<div class="card-title">
-					<div class="num-circle">A</div>
-					<h3 class="card-title-open">Find an App</h3>
+	<div class="panel panel-default card-step">
+		<div class="panel-body">
+			<div class="row">
+				
+				<div class="col-sm-6 card-left">
+					
+					<div class="media">
+	                  <div class="media-left media-top">
+	                    <div class="num-circle">1</div>
+	                  </div>
+	                  <div class="media-body media-top card-title-open">
+	                    <h3 class="media-heading">Find an App</h3>
+	                    <p>Discover applications in the BaseSpace Apps tab.</p>
+	                  </div>
+	                </div>
+
+					<div class="card-left-bottom">
+						<p class="card-further-title">Further Readings</p>
+						<ul class="card-links">
+							<li> <a href="/articles/descriptive/ui-overview/#headings_5">Apps tab > </a> </li>
+						</ul>
+					</div>
+
 				</div>
-				<p class="card-desc">Discover applications in the BaseSpace Apps tab</p>
-			</div>
-			<div class="card-left-bottom">
-				<p class="card-further-title">Further Readings</p>
-				<ul class="card-links">
-					<li> <a href="/articles/descriptive/ui-overview/#headings_5">Apps tab > </a> </li>
-				</ul>
-			</div>
-		</div>
-		
-		<div class="card-right">
-			
-			<!-- Carousel begins -->
-			<div id="carousel-find-app" class="carousel slide">
+				
+				<div class="col-sm-6">
+					<!-- Carousel begins -->
+					<div id="carousel-find-app" class="carousel slide">
 
-		      <!-- Carousel slides -->
-		      <div class="carousel-inner">
-		        
-		        <div class="item active">
-		          <div class="card-image">
-		            <img src="/images/new-to-basespace/find-apps.png"/>
-		          </div>
-		          <div class="carousel-caption">
-		              <p>Find the app to in the app store</p>
-		          </div>
-		        </div>
-		        
-		      </div>
+				      <!-- Carousel slides -->
+				      <div class="carousel-inner">
+				        
+				        <div class="item active">
+				          <div class="card-image">
+				            <img src="/images/new-to-basespace/find-apps.png"/>
+				          </div>
+				          <div class="carousel-caption">
+				              <p>Find the app to in the app store</p>
+				          </div>
+				        </div>
+				        
+				      </div>
 
-		      <!-- Indicators -->
-		      <div class="carousel-bottom">
-		        <ol class="carousel-indicators" align="right">
-		          <li data-target="#carousel-find-app" data-slide-to="0" class="active"></li>
-		        </ol>
-		      </div>
+				      <!-- Indicators -->
+				      <div class="carousel-bottom">
+				        <ol class="carousel-indicators" align="right">
+				          <li data-target="#carousel-find-app" data-slide-to="0" class="active"></li>
+				        </ol>
+				      </div>
 
-		    </div>
-			
-		</div>		
-	
-	  </div>
-	
-	  <div class="clearfix"></div>
-
-	</div> <!-- Open step card ends -->
-	
-	<!-- Open step card -->
-	<div class="card-step">
-	  
-	  <div class="card-container">
-
-		<div class="card-left">
-			<div class="card-left-top">
-				<div class="card-title">
-					<div class="num-circle">B</div>
-					<h3 class="card-title-open">Launch the app</h3>
+				    </div>
 				</div>
-				<p class="card-desc">To analyze your data, simply click Launch on an app</p>
-			</div>
-			<div class="card-left-bottom">
-				<p class="card-further-title">Further Readings</p>
-				<ul class="card-links">
-					<li> <a href="/articles/tutorials/launch-an-app/">How to launch an app > </a> </li>
-				</ul>
 			</div>
 		</div>
+	</div>
 
-		
-		<div class="card-right">
-			
-			<!-- Carousel begins -->
-			<div id="carousel-launch-app" class="carousel slide">
+	<div class="panel panel-default card-step">
+		<div class="panel-body">
+			<div class="row">
+				
+				<div class="col-sm-6 card-left">
+					
+					<div class="media">
+	                  <div class="media-left media-top">
+	                    <div class="num-circle">2</div>
+	                  </div>
+	                  <div class="media-body media-top card-title-open">
+	                    <h3 class="media-heading">Launch the app</h3>
+	                    <p>To analyze your data, simply click Launch on an app.</p>
+	                  </div>
+	                </div>
 
-		      <!-- Carousel slides -->
-		      <div class="carousel-inner">
-		        
-		        <div class="item active">
-		          <div class="card-image">
-		            <img src="/images/new-to-basespace/launch-app.png"/>
-		          </div>
-		          <div class="carousel-caption">
-		              <p>Launch the chosen app from the app page</p>
-		          </div>
-		        </div>
-		        
-		      </div>
+					<div class="card-left-bottom">
+						<p class="card-further-title">Further Readings</p>
+						<ul class="card-links">
+							<li> <a href="/articles/tutorials/launch-an-app/">How to launch an app > </a> </li>
+						</ul>
+					</div>
 
-		      <!-- Indicators -->
-		      <div class="carousel-bottom">
-		        <ol class="carousel-indicators" align="right">
-		          <li data-target="#carousel-launch-app" data-slide-to="0" class="active"></li>
-		        </ol>
-		      </div>
-
-		    </div>
-			
-		</div>
-
-	  </div>
-
-		<div class="clearfix"></div>
-
-	</div> <!-- Open step card ends -->
-
-	<!-- Open step card -->
-	<div class="card-step">
-
-	  <div class="card-container">
-
-	  	<div class="card-left">
-			<div class="card-left-top">
-				<div class="card-title">
-					<div class="num-circle">C</div>
-					<h3 class="card-title-open">Enter Analysis input and parameters</h3>
 				</div>
-				<p class="card-desc">Before the analysis is started, you will be asked to fill out some input parameters</p>
-			</div>
-			<div class="card-left-bottom">
-				<p class="card-further-title">Further Readings</p>
-				<ul class="card-links">
-					<li> <a href="/articles/tutorials/launch-an-app/#headings_2">How to enter input parameters > </a> </li>
-				</ul>
-			</div>
-		</div>
-		
-		<div class="card-right">
-			
-			<!-- Carousel begins -->
-			<div id="carousel-analysis" class="carousel slide">
+				
+				<div class="col-sm-6">
+					<!-- Carousel begins -->
+					<div id="carousel-launch-app" class="carousel slide">
 
-		      <!-- Carousel slides -->
-		      <div class="carousel-inner">
-		        
-		        <div class="item active">
-		          <div class="card-image">
-		            <img src="/images/new-to-basespace/input-form.png"/>
-		          </div>
-		          <div class="carousel-caption">
-		              <p>Enter the input parameters and continue to start the analysis</p>
-		          </div>
-		        </div>
-		       
-		      </div>
+				      <!-- Carousel slides -->
+				      <div class="carousel-inner">
+				        
+				        <div class="item active">
+				          <div class="card-image">
+				            <img src="/images/new-to-basespace/launch-app.png"/>
+				          </div>
+				          <div class="carousel-caption">
+				              <p>Launch the chosen app from the app page</p>
+				          </div>
+				        </div>
+				        
+				      </div>
 
-		      <!-- Indicators -->
-		      <div class="carousel-bottom">
-		        <ol class="carousel-indicators" align="right">
-		          <li data-target="#carousel-analysis" data-slide-to="0" class="active"></li>
-		        </ol>
-		      </div>
+				      <!-- Indicators -->
+				      <div class="carousel-bottom">
+				        <ol class="carousel-indicators" align="right">
+				          <li data-target="#carousel-launch-app" data-slide-to="0" class="active"></li>
+				        </ol>
+				      </div>
 
-		    </div>
-			
-		</div>		
-	
-	  </div>
-	
-	  <div class="clearfix"></div>
-
-	</div> <!-- Open step card -->
-
-	<!-- Open step card -->
-	<div class="card-step">
-	
-	   <div class="card-container">
-
-		<div class="card-left">
-			<div class="card-left-top">
-				<div class="card-title">
-					<div class="num-circle">D</div>
-					<h3 class="card-title-open">Monitor the analysis</h3>
+				    </div>
 				</div>
-				<p class="card-desc">Some applications will report information back to the user while running the analysis, this information can be viewed directly in BaseSpace</p>
-			</div>
-			<div class="card-left-bottom">
-				<p class="card-further-title">Further Readings</p>
-				<ul class="card-links">
-					<li> <a href="/articles/tutorials/launch-an-app/">How to launch an app > </a> </li>
-					<li> <a href="/articles/tutorials/requeue-analysis-for-run//">How to requeue analysis for Run > </a> </li>
-				</ul>
 			</div>
 		</div>
+	</div>
 
-		
-		<div class="card-right">
-			
-			<!-- Carousel begins -->
-			<div id="carousel-monitor" class="carousel slide">
+	<div class="panel panel-default card-step">
+		<div class="panel-body">
+			<div class="row">
+				
+				<div class="col-sm-6 card-left">
+					
+					<div class="media">
+	                  <div class="media-left media-top">
+	                    <div class="num-circle">3</div>
+	                  </div>
+	                  <div class="media-body media-top card-title-open">
+	                    <h3 class="media-heading">Enter Analysis input and parameters</h3>
+	                    <p>Before the analysis is started, you will be asked to fill out some input parameters.</p>
+	                  </div>
+	                </div>
 
-		      <!-- Carousel slides -->
-		      <div class="carousel-inner">
-		        
-		        <div class="item active">
-		          <div class="card-image">
-		            <img src="/images/new-to-basespace/monitor-analysis.png"/>
-		          </div>
-		          <div class="carousel-caption">
-		              <p>Monitor the analysis while it is in progress</p>
-		          </div>
-		        </div>
-		        
-		      </div>
+					<div class="card-left-bottom">
+						<p class="card-further-title">Further Readings</p>
+						<ul class="card-links">
+							<li> <a href="/articles/tutorials/launch-an-app/#headings_2">How to enter input parameters > </a> </li>
+						</ul>
+					</div>
 
-		      <!-- Indicators -->
-		      <div class="carousel-bottom">
-		        <ol class="carousel-indicators" align="right">
-		          <li data-target="#carousel-monitor" data-slide-to="0" class="active"></li>
-		        </ol>
-		      </div>
-
-		    </div>
-			
-		</div>		
-
-	  </div>
-
-	  <div class="clearfix"></div>
-
-	</div> <!-- Open step card ends -->
-
-	<!-- folded card -->
-
-	<!-- Open step card -->
-	<div class="card-step">
-	
-	   <div class="card-container">
-
-		<div class="card-left">
-			<div class="card-left-top">
-				<div class="card-title">
-					<div class="num-circle">E</div>
-					<h3 class="card-title-open">Read Analysis report</h3>
 				</div>
-				<p class="card-desc">Once the analysis is complete, the app will prepare a report for you in BaseSpace with more information about the analysis and results</p>
-			</div>
-			<div class="card-left-bottom">
-				<p class="card-further-title">Further Readings</p>
-				<ul class="card-links">
-					<li> <a href="/articles/tutorials/launch-an-app/">How to launch an app > </a> </li>
-					<li> <a href="/articles/tutorials/rename-an-analysis/">Rename analysis > </a> </li>
-				</ul>
+				
+				<div class="col-sm-6">
+					<!-- Carousel begins -->
+					<div id="carousel-analysis" class="carousel slide">
+
+				      <!-- Carousel slides -->
+				      <div class="carousel-inner">
+				        
+				        <div class="item active">
+				          <div class="card-image">
+				            <img src="/images/new-to-basespace/input-form.png"/>
+				          </div>
+				          <div class="carousel-caption">
+				              <p>Enter the input parameters and continue to start the analysis</p>
+				          </div>
+				        </div>
+				       
+				      </div>
+
+				      <!-- Indicators -->
+				      <div class="carousel-bottom">
+				        <ol class="carousel-indicators" align="right">
+				          <li data-target="#carousel-analysis" data-slide-to="0" class="active"></li>
+				        </ol>
+				      </div>
+
+				    </div>
+				</div>
 			</div>
 		</div>
+	</div>
 
-		
-		<div class="card-right">
-			
-			<!-- Carousel begins -->
-			<div id="carousel-read" class="carousel slide">
+	<div class="panel panel-default card-step">
+		<div class="panel-body">
+			<div class="row">
+				
+				<div class="col-sm-6 card-left">
+					
+					<div class="media">
+	                  <div class="media-left media-top">
+	                    <div class="num-circle">4</div>
+	                  </div>
+	                  <div class="media-body media-top card-title-open">
+	                    <h3 class="media-heading">Monitor the analysis</h3>
+	                    <p>Some applications will report information back to the user while running the analysis, this information can be viewed directly in BaseSpace.</p>
+	                  </div>
+	                </div>
 
-		      <!-- Carousel slides -->
-		      <div class="carousel-inner">
-		        
-		        <div class="item active">
-		          <div class="card-image">
-		            <img src="/images/new-to-basespace/analysis-report.png"/>
-		          </div>
-		          <div class="carousel-caption">
-		              <p>Read the analysis report</p>
-		          </div>
-		        </div>
-		        
-		      </div>
+					<div class="card-left-bottom">
+						<p class="card-further-title">Further Readings</p>
+						<ul class="card-links">
+							<li> <a href="/articles/tutorials/launch-an-app/">How to launch an app > </a> </li>
+							<li> <a href="/articles/tutorials/requeue-analysis-for-run//">How to requeue analysis for Run > </a> </li>
+						</ul>
+					</div>
 
-		      <!-- Indicators -->
-		      <div class="carousel-bottom">
-		        <ol class="carousel-indicators" align="right">
-		          <li data-target="#carousel-read" data-slide-to="0" class="active"></li>
-		        </ol>
-		      </div>
+				</div>
+				
+				<div class="col-sm-6">
+					<!-- Carousel begins -->
+					<div id="carousel-monitor" class="carousel slide">
 
-		    </div>
-			
-		</div>		
+				      <!-- Carousel slides -->
+				      <div class="carousel-inner">
+				        
+				        <div class="item active">
+				          <div class="card-image">
+				            <img src="/images/new-to-basespace/monitor-analysis.png"/>
+				          </div>
+				          <div class="carousel-caption">
+				              <p>Monitor the analysis while it is in progress</p>
+				          </div>
+				        </div>
+				        
+				      </div>
 
-	  </div>
+				      <!-- Indicators -->
+				      <div class="carousel-bottom">
+				        <ol class="carousel-indicators" align="right">
+				          <li data-target="#carousel-monitor" data-slide-to="0" class="active"></li>
+				        </ol>
+				      </div>
 
-	  <div class="clearfix"></div>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="panel panel-default card-step">
+		<div class="panel-body">
+			<div class="row">
+				
+				<div class="col-sm-6 card-left">
+					
+					<div class="media">
+	                  <div class="media-left media-top">
+	                    <div class="num-circle">5</div>
+	                  </div>
+	                  <div class="media-body media-top card-title-open">
+	                    <h3 class="media-heading">Read Analysis report</h3>
+	                    <p>Once the analysis is complete, the app will prepare a report for you in BaseSpace with more information about the analysis and results.</p>
+	                  </div>
+	                </div>
 
-	</div> <!-- Open step card ends -->	
+					<div class="card-left-bottom">
+						<p class="card-further-title">Further Readings</p>
+						<ul class="card-links">
+							<li> <a href="/articles/tutorials/launch-an-app/">How to launch an app > </a> </li>
+							<li> <a href="/articles/tutorials/rename-an-analysis/">Rename analysis > </a> </li>
+						</ul>
+					</div>
 
+				</div>
+				
+				<div class="col-sm-6">
+					<!-- Carousel begins -->
+					<div id="carousel-read" class="carousel slide">
+
+				      <!-- Carousel slides -->
+				      <div class="carousel-inner">
+				        
+				        <div class="item active">
+				          <div class="card-image">
+				            <img src="/images/new-to-basespace/analysis-report.png"/>
+				          </div>
+				          <div class="carousel-caption">
+				              <p>Read the analysis report</p>
+				          </div>
+				        </div>
+				        
+				      </div>
+
+				      <!-- Indicators -->
+				      <div class="carousel-bottom">
+				        <ol class="carousel-indicators" align="right">
+				          <li data-target="#carousel-read" data-slide-to="0" class="active"></li>
+				        </ol>
+				      </div>
+
+				    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
 	<div class="gradient-divider"></div>
 
 </div><!-- Data analysis section ends -->
 
 <!-- Manage data section -->
-<div class="big-section">
+<div class="bsh-big-section">
 
 	<h2 class="section-title">Manage your data</h2>
-	
-	<div class="card-stack">
-	
-	  <div class="card-container">
-	 
-		<div class="card-left">
-			<div class="card-left-top">
-				<div class="card-stack-title">
-					<h3 class="card-title-open-stack">Share with one or many users</h3>
-					<p class="card-desc-stack">Share data with individual users (AND) Share data with many users at once using the Link option</p>
+
+	<div class="panel panel-default card-step">
+		<div class="panel-body">
+			<div class="row">
+				
+				<div class="col-sm-6 card-left">
+					
+					<div class="media">
+		                <div class="media-body media-top card-title-open">
+		                    <h3 class="media-heading">Share with one or many users</h3>
+		                    <p>Share data with individual users (AND) Share data with many users at once using the Link option.</p>
+		                </div>
+	                </div>
+
+					<div class="card-left-bottom">
+						<p class="card-further-title">Further Readings</p>
+						<ul class="card-links">
+							<li> <a href="/articles/tutorials/share-data-using-getlink/">Share data using Getlink > </a> </li>
+							<li> <a href="/articles/tutorials/share-data-using-email/">Share data using Email > </a> </li>
+						</ul>
+					</div>
+
+				</div>
+				
+				<div class="col-sm-6">
+					<!-- Carousel begins -->
+					<div id="carousel-share" class="carousel slide">
+
+				      <!-- Carousel slides -->
+				      <div class="carousel-inner">
+				        
+				        <div class="item active">
+				          <div class="card-image">
+				            <img src="/images/new-to-basespace/pro-run.png"/>
+				          </div>
+				          <div class="carousel-caption">
+				              <p>Choose a desired project or run to share</p>
+				          </div>
+				        </div>
+				        <div class="item">
+				          <div class="card-image">
+				            <img src="/images/new-to-basespace/share-2.png"/>
+				          </div>
+				          <div class="carousel-caption">
+				              <p>Use either of the 'Share by email' or 'Share by Getlink' methods</p>
+				          </div>
+				        </div>
+				        
+				      </div>
+
+				      <!-- Indicators -->
+				      <div class="carousel-bottom">
+				        <ol class="carousel-indicators" align="right">
+				          <li data-target="#carousel-share" data-slide-to="0" class="active"></li>
+				          <li data-target="#carousel-share" data-slide-to="1"></li>
+				        </ol>
+				      </div>
+
+				    </div>
 				</div>
 			</div>
-			<div class="card-left-bottom">
-				<p class="card-further-title">Further Readings</p>
-				<ul class="card-links">
-					<li> <a href="/articles/tutorials/share-data-using-getlink/">Share data using Getlink > </a> </li>
-					<li> <a href="/articles/tutorials/share-data-using-email/">Share data using Email > </a> </li>
-				</ul>
-			</div>
 		</div>
-
-		
-		<div class="card-right">
-			
-			<!-- Carousel begins -->
-			<div id="carousel-share" class="carousel slide">
-
-		      <!-- Carousel slides -->
-		      <div class="carousel-inner">
-		        
-		        <div class="item active">
-		          <div class="card-image">
-		            <img src="/images/new-to-basespace/pro-run.png"/>
-		          </div>
-		          <div class="carousel-caption">
-		              <p>Choose a desired project or run to share</p>
-		          </div>
-		        </div>
-		        <div class="item">
-		          <div class="card-image">
-		            <img src="/images/new-to-basespace/share-2.png"/>
-		          </div>
-		          <div class="carousel-caption">
-		              <p>Use either of the 'Share by email' or 'Share by Getlink' methods</p>
-		          </div>
-		        </div>
-		        
-		      </div>
-
-		      <!-- Indicators -->
-		      <div class="carousel-bottom">
-		        <ol class="carousel-indicators" align="right">
-		          <li data-target="#carousel-share" data-slide-to="0" class="active"></li>
-		          <li data-target="#carousel-share" data-slide-to="1"></li>
-		        </ol>
-		      </div>
-
-		    </div>
-			
-		</div>		
-
-	  </div>
-
-	  <div class="clearfix"></div>
-
 	</div>
-
-	<div class="card-stack">
 	
-	  <div class="card-container">
-	 
-		<div class="card-left">
-			<div class="card-left-top">
-				<div class="card-stack-title">
-					<h3 class="card-title-open-stack">Transfer ownership</h3>
-					<p class="card-desc-stack">Grant another user some or full ownership of any of your data</p>
+	<div class="panel panel-default card-step">
+		<div class="panel-body">
+			<div class="row">
+				
+				<div class="col-sm-6 card-left">
+					
+					<div class="media">
+		                <div class="media-body media-top card-title-open">
+		                    <h3 class="media-heading">Transfer ownership</h3>
+		                    <p>Grant another user some or full ownership of any of your data.</p>
+		                </div>
+	                </div>
+
+					<div class="card-left-bottom">
+						<p class="card-further-title">Further Readings</p>
+						<ul class="card-links">
+							<li> <a href="/articles/tutorials/transfer-ownership/">How to transfer Ownership > </a> </li>
+						</ul>
+					</div>
+
+				</div>
+				
+				<div class="col-sm-6">
+					<!-- Carousel begins -->
+					<div id="carousel-transfer" class="carousel slide">
+
+				      <!-- Carousel slides -->
+				      <div class="carousel-inner">
+				        
+				        <div class="item active">
+				          <div class="card-image">
+				            <img src="/images/new-to-basespace/pro-run.png"/>
+				          </div>
+				          <div class="carousel-caption">
+				              <p>Choose a desired project or run to share</p>
+				          </div>
+				        </div>
+				        <div class="item">
+				          <div class="card-image">
+				            <img src="/images/new-to-basespace/transfer-2.png"/>
+				          </div>
+				          <div class="carousel-caption">
+				              <p>Choose the 'Transfer Ownership' button.</p>
+				          </div>
+				        </div>
+				        
+				      </div>
+
+				      <!-- Indicators -->
+				      <div class="carousel-bottom">
+				        <ol class="carousel-indicators" align="right">
+				          <li data-target="#carousel-transfer" data-slide-to="0" class="active"></li>
+				          <li data-target="#carousel-transfer" data-slide-to="1"></li>
+				        </ol>
+				      </div>
+
+				    </div>
 				</div>
 			</div>
-			<div class="card-left-bottom">
-				<p class="card-further-title">Further Readings</p>
-				<ul class="card-links">
-					<li> <a href="/articles/tutorials/transfer-ownership/">How to transfer Ownership > </a> </li>
-				</ul>
-			</div>
 		</div>
-
-		
-		<div class="card-right">
-			
-			<!-- Carousel begins -->
-			<div id="carousel-transfer" class="carousel slide">
-
-		      <!-- Carousel slides -->
-		      <div class="carousel-inner">
-		        
-		        <div class="item active">
-		          <div class="card-image">
-		            <img src="/images/new-to-basespace/pro-run.png"/>
-		          </div>
-		          <div class="carousel-caption">
-		              <p>Choose a desired project or run to share</p>
-		          </div>
-		        </div>
-		        <div class="item">
-		          <div class="card-image">
-		            <img src="/images/new-to-basespace/transfer-2.png"/>
-		          </div>
-		          <div class="carousel-caption">
-		              <p>Choose the 'Transfer Ownership' button.</p>
-		          </div>
-		        </div>
-		        
-		      </div>
-
-		      <!-- Indicators -->
-		      <div class="carousel-bottom">
-		        <ol class="carousel-indicators" align="right">
-		          <li data-target="#carousel-transfer" data-slide-to="0" class="active"></li>
-		          <li data-target="#carousel-transfer" data-slide-to="1"></li>
-		        </ol>
-		      </div>
-
-		    </div>
-			
-		</div>		
-
-	  </div>
-
-	  <div class="clearfix"></div>
-
 	</div>
 
-	<div class="card-stack">
-	
-	  <div class="card-container">
-	 
-		<div class="card-left">
-			<div class="card-left-top">
-				<div class="card-stack-title">
-					<h3 class="card-title-open-stack">Manage data in your account</h3>
-					<p class="card-desc-stack">Copy data to other locations in BaseSpace (AND) Remove or delete data from your BaseSpace account</p>
+	<div class="panel panel-default card-step">
+		<div class="panel-body">
+			<div class="row">
+				
+				<div class="col-sm-6 card-left">
+					
+					<div class="media">
+		                <div class="media-body media-top card-title-open">
+		                    <h3 class="media-heading">Manage data in your account</h3>
+		                    <p>Copy data to other locations in BaseSpace (AND) Remove or delete data from your BaseSpace account.</p>
+		                </div>
+	                </div>
+
+					<div class="card-left-bottom">
+						<p class="card-further-title">Further Readings</p>
+						<ul class="card-links">
+							<li> <a href="/articles/tutorials/copy-samples-to-another-project/"> How to copy samples to another project > </a> </li>
+							<li> <a href="/articles/tutorials/delete-data-and-restore/"> How to delete/restore data > </a> </li>
+						</ul>
+					</div>
+
+				</div>
+				
+				<div class="col-sm-6">
+					<!-- Carousel begins -->
+					<div id="carousel-manage" class="carousel slide">
+
+				      <!-- Carousel slides -->
+				      <div class="carousel-inner">
+				        
+				        <div class="item active">
+				          <div class="card-image">
+				            <img src="/images/new-to-basespace/manage-1.png"/>
+				          </div>
+				          <div class="carousel-caption">
+				              <p>Choose the desired project to manage</p>
+				          </div>
+				        </div>
+				        <div class="item">
+				          <div class="card-image">
+				            <img src="/images/new-to-basespace/manage-2.png"/>
+				          </div>
+				          <div class="carousel-caption">
+				              <p>You can Copy Samples</p>
+				          </div>
+				        </div>
+				        <div class="item">
+				          <div class="card-image">
+				            <img src="/images/new-to-basespace/manage-3.png"/>
+				          </div>
+				          <div class="carousel-caption">
+				              <p>Move data to trash</p>
+				          </div>
+				        </div>
+				        
+				      </div>
+
+				      <!-- Indicators -->
+				      <div class="carousel-bottom">
+				        <ol class="carousel-indicators" align="right">
+				          <li data-target="#carousel-manage" data-slide-to="0" class="active"></li>
+				          <li data-target="#carousel-manage" data-slide-to="1"></li>
+				          <li data-target="#carousel-manage" data-slide-to="2"></li>
+				        </ol>
+				      </div>
+
+				    </div>
 				</div>
 			</div>
-			<div class="card-left-bottom">
-				<p class="card-further-title">Further Readings</p>
-				<ul class="card-links">
-					<li> <a href="/articles/tutorials/copy-samples-to-another-project/"> How to copy samples to another project > </a> </li>
-					<li> <a href="/articles/tutorials/delete-data-and-restore/"> How to delete/restore data > </a> </li>
-				</ul>
-			</div>
 		</div>
-
-		
-		<div class="card-right">
-			
-			<!-- Carousel begins -->
-			<div id="carousel-manage" class="carousel slide">
-
-		      <!-- Carousel slides -->
-		      <div class="carousel-inner">
-		        
-		        <div class="item active">
-		          <div class="card-image">
-		            <img src="/images/new-to-basespace/manage-1.png"/>
-		          </div>
-		          <div class="carousel-caption">
-		              <p>Choose the desired project to manage</p>
-		          </div>
-		        </div>
-		        <div class="item">
-		          <div class="card-image">
-		            <img src="/images/new-to-basespace/manage-2.png"/>
-		          </div>
-		          <div class="carousel-caption">
-		              <p>You can Copy Samples</p>
-		          </div>
-		        </div>
-		        <div class="item">
-		          <div class="card-image">
-		            <img src="/images/new-to-basespace/manage-3.png"/>
-		          </div>
-		          <div class="carousel-caption">
-		              <p>Move data to trash</p>
-		          </div>
-		        </div>
-		        
-		      </div>
-
-		      <!-- Indicators -->
-		      <div class="carousel-bottom">
-		        <ol class="carousel-indicators" align="right">
-		          <li data-target="#carousel-manage" data-slide-to="0" class="active"></li>
-		          <li data-target="#carousel-manage" data-slide-to="1"></li>
-		          <li data-target="#carousel-manage" data-slide-to="2"></li>
-		        </ol>
-		      </div>
-
-		    </div>
-			
-		</div>		
-
-	  </div>
-
-	  <div class="clearfix"></div>
-
 	</div>
-	
+
 	<div class="gradient-divider"></div>
 
 </div> <!-- Manage data section ends -->
 
 <!-- Links summary section -->
-<div class="big-section">
+
 	
+<div class="bsh-big-section" id="links-summary">
 	<h2 class="section-title">Learn about the features in depth</h2>
-
-	<div class="links-all">
-		
-		<table class="links-table">
-		  <tr>
-		    <td class="">
-		    	<p class="links-title">Prep Tab</p>
-		    	<ul class="card-links">
-					<li> <a href="/articles/descriptive/biological-samples/">Biological Samples Overview > </a> </li>
-					<li> <a href="/articles/tutorials/prep-libraries/">How to Prep Libraries > </a> </li>
-					<li> <a href="/articles/tutorials/pool-libraries/">How to pool libraries > </a> </li>
-					<li> <a href="/articles/tutorials/plan-runs/">How to plan Runs > </a> </li>
-				</ul>
-		    </td>
-		    <td class="">
-		    	<p class="links-title">Runs</p>
-		    	<ul class="card-links">
-					<li> <a href="/articles/descriptive/runs-overview/">Runs Overview > </a> </li>
-					<li> <a href="/articles/tutorials/download-data-from-run/">Download data from Run > </a> </li>
-				</ul>
-		    </td>
-		  </tr>
-		  <tr>
-		    <td class="">
-		    	<p class="links-title">Analysis</p>
-		    	<ul class="card-links">
-					<li> <a href="/articles/descriptive/ui-overview/#headings_5">Apps tab > </a> </li>
-					<li> <a href="/articles/tutorials/launch-an-app/">How to launch an app > </a> </li>
-					<li> <a href="/articles/tutorials/requeue-analysis-for-run//">How to requeue analysis for Run > </a> </li>
-					<li> <a href="/articles/tutorials/rename-an-analysis/">Rename analysis > </a> </li>
-				</ul>
-		    </td>
-		    <td class="">
-		    	<p class="links-title">Data Management</p>
-		    	<ul class="card-links">
-					<li> <a href="/articles/tutorials/share-data-using-getlink/">Share data using Getlink > </a> </li>
-					<li> <a href="/articles/tutorials/transfer-ownership/">How to transfer Ownership > </a> </li>
-					<li> <a href="/articles/tutorials/copy-samples-to-another-project/"> How to copy samples to another project > </a> </li>
-					<li> <a href="/articles/tutorials/delete-data-and-restore/"> How to delete/restore data > </a> </li>
-				</ul>
-		    </td>
-		  </tr>
-	
-		</table>
+	<div class="row">
+		<div class="col-sm-6">
+			<h4>Prep Tab</h4>
+			<ul class="list-unstyled">
+				<li> <a href="/articles/descriptive/biological-samples/">Biological Samples Overview &raquo; </a> </li>
+				<li> <a href="/articles/tutorials/prep-libraries/">How to Prep Libraries &raquo; </a> </li>
+				<li> <a href="/articles/tutorials/pool-libraries/">How to pool libraries &raquo; </a> </li>
+				<li> <a href="/articles/tutorials/plan-runs/">How to plan Runs &raquo; </a> </li>
+			</ul>
+			<br />
+			<h4>Analysis</h4>
+			<ul class="list-unstyled">
+				<li> <a href="/articles/descriptive/ui-overview/#headings_5">Apps tab &raquo; </a> </li>
+				<li> <a href="/articles/tutorials/launch-an-app/">How to launch an app &raquo; </a> </li>
+				<li> <a href="/articles/tutorials/requeue-analysis-for-run//">How to requeue analysis for Run &raquo; </a> </li>
+				<li> <a href="/articles/tutorials/rename-an-analysis/">Rename analysis &raquo; </a> </li>
+			</ul>
+			<br />
+		</div>
+		<div class="col-sm-6">
+			<h4>Runs</h4>
+			<ul class="list-unstyled">
+				<li> <a href="/articles/descriptive/runs-overview/">Runs Overview &raquo; </a> </li>
+				<li> <a href="/articles/tutorials/download-data-from-run/">Download data from Run &raquo; </a> </li>
+			</ul>
+			<br />
+			<h4>Data Management</h4>
+			<ul class="list-unstyled">
+				<li> <a href="/articles/tutorials/share-data-using-getlink/">Share data using Getlink &raquo; </a> </li>
+				<li> <a href="/articles/tutorials/transfer-ownership/">How to transfer Ownership &raquo; </a> </li>
+				<li> <a href="/articles/tutorials/copy-samples-to-another-project/"> How to copy samples to another project &raquo; </a> </li>
+				<li> <a href="/articles/tutorials/delete-data-and-restore/"> How to delete/restore data &raquo; </a> </li>
+			</ul>
+			<br />
+		</div>
 	</div>
-
 </div>

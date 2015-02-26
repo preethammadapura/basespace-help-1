@@ -1,65 +1,78 @@
 ---
 layout: default
 hide_welcome_banner: true
+is_article: true
 ---
 <!--  Breadcrumb bar  -->
 {% include article-breadcrumbs.html %}
 <!--  Breadcrumb bar ends  -->
 
-  <!--  Row begins  -->
+<div class="container">
   <div class="row">
-  
-    <!-- Side Nav Bar -->
-      <nav class="bs-docs-sidebar">
+
+    <div class="col-lg-2 col-md-2 hidden-sm hidden-xs" id="sidenav-column">
+      <div id="sidenav-list" class="affix" style="display:none;">
         {% if page.headings and page.headings.size > 0 %}
-          <ul id="sidenav" class="nav nav-stacked col-sm-2" data-spy="affix">
+          <ul class="nav nav-stacked text-right">
           {% for t in page.headings %}
-    			  {% if t.Level == 2 %}
-      			  <li>
-        				<a href="#{{ t.Id }}">{{ t.Text }}</a>
-        				{% if t.children and t.children.size > 0 %}
-          				<ul class="nav nav-stacked">
-          				{% for child in t.children %}
-          					{% if child.Level == 3 %}
-          					<li>
-          						<a href="#{{ child.Id }}">{{ child.Text }}</a>
-          					</li>
-          					{% endif %}
-          				{% endfor %}
-          				</ul>
-        				{% endif %}
-      			  </li>
-    			  {% endif %}
+            {% if t.Level == 2 %}
+              <li>
+                <a href="#{{ t.Id }}">{{ t.Text }}</a>
+                {% if t.children and t.children.size > 0 %}
+                  <ul class="nav nav-stacked">
+                  {% for child in t.children %}
+                    {% if child.Level == 3 %}
+                    <li>
+                      <a href="#{{ child.Id }}">{{ child.Text }}</a>
+                    </li>
+                    {% endif %}
+                  {% endfor %}
+                  </ul>
+                {% endif %}
+              </li>
+            {% endif %}
           {% endfor %}
           </ul>
         {% endif %}
-      </nav>
-    <!-- Side Nav Bar ends -->
+      </div>
+    </div><!-- /end side nav column -->
+    
+    <div class="col-lg-12 col-md-12" id="content-column">
+    
+      <div class="row">
+        
+        <div class="col-lg-10 col-md-12">
+          <!-- Article Header -->
+          {% if (page.hide_article_title == null || page.hide_article_title == false) %}
+            <h1 class="bsh-article-title">{{ page.title }}</h1>
+          {% endif %}
+          <!-- Article Header ends -->
 
-    <!--  Main article content with title  -->
-    <div class="col-sm-7 col-sm-offset-2 main-layout">
-      
-      <!-- Article Header -->
-      <h1 class="article-title">{{ page.title }}</h1>
-      <!-- Article Header ends -->
+          <!-- Article Body -->
+          <div class="bsh-article-content">
+            {{ content }}
+          </div> 
+          <!-- Article-body ends -->
+        </div>
+        
+        <div class="col-lg-2 hidden-md hidden-sm hidden-xs">
+          <!--  article sidebar -->
+          {% if (page.hide_github_edit == null || page.hide_github_edit == false) %}
+            {% include article-sidebar.html %}
+          {% endif %}
+        </div>
 
-      <!-- Article Body -->
-      <div class="article-content">
-        {{ content }}
-      </div> 
-      <!-- Article-body ends -->
+      </div>
 
-    </div>
-    <!--  Main article layout ends  -->
+      <!--  article sidebar -->
+      {% if (page.hide_github_edit == null || page.hide_github_edit == false) %}
+        {% include edit.html %}
+      {% endif %}
 
-    <!-- Article sidebar -->
-    {% include article-sidebar.html %}
-    <!-- Article sidebar ends -->
+    </div><!-- /end main content column -->
+  
+  </div><!-- /end main .row -->
 
-    <div class="clearfix"></div>
+</div><!-- /end .container -->
 
-  </div>
-  <!--  Row ends  -->
 
-<!--  container ends -->
-{% include edit.html %}

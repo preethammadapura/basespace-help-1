@@ -3,32 +3,18 @@ layout: default
 title: "Articles"
 section_root: true
 hide_welcome_banner: true
+is_article: false
 ---
 {% include article-breadcrumbs.html %}
 
-<div class="landing-page">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="bsh-article-title">Articles</h1>
+      <p>Browse list of tutorials, walkthroughs and articles</p>
 
-     <div class="row">
-        <!-- intro banner -->
-        <div class="col-xs-8 col-xs-offset-2">
-          <div id="landingpage-main">
-            <h1 class="landingpage-title">Articles</h1>
-            <p class="landingpage-p">Browse list of tutorials, walkthroughs and articles</p>
-            <div class="landingpage-line"></div>
-          </div>
-             
-        </div>
-        <!-- intro banner ends-->
-     </div>
-      
-
-    <!-- main Section -->
-    <div class="row">  
-      <br>          
-        <!--accordion column-->
-        <div class="col-xs-8 col-xs-offset-2" id="column-main"> 
-            
-            <!-- accordion --> 
+      <hr/>
+      <!-- accordion --> 
             <div class="accordion-new" id="accordion">
                 
                 <!--section1 begins-->
@@ -112,7 +98,7 @@ hide_welcome_banner: true
                   
                       <div class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
                           <div class="toggle-icon"><span class="glyphicon glyphicon-plus"></span></div> 
-                          <p class="accordion-title">Runs Monitoring</p>
+                          <p class="accordion-title">Run Monitoring</p>
                       </div>
                       <p class="accordion-title-desc">Everything about managing your runs in BaseSpace</p> 
                  
@@ -207,12 +193,7 @@ hide_welcome_banner: true
                 </div> <!--section8 ends-->
              
             </div>
-            <!-- accordion ends -->
-         
-        </div>
-        <!-- accordion column ends -->
-      
+      <!-- accordion ends -->
     </div>
-    <!-- main section row ends -->
-  
+  </div>
 </div>
