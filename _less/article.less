@@ -13,9 +13,9 @@
 
 .bsh-article-title {
   margin-bottom: 25px;
-  font: 700 28px/1.2em @font-header, sans-serif;
   color: @article-color;
   letter-spacing: 1px;
+  margin-top: 35px;
 
   @media (max-width: @media-xs-min) {
     margin-top: 50px;
@@ -32,6 +32,10 @@
     > h2, > h3 {
         margin-top: -@anchor-heading-offset;
         padding-top: @anchor-heading-offset;
+    }
+
+    > h4 {
+        padding-top: 20px;
     }
 
     > p {
@@ -105,11 +109,10 @@
 
 /* Sidebar styles */
 
-.bsh-article-sidebar {
-    padding-top: 50px;
-    border-top: 1px solid #cfcfcf;
-    margin-top: 100px;
+.bsh-related-sidebar {
     
+    padding-top: 20px;
+
     > hr {
         margin-bottom: 35px;
     }
@@ -128,3 +131,17 @@
     }
 }
 
+.bsh-related-bottombar {
+    .nav > li > a {
+        padding-left: 0;
+
+        &:hover {
+            background-color: #fff;
+            text-decoration: underline;
+        }
+    }
+}
+
+.bsh-edit {
+    margin-top: 50px;
+}

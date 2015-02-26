@@ -38,21 +38,35 @@ is_article: true
     </div><!-- /end side nav column -->
     
     <div class="col-lg-12 col-md-12" id="content-column">
-      <!-- Article Header -->
-      {% if (page.hide_article_title == null || page.hide_article_title == false) %}
-        <h1 class="bsh-article-title">{{ page.title }}</h1>
-      {% endif %}
-      <!-- Article Header ends -->
+    
+      <div class="row">
+        
+        <div class="col-lg-10 col-md-12">
+          <!-- Article Header -->
+          {% if (page.hide_article_title == null || page.hide_article_title == false) %}
+            <h1 class="bsh-article-title">{{ page.title }}</h1>
+          {% endif %}
+          <!-- Article Header ends -->
 
-      <!-- Article Body -->
-      <div class="bsh-article-content">
-        {{ content }}
-      </div> 
-      <!-- Article-body ends -->
+          <!-- Article Body -->
+          <div class="bsh-article-content">
+            {{ content }}
+          </div> 
+          <!-- Article-body ends -->
+        </div>
+        
+        <div class="col-lg-2 hidden-md hidden-sm hidden-xs">
+          <!--  article sidebar -->
+          {% if (page.hide_github_edit == null || page.hide_github_edit == false) %}
+            {% include article-sidebar.html %}
+          {% endif %}
+        </div>
 
-      <!--  bottom container -->
+      </div>
+
+      <!--  article sidebar -->
       {% if (page.hide_github_edit == null || page.hide_github_edit == false) %}
-        {% include article-sidebar.html %}
+        {% include edit.html %}
       {% endif %}
 
     </div><!-- /end main content column -->

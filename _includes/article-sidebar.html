@@ -1,61 +1,34 @@
-<div class="container bsh-article-sidebar">
-  
-  <div class="row">
-    <div class="col-md-12">
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <div class="media">
-          <div class="media-left">
-              <img height="60" width="70" src="{{ site.baseurl }}/images/Octocat.png" alt="GitHub">
-          </div>
-          <div class="media-body">
-            <h4 class="media-heading">Contribute to this article</h4>
-            <p>Want to edit or suggest changes to this content? You can do so <a href="{{ page.edithref }}">using GitHub</a>.
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="bsh-related-sidebar">
+    <hr class="hidden-lg hidden-md" />
 
-  <div class="row">
-    <hr />
-
-    <div class="col-sm-4">
       <h4>Related Articles</h4>
       <ul class="nav nav-stacked nav-pills">
         <li><a href="/articles/descriptive/ui-overview/">BaseSpace UI Overview</a></li>
         <li><a href="{{ site.baseurl }}/articles/new-to-basespace/">Getting Started with BaseSpace</a></li>
       </ul>
-    </div>
 
-    <div class="col-sm-4">
       <h4>Forums</h4>
       <p>Visit our <a target="_blank" href="https://support.basespace.illumina.com/">Forums</a> to engage with the BaseSpace Community</p>
-    </div>
 
-    <div class="col-sm-4">
       <h4>Related Video</h4>
       <a href="#" class="thumbnail bsh-thumbnail" data-toggle="modal" data-target="#videoModal" data-theVideo="//www.youtube.com/embed/HhHuCz5_pRQ">
         <img src="{{site.baseurl }}/images/basespace_video.png" class="img-responsive" />
         <div class="caption">
-          <h5>Introduction to BaseSpace</h5>
+          <h5>Introducing Native app engine</h5>
         </div>
       </a>
+
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <div>
+                      <iframe width="100%" height="350" src=""></iframe>
+                  </div>
+              </div>
+          </div>
+      </div>
     </div>
 
-  </div>  
-
-  <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <div>
-                    <iframe width="100%" height="350" src=""></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-  </div>
 </div>
