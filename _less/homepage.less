@@ -197,24 +197,45 @@ a.bsh-well {
   color: @earth-pumpkin-color;
 }
 
-.nav > li > a.popular-article-link {
-  color: @link-color;
-  line-height: 15px;
-
-  &:hover {
-    background-color: #fff;
-    text-decoration: underline;
-  }
-}
-
 .popular-articles-section {
   padding-left: 40px;
 
-  h3 {
+  > h3 {
     padding-left: 15px;
     margin-top: 15px;
   }
 
+  > ul {
+    padding-left: 15px;
+  }
+
+  .nav > li {
+    color: #999;
+    
+    > span {
+      float: left;
+      padding: 8px 8px 0px 0px;
+
+      &:hover {
+        color: #999;
+      }
+    }
+
+    > a.popular-article-link {
+      color: @link-color;
+      line-height: 15px;
+      padding-left: 0px;
+
+      &:hover, &:focus {
+        background-color: transparent;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.new-window-icon {
+  font-size: 9px;
 }
 
 /* %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%
@@ -283,8 +304,8 @@ a.bsh-thumbnail {
   }
 
   &:hover {
-    border: 1px solid @link-color;
-    color: @link-color;
+    background-color: #9ec4eb;
+    color: #fff;
   }
 
   .bsh-additional-icon {
