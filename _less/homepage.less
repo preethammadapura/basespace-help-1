@@ -100,6 +100,8 @@ a.bsh-well {
   padding-top: 28px;
   padding-bottom: 20px;
   padding-left: 25px;
+  position: relative;
+  padding-right: 50px;
 
   &:hover{
     text-decoration: none !important;
@@ -114,6 +116,13 @@ a.bsh-well {
 
   &:visited, &:focus {
     text-decoration: none !important;
+  }
+
+  .media-right {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    margin-top: -13px;
   }
 }
 
@@ -185,7 +194,7 @@ a.bsh-well {
 }
 
 .caret-right {
-  font-size: 6rem; 
+  font-size: 30px; 
   color: #bbb;
 }
 
@@ -197,23 +206,48 @@ a.bsh-well {
   color: @earth-pumpkin-color;
 }
 
-.nav > li > a.popular-article-link {
-  color: @link-color;
-  line-height: 15px;
-
-  &:hover {
-    background-color: #fff;
-    text-decoration: underline;
-  }
-}
-
 .popular-articles-section {
   padding-left: 40px;
 
-  h3 {
+  > h3 {
     padding-left: 15px;
   }
 
+  > ul {
+    padding-left: 15px;
+  }
+
+  .nav > li {
+    color: #999;
+    
+    > span {
+      float: left;
+      padding: 8px 8px 0px 0px;
+
+      &:hover {
+        color: #999;
+      }
+    }
+
+    > a.popular-article-link {
+      color: @link-color;
+      line-height: 15px;
+      padding-left: 0px;
+
+      &:hover, &:focus {
+        background-color: transparent;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.new-window-icon {
+  font-size: 9px;
+}
+
+#feed {
+  margin-bottom: 30px;
 }
 
 /* %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%
@@ -255,29 +289,39 @@ a.bsh-thumbnail {
   .home-title {
     margin-bottom: 45px;
   }
+
+  .container {
+    .row {
+      .col-sm-3 {
+        > a {
+          &:hover, &:focus {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+    
 }
 
 .bsh-additional-section {
-  display: block;
   color: #666;
+  text-align: center;
+  background-color: #fefefe;
+  border-radius: 3px;
+  padding: 15px;
 
-  @media all and (max-height: @media-sm-max) {
-    margin-bottom: 30px;
-  }
-
-  &:hover {
+  &:hover, &:focus {
     text-decoration: none;
   }
 
-  .media-body {
-    padding-left: 10px;
-  }
-
   &:hover {
-    text-decoration: none;
+    background-color: #9ec4eb;
+    color: #fff;
+  }
+
+  .bsh-additional-icon {
+    font-size: 28px;
   }
 }
 
-.bsh-additional-icon {
-  font-size: 4.5rem;
-}
