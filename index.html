@@ -21,7 +21,7 @@ is_homepage: true
 
             <a href="{{ site.baseurl }}/articles/new-to-basespace" class="well bsh-well" id="bsh-category-newb">
                 <div class="media">
-                  <div class="media-right media-middle pull-right ">
+                  <div class="media-right media-middle pull-right">
                       <span class="icon-caret-right caret-right"></span>
                   </div>
                   <div class="media-left media-middle">
@@ -36,7 +36,7 @@ is_homepage: true
 
             <a href="{{ site.baseurl }}/articles/" class="well bsh-well" id="bsh-category-articles">
                 <div class="media">
-                    <div class="media-right media-middle pull-right ">
+                    <div class="media-right media-middle pull-right">
                         <span class="icon-caret-right caret-right"></span>
                     </div>
                   <div class="media-left media-middle">
@@ -211,7 +211,7 @@ function initialize() {
           year = date.getFullYear(),
           dateFriendly = month +" "+ year;
 
-      html = html + "<li><span>"+dateFriendly+" |</span> <a target='_blank' class='popular-article-link' href='"+entry.link+"'>"+entry.title+"<span class='icon-new-tab'></span></a></li>\n";
+      html = html + "<li><span>"+dateFriendly+" |</span> <a target='_blank' class='popular-article-link' href='"+entry.link+"'>"+entry.title+" <span class='icon-new-tab'></span></a></li>\n";
     }
     if (html) $feed.html(html);
 
