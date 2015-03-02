@@ -21,21 +21,45 @@
 
 				    <!-- Collect the nav links, forms, and other content for toggling -->
 				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				      <ul class="nav navbar-nav navbar-right hidden-xs {% if page.is_homepage == null %}hidden-md{% endif %}">
-				        <li>
-				        	<a href="http://www.illumina.com/" target="_blank">
-			  	    			<img class="header-brand-illumina" src="/images/ILLUMINA_LOGO_small_new.png" />
-			  	    		</a>
-		  	    		</li>
-				      </ul>
-				      <form class="navbar-form navbar-right" role="search" id="searchbox_002811649472907755927:ae_7fgj1z-k" method="get" action="{{ site.baseurl }}/articles/searchresults/">
-				        <div class="form-group">
-				          	<input value="002811649472907755927:ae_7fgj1z-k" name="cx" type="hidden"/>
-					    	<input value="FORID:11" name="cof" type="hidden"/>
-						    <input class="form-control" id="q" name="q" size="35" type="text" value="" placeholder="Search"/>
-				        </div>
-				      </form>
-				    </div><!-- /.navbar-collapse -->
+						<ul class="nav navbar-nav navbar-right hidden-xs hidden-sm {% if page.is_homepage == null %}hidden-md{% endif %}">
+							<li>
+								<a href="http://www.illumina.com/" target="_blank">
+									<img class="header-brand-illumina" src="/images/ILLUMINA_LOGO_small_new.png" />
+								</a>
+							</li>
+						</ul>
+
+						<div class="bsh-user-account dropdown navbar-right">
+						
+							<button class="btn btn-default dropdown-toggle" type="button" id="bsh-account-dropdown" data-toggle="dropdown" aria-expanded="true">
+								<div class="account-left pull-left">
+									<img class="bsh-gravatar" src="/images/Octocat.png">
+								</div>
+								<div class="account-body pull-left hidden-sm hidden-xs">
+									<p class="media-heading">User Name</p>
+								</div>
+								<div class="account-right pull-left">
+									<span class="icon-caret-down"></span>
+								</div>
+							</button>
+							
+							<ul class="dropdown-menu" role="menu" aria-labelledby="bsh-account-dropdown">
+								<li role="presentation"><a target="_newtab" role="menuitem" tabindex="-1" href="https://basespace.illumina.com">BaseSpace</a></li>
+								<li role="presentation"><a target="_newtab" role="menuitem" tabindex="-1" href="https://my.illumina.com">myIllumina</a></li>
+								<li role="presentation" class="divider"></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="https://basespace.illumina.com/auth/logout">Log out</a></li>
+							</ul>
+
+						</div>
+
+						<form class="navbar-form navbar-left" role="search" id="searchbox_002811649472907755927:ae_7fgj1z-k" method="get" action="{{ site.baseurl }}/articles/searchresults/">
+							<div class="form-group">
+							  	<input value="002811649472907755927:ae_7fgj1z-k" name="cx" type="hidden"/>
+								<input value="FORID:11" name="cof" type="hidden"/>
+							    <input class="form-control" id="q" name="q" size="35" type="text" value="" placeholder="Search"/>
+							</div>
+						</form>
+					</div><!-- /.navbar-collapse -->
 		  		</div>
 		  	</div>
 		    
