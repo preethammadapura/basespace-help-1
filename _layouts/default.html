@@ -33,10 +33,10 @@
 						
 							<button class="btn btn-default dropdown-toggle" type="button" id="bsh-account-dropdown" data-toggle="dropdown" aria-expanded="true">
 								<div class="account-left pull-left">
-									<img class="bsh-gravatar" src="/images/Octocat.png">
+									<img id="bsh-gravatar">
 								</div>
 								<div class="account-body pull-left hidden-sm hidden-xs">
-									<p class="media-heading">User Name</p>
+									<p id="bsh-user-name"></p>
 								</div>
 								<div class="account-right pull-left">
 									<span class="icon-caret-down"></span>
@@ -49,6 +49,8 @@
 								<li role="presentation" class="divider"></li>
 								<li role="presentation"><a role="menuitem" tabindex="-1" href="https://basespace.illumina.com/auth/logout">Log out</a></li>
 							</ul>
+
+							<a href="https://basespace.illumina.com/auth/logout" class="btn btn-default" id="bsh-account-signin">Sign in</a>
 
 						</div>
 

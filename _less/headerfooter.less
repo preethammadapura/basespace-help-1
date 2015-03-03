@@ -56,20 +56,15 @@ input.gsc-search-button {
 
 /* User Account styles */
 
-.bsh-user-account {
-
-
-}
-
 #bsh-account-dropdown {
   border: none;
   margin-top: 10px;
-
+  
   .account-left {
     display: block;
 
-    .bsh-gravatar {
-      border: 1px solid #ccc;
+    #bsh-gravatar {
+      border: 1px solid #ddd;
       width: 35px;
       height: 35px;
       border-radius: 50%;
@@ -81,12 +76,21 @@ input.gsc-search-button {
   .account-body {
     display: block;
     padding: 7px 6px 0px 10px;
+    max-width: 100px;
+    overflow: hidden;
   }
 
   .account-right {
     padding: 12px 1px 0px 6px;
     font-size: 10px;
   }
+}
+
+#bsh-account-signin {
+  display: none;
+  margin: 15px 15px 0px 0px;
+  color: white;
+  background-color: #328ed1;
 }
 
 /* %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%
