@@ -3,7 +3,9 @@ $(function() {
 		url:"https://api.basespace.illumina.com/v1pre3/users/current", 
 		dataType: "jsonp",
 		success: function (result) {
-			$("#bsh-user-name").html(result.Response.Name);
+			var res = result.Response.Name;
+			res = res.split(" ");
+			$("#bsh-user-name").html(res[0]);
 			$("#bsh-gravatar").attr("src", result.Response.GravatarUrl);
 		},
 		error: function (result) {
