@@ -211,7 +211,7 @@ function initialize() {
           year = date.getFullYear(),
           dateFriendly = month +" "+ year;
 
-      html = html + "<li><span>"+dateFriendly+" |</span> <a target='_blank' class='popular-article-link' href='"+entry.link+"'>"+entry.title+" <span class='icon-new-tab'></span></a></li>\n";
+      html = html + "<li><span>"+dateFriendly+"</span><span>|</span> <a target='_blank' class='popular-article-link' href='"+entry.link+"'>"+entry.title+" <span class='icon-new-tab'></span></a></li>\n";
     }
     if (html) $feed.html(html);
 
