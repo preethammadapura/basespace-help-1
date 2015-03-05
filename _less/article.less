@@ -67,8 +67,9 @@
 
     &:hover {
         color: @sidenav-blue;
-        border-right: 2px solid @sidenav-blue;
+        border-right: 1px solid @sidenav-blue;
         background-color: #fff;
+        margin-right: -1px;
     }
 }
 
@@ -86,6 +87,7 @@
     &:hover {
         color: @sidenav-blue;
         border-right: 1px solid @sidenav-blue;
+        margin-right: 0px;
     }
 }
 
@@ -96,14 +98,12 @@
 
     > li.active > a {
         color: @sidenav-blue;
-        font-weight: 200;
     }
 }
 
 #sidenav-list .nav > li.active > a {
     border-right: 2px solid @sidenav-blue;
     color: @sidenav-blue;
-    font-weight: 600;
     z-index: 1;
     margin-right: -1px;
 }
