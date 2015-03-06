@@ -47,23 +47,23 @@ There are two ways to delete a Project within BaseSpace:
 
 **From the Projects list page**
 
-{% step 1, /images/tutorials/delete-run-selector_1366x359.png, Choose Project %}
+{% step 1, /images/tutorials/delete-project-selected.png, Choose Project %}
 On the Projects list page, simply select a Project from the list and click the **Move to Trash** button
 {% endstep %}
 
 **From the Project's details page**
 
-{% step 1, /images/tutorials/delete-run-selector_1366x359.png, Choose Project %}
+{% step 1, /images/tutorials/delete-project-from-details.png, Choose Project %}
 After selecting a Project and navigating to the Project's details page, simply click on the **Move to Trash** button
 {% endstep %}
 
 **For Samples**:
 
-{% step 1, /images/tutorials/delete-run-selector_1366x359.png, Choose Project %}
+{% step 1, /images/tutorials/projects-tab_1365x519.png, Choose Project %}
 Select the Project where your Samples are stored
 {% endstep %}
 
-{% step 1, /images/tutorials/delete-run-selector_1366x359.png, Select Samples %}
+{% step 1, /images/tutorials/delete-samples-selector.png, Select Samples %}
 Select the Sample(s) you wish to delete and click on the **Move to Trash** button{% endstep %}
 
 **Alternatively**,
