@@ -20,13 +20,13 @@
 			<div class="col-md-10 col-lg-10">
 				<ol class="breadcrumb bsh-breadcrumb">
 				    <li>
-				        {% case page.layout %}
+				        {% case page.section_root %}
 				        {% when "release-notes" %}
                         <a href="{{ site.baseurl }}/release-notes/">Release Notes</a>
-				        {% when "article" %}
-				        <a href="{{ site.baseurl }}/articles/">Articles</a>
-                        {% else %}
+				        {% when "help-center" %}
 				        <a href="{{ site.baseurl }}/">Help Center</a>
+                        {% else %}
+				        <a href="{{ site.baseurl }}/articles/">Articles</a>				        
 				        {% endcase %}
 				    </li>
 					<li class="active">{{ page.title }}</li>
