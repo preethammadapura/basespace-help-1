@@ -14,5 +14,8 @@ function autoPlayYouTubeModal() {
         $(theModal + ' button.close').click(function () {
             $(theModal + ' iframe').attr('src', videoSRC);
         });
+        $(theModal).on('hidden.bs.modal', function () {
+            $(theModal + ' iframe').removeAttr('src');
+        });
     });
 }
