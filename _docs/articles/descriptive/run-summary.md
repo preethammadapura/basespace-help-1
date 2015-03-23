@@ -6,6 +6,8 @@ title: Description of the Run Summary section for a Sequencing Run
 
 # Run Summary
 
+The Run Summary page can be accessed by first selecting a Run in BaseSpace then clicking on the **Run Summary** button in the left-hand navigation pane.
+
 ## What is it?
 The Run Summary page shows tables with basic data quality metrics that are summarized per lane and per read. All the statistics are given as means and standard deviations over the tiles used in the lane.
 
