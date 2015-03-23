@@ -21,37 +21,125 @@ The tables do not contain information about samples or projects. The tables also
 
 The following metrics are displayed in the top table, split out by read and total:
 
-| Metric Name                           | Description
-|
-| Level                            | The sequencing read number                                                                                                                                                                                                                                                                                                                          
-| Cycles                           | The number of cycles in the read                                                                                                                                                                                                                                                                                                                      |
-| Yield Total                      | The number of bases sequenced, which is updated as the Run progresses                                                                                                                                                                                                                                                                                 |
-| Projected Total Yield            | The projected number of bases expected to be sequenced at the end of the Run                                                                                                                                                                                                                                                                          |
-| Yield Perfect                    | The number of bases in reads that align perfectly, as determined by alignment to PhiX of reads derived from a spiked in PhiX control sample. If no PhiX control sample is run in the lane, this chart is not available                                                                                                                                |
-| Yield <=3 errors                 | The number of bases in reads that align with three errors or less, as determined by a spiked in PhiX control sample. If no PhiX control sample is run in the lane, this chart is not available, and shows a zero value. This value is not calculated for NextSeq two-channel sequencing, and the value shown is always zero                           |
-| Aligned                          | The percentage of the sample that aligned to the PhiX genome, which is determined for each level or read independently                                                                                                                                                                                                                                |
-| % Perfect [Num Usable Cycles]    | The percentage of bases in reads that align perfectly, as determined by a spiked in PhiX control sample, at the cycle indicated in the brackets. If no PhiX control sample is run in the lane, this chart shows 0% and the number of cycles used. This value is not calculated for NextSeq two-channel sequencing, and the value shown is always zero |
-| % <=3 errors [Num Usable Cycles] | The percentage of bases in reads that align with three errors or less, as determined by a spiked in PhiX control sample, at the indicated cycle. If no PhiX control sample is run in the lane, this chart shows 0% and the number of cycles used. This value is not calculated for NextSeq two-channel sequencing, and the value shown is always zero |
-| Error Rate                       | The calculated error rate of the reads that aligned to PhiX                                                                                                                                                                                                                                                                                           |
-| Intensity Cycle 1                | The average of the A channel intensity measured at the first cycle averaged over filtered clusters                                                                                                                                                                                                                                                    |
-| % Intensity Cycle 20             | The corresponding intensity statistic at cycle 20 as a percentage of that value at the first cycle. 100%x(Intensity at cycle 20)/(Intensity at cycle 1)                                                                                                                                                                                               |
-| %Q>=30                           | The percentage of bases with a quality score of 30 or higher, respectively. This chart is generated after the 25th cycle, and the values represent the current cycle.                                                                                                                                                                                 |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-031e">Level</th>
+    <th class="tg-031e">The sequencing read number</th>
+  </tr>
+  <tr>
+    <td class="tg-031e">Cycles</td>
+    <td class="tg-031e">The number of cycles in the read</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Yield Total</td>
+    <td class="tg-031e">The number of bases sequenced, which is updated as the Run progresses</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Projected Total Yield</td>
+    <td class="tg-031e">The projected number of bases expected to be sequenced at the end of the Run</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Yield Perfect</td>
+    <td class="tg-031e">The number of bases in reads that align perfectly, as determined by alignment to PhiX of reads derived from a spiked in PhiX control sample. If no PhiX control sample is run in the lane, this chart is not available</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Yield &lt;=3 errors</td>
+    <td class="tg-031e">The number of bases in reads that align with three errors or less, as determined by a spiked in PhiX control sample. If no PhiX control sample is run in the lane, this chart is not available, and shows a zero value. This value is not calculated for NextSeq two-channel sequencing, and the value shown is always zero</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Aligned</td>
+    <td class="tg-031e">The percentage of the sample that aligned to the PhiX genome, which is determined for each level or read independently</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">% Perfect [Num Usable Cycles]</td>
+    <td class="tg-031e">The percentage of bases in reads that align perfectly, as determined by a spiked in PhiX control sample, at the cycle indicated in the brackets. If no PhiX control sample is run in the lane, this chart shows 0% and the number of cycles used. This value is not calculated for NextSeq two-channel sequencing, and the value shown is always zero</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">% &lt;=3 errors [Num Usable Cycles]</td>
+    <td class="tg-031e">The percentage of bases in reads that align with three errors or less, as determined by a spiked in PhiX control sample, at the indicated cycle. If no PhiX control sample is run in the lane, this chart shows 0% and the number of cycles used. This value is not calculated for NextSeq two-channel sequencing, and the value shown is always zero</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Error Rate</td>
+    <td class="tg-031e">The calculated error rate of the reads that aligned to PhiX</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Intensity Cycle 1</td>
+    <td class="tg-031e">The average of the A channel intensity measured at the first cycle averaged over filtered clusters</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">% Intensity Cycle 20</td>
+    <td class="tg-031e">The corresponding intensity statistic at cycle 20 as a percentage of that value at the first cycle. 100%x(Intensity at cycle 20)/(Intensity at cycle 1)</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">%Q&gt;=30</td>
+    <td class="tg-031e">The corresponding intensity statistic at cycle 20 as a percentage of that value at the first cycle. 100%x(Intensity at cycle 20)/(Intensity at cycle 1).</td>
+  </tr>
+</table>
 
 
 The following metrics are available in the Read tables, split out by lane:
 
-| Metric Name                           | Description
-|
-| Tiles               | The number of tiles per lane
-| Density             | The density of clusters (in thousands per mm2) detected by image analysis, +/- one standard deviation.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| Clusters PF         | The percentage of clusters passing filtering, +/- one standard deviation.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Phasing/Prephasing  | The value used by RTA for the percentage of molecules in a cluster for which sequencing falls behind (phasing) or jumps ahead (prephasing) the current cycle within a read.  For MiSeq and NextSeq, RTA generates phasing and prephasing estimates empirically for every cycle. The value displayed here is therefore not used in the actual phasing/prephasing calculations, but is an aggregate value determined from the first 25 cycles. For most applications, the value reported is very close to the value that is applied. For low diversity samples or samples with unbalanced base composition, the reported value can diverge from the values being applied because the value changes from cycle to cycle. |
-| Reads               | The number of clusters (in millions).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| Reads PF            | The number of clusters (in millions) passing filtering.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| %Q>=30              | The percentage of bases with a quality score of 30 or higher, respectively. This chart is generated after the 25th cycle, and the values represent the current cycle.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| Yield               | The number of bases sequenced which passed filter.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| Cycles Err Rated    | The number of cycles that have been error rated using PhiX, starting at cycle 1.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| Aligned             | The percentage that aligned to the PhiX genome.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Error Rate          | The calculated error rate, as determined by the PhiX alignment. Subsequent columns display the error rate for cycles 1–35, 1–75, and 1–100.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| Intensity Cycle 1   | The average of the A channel intensity measured at the first cycle averaged over filtered clusters.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| %Intensity Cycle 20 | The corresponding intensity statistic at cycle 20 as a percentage of that value at the first cycle. 100%x(Intensity at cycle 20)/(Intensity at cycle 1).      
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+</style>
+<table class="tg">
+  <tr>
+    <td class="tg-031e">Tiles</th>
+    <td class="tg-031e">The number of tiles per lane</th>
+  </tr>
+  <tr>
+    <td class="tg-031e">Density</td>
+    <td class="tg-031e">The density of clusters (in thousands per mm2) detected by image analysis, +/- one standard deviation.</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Clusters PF</td>
+    <td class="tg-031e">The percentage of clusters passing filtering, +/- one standard deviation.</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Phasing/Prephasing</td>
+    <td class="tg-031e">The value used by RTA for the percentage of molecules in a cluster for which sequencing falls behind (phasing) or jumps ahead (prephasing) the current cycle within a read.<br><br>For MiSeq and NextSeq, RTA generates phasing and prephasing estimates empirically for every cycle. The value displayed here is therefore not used in the actual phasing/prephasing calculations, but is an aggregate value determined from the first 25 cycles. For most applications, the value reported is very close to the value that is applied. For low diversity samples or samples with unbalanced base composition, the reported value can diverge from the values being applied because the value changes from cycle to cycle.</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Reads</td>
+    <td class="tg-031e">The number of clusters (in millions).</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Reads PF</td>
+    <td class="tg-031e">The number of clusters (in millions) passing filtering.</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">%Q&gt;=30</td>
+    <td class="tg-031e">The percentage of bases with a quality score of 30 or higher, respectively. This chart is generated after the 25th cycle, and the values represent the current cycle.</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Yield</td>
+    <td class="tg-031e">The number of bases sequenced which passed filter.</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Cycles Err Rated</td>
+    <td class="tg-031e">The number of cycles that have been error rated using PhiX, starting at cycle 1.</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Aligned</td>
+    <td class="tg-031e">The percentage that aligned to the PhiX genome.</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Error Rate</td>
+    <td class="tg-031e">The calculated error rate, as determined by the PhiX alignment. Subsequent columns display the error rate for cycles 1–35, 1–75, and 1–100.</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Intensity Cycle 1</td>
+    <td class="tg-031e">The average of the A channel intensity measured at the first cycle averaged over filtered clusters.</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">%Intensity Cycle 20</td>
+    <td class="tg-031e">The corresponding intensity statistic at cycle 20 as a percentage of that value at the first cycle. 100%x(Intensity at cycle 20)/(Intensity at cycle 1).</td>
+  </tr>
+</table>
