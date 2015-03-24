@@ -8,7 +8,13 @@ hide_welcome_banner: true
 In BaseSpace, there are two major workflows that you may become accustomed to:
 
 1. Prepping a Run in BaseSpace
+	* Connection from BaseSpace to your sequencing instrument
+	* Allows you to easily configure your Run within BaseSpace before starting it on the NextSeq
+	* Rich UI
 2. Processing Data and Analysis in BaseSpace
+	* Software is available through an App Store where both Illumina and third-party software is made available for users
+	* Easy-to-use configuration
+	* Rich UI for reporting results
 
 ## Prep a Run in BaseSpace
 
