@@ -6,6 +6,8 @@ title: Run Indexing QC
 ##What is it
 The Indexing QC page lists count information for indexes used in the run as designated in the sample sheet. The Indexing QC is only available if the run is an index run.
 
+{% screenshot /images/articles/runs-indexing-qc_767x338.png %}
+
 ##When to use it
 Look at this page when you want to see indexing information for a lane after the index read is completed.
 
