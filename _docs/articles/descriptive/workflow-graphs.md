@@ -10,7 +10,7 @@ The workflow graphs provide metrics that allow you to judge the success of the s
 
 ###What is it
 The workflow graphs provide metrics that allow you to judge the success of the sequencing run for that sample. The following topics provide information about these charts.
-{% screenshot /images/articles/prep-tab_121x128.png %}
+{% screenshot /images/articles/low-percentage-graph.png %}
 You can expand a chart by clicking the expand button at the top right corner. 
 
 ###When to use it
@@ -57,7 +57,7 @@ This graph is not a good predictor of yields or quality of final results.
 
 ###What is it
 The High Percentage Graph represents run statistics that are generally near 100% in an ideal run. These graphs are metrics of the sequencing run or the analysis step.
-{% screenshot /images/articles/prep-tab_121x128.png %}
+{% screenshot /images/articles/high-percentage-graph.png %}
 You can expand a chart by clicking the expand button at the top right corner. 
 
 ###When to use it
@@ -115,7 +115,7 @@ The Clusters graph provides information about the number of clusters that are de
 - Unindexed
 - Duplicates
 
-{% screenshot /images/articles/prep-tab_121x128.png %}
+{% screenshot /images/articles/clusters-graph.png %}
 You can expand a chart by clicking the expand button at the top right corner.
 
 ###When to use it
@@ -161,7 +161,7 @@ A cluster represents a clonal spot on the flow cell that contains the amplified 
 ###What is it
 The Mismatch Graph plots the mismatches between a sequence read and a reference genome after alignment.
 
-{% screenshot /images/articles/prep-tab_121x128.png %}
+{% screenshot /images/articles/mismatch-graph.png %}
 You can expand a chart by clicking the expand button at the top right corner.
 
 ###When to use it
