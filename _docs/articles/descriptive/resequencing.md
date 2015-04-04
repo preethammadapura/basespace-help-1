@@ -16,10 +16,10 @@ The Resequencing App Results Page provides four graphs:
 
 The Resequencing Sample Details Page provides five panes:
 
-- [Samples Table]()
-- [Coverage Graph]()
-- [Q-Score Graph]()
-- [Variant Score Graph]()
-- [Variants Table]()
+- [Samples Table](/articles/descriptive/sample-details-page-components/#headings_0)
+- [Coverage Graph](/articles/descriptive/sample-details-page-components/#headings_2)
+- [Q-Score Graph](/articles/descriptive/sample-details-page-components/#headings_3)
+- [Variant Score Graph](/articles/descriptive/sample-details-page-components/#headings_4)
+- [Variants Table](/articles/descriptive/sample-details-page-components/#headings_5)
 
 The graphs and variants table display data for the chromosome that is selected in the drop-down list.
