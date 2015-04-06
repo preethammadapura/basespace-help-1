@@ -11,4 +11,4 @@ This section describes the Illumina workflow apps.
 - [Small RNA Analysis](/articles/descriptive/small-rna-analysis/)
 - [Metagenomics Analysis](/articles/descriptive/metagenomics-analysis/)
 - [De Novo Assembly](/articles/descriptive/de-novo-assembly/)
-- [Generate FASTQ]()
+- [Generate FASTQ](/articles/descriptive/generate-fastq/)
